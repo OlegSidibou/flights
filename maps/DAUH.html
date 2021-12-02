@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_da1407342eab4359a204fb0b394489c8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_da1407342eab4359a204fb0b394489c8" ></div>
+        
+</body>
+<script>    
+    
+            var map_da1407342eab4359a204fb0b394489c8 = L.map(
+                "map_da1407342eab4359a204fb0b394489c8",
+                {
+                    center: [31.673000335699996, 6.140439987180001],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_777ccf244b03466986a6313b56c0cd99 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_da1407342eab4359a204fb0b394489c8);
+        
+    
+            var poly_line_b77e075fd88a4501abfa856632b1d6d3 = L.polyline(
+                [[31.673000335699996, 6.140439987180001], [31.802492841744833, 6.06959447666652], [31.93194600399878, 5.998550146078271], [32.061359512470695, 5.927305490037928], [32.19073305470268, 5.855858992151439], [32.320066315743425, 5.784209124900236], [32.44935897812122, 5.712354349532427], [32.578610721816666, 5.640293115952906], [32.70782122423512, 5.5680238626124225], [32.83699016017878, 5.495545016395564], [32.9661172018184, 5.422854992507641], [33.09520201866483, 5.349952194360503], [33.22424427753998, 5.276835013457225], [33.353243642547675, 5.203501829275682], [33.48219977504402, 5.129951009151002], [33.61111233360756, 5.056180908156885], [33.73998097400883, 4.982189868985749], [33.868805349179915, 4.907976221827753], [33.997585109183326, 4.833538284248614], [34.12631990118064, 4.758874361066275], [34.255009369400845, 4.683982744226365], [34.383653155108114, 4.608861712676453], [34.51225089656943, 4.533509532239105], [34.64080222902163, 4.45792445548371], [34.76930678463817, 4.382104721597062], [34.89776419249544, 4.30604855625272], [35.02617407853873, 4.2297541714790885], [35.154536065547745, 4.15321976552625], [35.2828497731017, 4.076443522731509], [35.411114817544075, 3.999423613383648], [35.53933081194683, 3.922158193585891], [35.66749736607432, 3.8446454051175545], [35.79561408634666, 3.7668833752943787], [35.9236805758027, 3.6888702168275147], [36.05169643406262, 3.610604027681195], [36.179661257289965, 3.532082890929023], [36.307574638153234, 3.4533048746089166], [36.43543616578713, 3.3742680315766704], [36.563245425753195, 3.294970399358136], [36.691002, 3.21541]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_da1407342eab4359a204fb0b394489c8);
+        
+    
+        var popup_357465e9b4284e109a5b962b56580338 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68b90ef955db4b8baf7b6258cfcf9215 = $(`<div id="html_68b90ef955db4b8baf7b6258cfcf9215" style="width: 100.0%; height: 100.0%;">🏠DAUH↔DAAG<br />Distance: 334nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">DTH1803</span> (B738) ↗️<br /><span style="color: #bada55">DTH1802</span> (B738) ↘️<br /><span style="color: #bada55">DAH6226</span> (B738) ↘️</div>`)[0];
+            popup_357465e9b4284e109a5b962b56580338.setContent(html_68b90ef955db4b8baf7b6258cfcf9215);
+        
+
+        poly_line_b77e075fd88a4501abfa856632b1d6d3.bindPopup(popup_357465e9b4284e109a5b962b56580338)
+        ;
+
+        
+    
+    
+            poly_line_b77e075fd88a4501abfa856632b1d6d3.bindTooltip(
+                `<div>
+                     🏠DAUH↔DAAG<br />Distance: 334nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">DTH1803</span> (B738) ↗️<br /><span style="color: #bada55">DTH1802</span> (B738) ↘️<br /><span style="color: #bada55">DAH6226</span> (B738) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_19aa04b0492e4a258055292a24fc2afb = L.polyline(
+                [[31.673000335699996, 6.140439987180001], [31.802492841744833, 6.06959447666652], [31.93194600399878, 5.998550146078271], [32.061359512470695, 5.927305490037928], [32.19073305470268, 5.855858992151439], [32.320066315743425, 5.784209124900236], [32.44935897812122, 5.712354349532427], [32.578610721816666, 5.640293115952906], [32.70782122423512, 5.5680238626124225], [32.83699016017878, 5.495545016395564], [32.9661172018184, 5.422854992507641], [33.09520201866483, 5.349952194360503], [33.22424427753998, 5.276835013457225], [33.353243642547675, 5.203501829275682], [33.48219977504402, 5.129951009151002], [33.61111233360756, 5.056180908156885], [33.73998097400883, 4.982189868985749], [33.868805349179915, 4.907976221827753], [33.997585109183326, 4.833538284248614], [34.12631990118064, 4.758874361066275], [34.255009369400845, 4.683982744226365], [34.383653155108114, 4.608861712676453], [34.51225089656943, 4.533509532239105], [34.64080222902163, 4.45792445548371], [34.76930678463817, 4.382104721597062], [34.89776419249544, 4.30604855625272], [35.02617407853873, 4.2297541714790885], [35.154536065547745, 4.15321976552625], [35.2828497731017, 4.076443522731509], [35.411114817544075, 3.999423613383648], [35.53933081194683, 3.922158193585891], [35.66749736607432, 3.8446454051175545], [35.79561408634666, 3.7668833752943787], [35.9236805758027, 3.6888702168275147], [36.05169643406262, 3.610604027681195], [36.179661257289965, 3.532082890929023], [36.307574638153234, 3.4533048746089166], [36.43543616578713, 3.3742680315766704], [36.563245425753195, 3.294970399358136], [36.691002, 3.21541]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_da1407342eab4359a204fb0b394489c8);
+        
+    
+        var popup_c3d227f2bfdc4ad88cfd841a4adf5758 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5641c2fe40a241288ee792704205bad3 = $(`<div id="html_5641c2fe40a241288ee792704205bad3" style="width: 100.0%; height: 100.0%;">🏠DAUH↔DAAG<br />Distance: 334nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">DTH1803</span> (B738) ↗️<br /><span style="color: #bada55">DTH1802</span> (B738) ↘️<br /><span style="color: #bada55">DAH6226</span> (B738) ↘️</div>`)[0];
+            popup_c3d227f2bfdc4ad88cfd841a4adf5758.setContent(html_5641c2fe40a241288ee792704205bad3);
+        
+
+        poly_line_19aa04b0492e4a258055292a24fc2afb.bindPopup(popup_c3d227f2bfdc4ad88cfd841a4adf5758)
+        ;
+
+        
+    
+    
+            poly_line_19aa04b0492e4a258055292a24fc2afb.bindTooltip(
+                `<div>
+                     🏠DAUH↔DAAG<br />Distance: 334nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">DTH1803</span> (B738) ↗️<br /><span style="color: #bada55">DTH1802</span> (B738) ↘️<br /><span style="color: #bada55">DAH6226</span> (B738) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4cfde089291744f3a973d03486a5e3d4 = L.circleMarker(
+                [36.691002, 3.21541],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_da1407342eab4359a204fb0b394489c8);
+        
+    
+        var popup_c088746c3d25454fbe70ef7b17e647b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62aba8d9f0e640e392d3fa0a38415288 = $(`<div id="html_62aba8d9f0e640e392d3fa0a38415288" style="width: 100.0%; height: 100.0%;"><div ><strong>Houari Boumediene Airport</strong> (DAAG)<br />Distance: 334nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">DTH1803</span> (B738) ↘️<br /><span style="color: #bada55">DTH1802</span> (B738) ↗️<br /><span style="color: #bada55">DAH6226</span> (B738) ↗️</div></div>`)[0];
+            popup_c088746c3d25454fbe70ef7b17e647b0.setContent(html_62aba8d9f0e640e392d3fa0a38415288);
+        
+
+        circle_marker_4cfde089291744f3a973d03486a5e3d4.bindPopup(popup_c088746c3d25454fbe70ef7b17e647b0)
+        ;
+
+        
+    
+    
+            circle_marker_4cfde089291744f3a973d03486a5e3d4.bindTooltip(
+                `<div>
+                     <div ><strong>Houari Boumediene Airport</strong> (DAAG)<br />Distance: 334nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">DTH1803</span> (B738) ↘️<br /><span style="color: #bada55">DTH1802</span> (B738) ↗️<br /><span style="color: #bada55">DAH6226</span> (B738) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_70037d39ae7e4d2a80cb6ebdd409078b = L.circle(
+                [31.673000335699996, 6.140439987180001],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 370400, "stroke": true, "weight": 1}
+            ).addTo(map_da1407342eab4359a204fb0b394489c8);
+        
+    
+        var popup_637f7063eb294302bfd74d3e53f4a151 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71476d58bdc04045be28714a924b3391 = $(`<div id="html_71476d58bdc04045be28714a924b3391" style="width: 100.0%; height: 100.0%;">1 hr flight</div>`)[0];
+            popup_637f7063eb294302bfd74d3e53f4a151.setContent(html_71476d58bdc04045be28714a924b3391);
+        
+
+        circle_70037d39ae7e4d2a80cb6ebdd409078b.bindPopup(popup_637f7063eb294302bfd74d3e53f4a151)
+        ;
+
+        
+    
+    
+            var circle_d70ddc13ef104d6ba79ce37e2a44b613 = L.circle(
+                [31.673000335699996, 6.140439987180001],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1111000.0, "stroke": true, "weight": 1}
+            ).addTo(map_da1407342eab4359a204fb0b394489c8);
+        
+    
+        var popup_3094faa06dd1474e8aee2d97c9c4173c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2587ac9c87e94fdda1f4a6ab187382a0 = $(`<div id="html_2587ac9c87e94fdda1f4a6ab187382a0" style="width: 100.0%; height: 100.0%;">2 hr flight</div>`)[0];
+            popup_3094faa06dd1474e8aee2d97c9c4173c.setContent(html_2587ac9c87e94fdda1f4a6ab187382a0);
+        
+
+        circle_d70ddc13ef104d6ba79ce37e2a44b613.bindPopup(popup_3094faa06dd1474e8aee2d97c9c4173c)
+        ;
+
+        
+    
+    
+            var circle_b0e674b381d346048736c384dfefc93f = L.circle(
+                [31.673000335699996, 6.140439987180001],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1852000.0, "stroke": true, "weight": 1}
+            ).addTo(map_da1407342eab4359a204fb0b394489c8);
+        
+    
+        var popup_2d6d23da5d2c4be991e38471a5a7e074 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40b5363b1d424d29ae7f59a0b2e35bbe = $(`<div id="html_40b5363b1d424d29ae7f59a0b2e35bbe" style="width: 100.0%; height: 100.0%;">3 hr flight</div>`)[0];
+            popup_2d6d23da5d2c4be991e38471a5a7e074.setContent(html_40b5363b1d424d29ae7f59a0b2e35bbe);
+        
+
+        circle_b0e674b381d346048736c384dfefc93f.bindPopup(popup_2d6d23da5d2c4be991e38471a5a7e074)
+        ;
+
+        
+    
+    
+            var circle_a77276ff5ebc47e1b6fbe7aaf390076a = L.circle(
+                [31.673000335699996, 6.140439987180001],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2463160, "stroke": true, "weight": 1}
+            ).addTo(map_da1407342eab4359a204fb0b394489c8);
+        
+    
+        var popup_b915205e63d0481a9fa191717a037a48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69f60b793d5e41b19369ade0f8f6f314 = $(`<div id="html_69f60b793d5e41b19369ade0f8f6f314" style="width: 100.0%; height: 100.0%;">4 hr flight</div>`)[0];
+            popup_b915205e63d0481a9fa191717a037a48.setContent(html_69f60b793d5e41b19369ade0f8f6f314);
+        
+
+        circle_a77276ff5ebc47e1b6fbe7aaf390076a.bindPopup(popup_b915205e63d0481a9fa191717a037a48)
+        ;
+
+        
+    
+    
+            var circle_marker_17a58641bb8147fe80f138e37499e298 = L.circleMarker(
+                [31.673000335699996, 6.140439987180001],
+                {"bubblingMouseEvents": true, "color": "#FF6666", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF6666", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_da1407342eab4359a204fb0b394489c8);
+        
+    
+        var popup_892c197ab8d7481780ff1cab8d5651fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f9685e510f84bbca3a90e7b8a987dee = $(`<div id="html_5f9685e510f84bbca3a90e7b8a987dee" style="width: 100.0%; height: 100.0%;"><div ><strong>Oued Irara Airport</strong> (DAUH)<br /><br />3 flights to 2 airports.<br />From here you can go to <a href="index.html">index page</a>.</div></div>`)[0];
+            popup_892c197ab8d7481780ff1cab8d5651fa.setContent(html_5f9685e510f84bbca3a90e7b8a987dee);
+        
+
+        circle_marker_17a58641bb8147fe80f138e37499e298.bindPopup(popup_892c197ab8d7481780ff1cab8d5651fa)
+        ;
+
+        
+    
+    
+            circle_marker_17a58641bb8147fe80f138e37499e298.bindTooltip(
+                `<div>
+                     <div ><strong>Oued Irara Airport</strong> (DAUH)<br /><br />3 flights to 2 airports.<br />From here you can go to <a href="index.html">index page</a>.</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

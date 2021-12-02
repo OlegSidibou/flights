@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_53cf4080a9ff49cf9c8af3607a2be137 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_53cf4080a9ff49cf9c8af3607a2be137" ></div>
+        
+</body>
+<script>    
+    
+            var map_53cf4080a9ff49cf9c8af3607a2be137 = L.map(
+                "map_53cf4080a9ff49cf9c8af3607a2be137",
+                {
+                    center: [3.326667, 117.569444],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aa1c2e75653e4086a85204fd77516c91 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_53cf4080a9ff49cf9c8af3607a2be137);
+        
+    
+            var poly_line_f1e5178b95114e8cbaf4a75b2f6f7c1c = L.polyline(
+                [[3.326667, 117.569444], [3.1115893226669864, 117.62038814403034], [2.8965091912239713, 117.67131150068305], [2.6814267765045225, 117.72221551677961], [2.4663422490856255, 117.77310163701424], [2.251255779306973, 117.82397130411364], [2.036167537290205, 117.87482595899657], [1.82107769295809, 117.92566704093274], [1.6059864160536703, 117.97649598770158], [1.3908938761593541, 118.02731423575062], [1.1758002427159802, 118.07812322035338], [0.9607056850418436, 118.1289243757672], [0.7456103723516933, 118.17971913539073], [0.5305144737757078, 118.23050893192142], [0.31541815837845055, 118.2812951975125], [0.10032159517781056, 118.33207936393015], [-0.1147750468360716, 118.38286286271048], [-0.32987159868188015, 118.4336471253164], [-0.5449678913682016, 118.48443358329452], [-0.7600637558746072, 118.53522366843214], [-0.9751590231327159, 118.58601881291413], [-1.1902535240072616, 118.6368204494801], [-1.4053470892771305, 118.68763001158148], [-1.6204395496163924, 118.73844893353899], [-1.8355307355752897, 118.7892786507001], [-2.0506204775612185, 118.8401205995968], [-2.2657086058196603, 118.89097621810375], [-2.48079495041508, 118.9418469455965], [-2.695879341211793, 118.99273422311026], [-2.9109616078547584, 119.04363949349897], [-3.1260415797503622, 119.09456420159478], [-3.341119086047096, 119.14550979436785], [-3.556193955616219, 119.19647772108696], [-3.7712660170323304, 119.24746943348028], [-3.9863350985538775, 119.29848638589695], [-4.20140102810359, 119.34953003546909], [-4.416463633248841, 119.40060184227461], [-4.63152274118192, 119.45170326950047], [-4.8465781787002085, 119.50283578360693], [-5.061629772186279, 119.5540008544922]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_53cf4080a9ff49cf9c8af3607a2be137);
+        
+    
+        var popup_8bbe7e7b3c8842898e7b9703c5b35e62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5a7735ca2a741988c0e6422bd597937 = $(`<div id="html_b5a7735ca2a741988c0e6422bd597937" style="width: 100.0%; height: 100.0%;">🏠WAQQ↔WAAA<br />Distance: 518nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">LNI739</span> (B739) ↗️<br /><span style="color: #bada55">LNI738</span> (B739) ↘️</div>`)[0];
+            popup_8bbe7e7b3c8842898e7b9703c5b35e62.setContent(html_b5a7735ca2a741988c0e6422bd597937);
+        
+
+        poly_line_f1e5178b95114e8cbaf4a75b2f6f7c1c.bindPopup(popup_8bbe7e7b3c8842898e7b9703c5b35e62)
+        ;
+
+        
+    
+    
+            poly_line_f1e5178b95114e8cbaf4a75b2f6f7c1c.bindTooltip(
+                `<div>
+                     🏠WAQQ↔WAAA<br />Distance: 518nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">LNI739</span> (B739) ↗️<br /><span style="color: #bada55">LNI738</span> (B739) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_26cb53e77c8f44a8a3dcb70f31a6e439 = L.polyline(
+                [[3.326667, 117.569444], [3.1115893226669864, 117.62038814403034], [2.8965091912239713, 117.67131150068305], [2.6814267765045225, 117.72221551677961], [2.4663422490856255, 117.77310163701424], [2.251255779306973, 117.82397130411364], [2.036167537290205, 117.87482595899657], [1.82107769295809, 117.92566704093274], [1.6059864160536703, 117.97649598770158], [1.3908938761593541, 118.02731423575062], [1.1758002427159802, 118.07812322035338], [0.9607056850418436, 118.1289243757672], [0.7456103723516933, 118.17971913539073], [0.5305144737757078, 118.23050893192142], [0.31541815837845055, 118.2812951975125], [0.10032159517781056, 118.33207936393015], [-0.1147750468360716, 118.38286286271048], [-0.32987159868188015, 118.4336471253164], [-0.5449678913682016, 118.48443358329452], [-0.7600637558746072, 118.53522366843214], [-0.9751590231327159, 118.58601881291413], [-1.1902535240072616, 118.6368204494801], [-1.4053470892771305, 118.68763001158148], [-1.6204395496163924, 118.73844893353899], [-1.8355307355752897, 118.7892786507001], [-2.0506204775612185, 118.8401205995968], [-2.2657086058196603, 118.89097621810375], [-2.48079495041508, 118.9418469455965], [-2.695879341211793, 118.99273422311026], [-2.9109616078547584, 119.04363949349897], [-3.1260415797503622, 119.09456420159478], [-3.341119086047096, 119.14550979436785], [-3.556193955616219, 119.19647772108696], [-3.7712660170323304, 119.24746943348028], [-3.9863350985538775, 119.29848638589695], [-4.20140102810359, 119.34953003546909], [-4.416463633248841, 119.40060184227461], [-4.63152274118192, 119.45170326950047], [-4.8465781787002085, 119.50283578360693], [-5.061629772186279, 119.5540008544922]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_53cf4080a9ff49cf9c8af3607a2be137);
+        
+    
+        var popup_cb0952a4722144b6802bfea797632f11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ae3138769ec4d1d9913ec10582eeb19 = $(`<div id="html_0ae3138769ec4d1d9913ec10582eeb19" style="width: 100.0%; height: 100.0%;">🏠WAQQ↔WAAA<br />Distance: 518nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">LNI739</span> (B739) ↗️<br /><span style="color: #bada55">LNI738</span> (B739) ↘️</div>`)[0];
+            popup_cb0952a4722144b6802bfea797632f11.setContent(html_0ae3138769ec4d1d9913ec10582eeb19);
+        
+
+        poly_line_26cb53e77c8f44a8a3dcb70f31a6e439.bindPopup(popup_cb0952a4722144b6802bfea797632f11)
+        ;
+
+        
+    
+    
+            poly_line_26cb53e77c8f44a8a3dcb70f31a6e439.bindTooltip(
+                `<div>
+                     🏠WAQQ↔WAAA<br />Distance: 518nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">LNI739</span> (B739) ↗️<br /><span style="color: #bada55">LNI738</span> (B739) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0d1e7e90fb794822b16852b532eafb70 = L.polyline(
+                [[3.326667, 117.569444], [3.0521120240029256, 117.44694942678191], [2.7775431310286005, 117.3245174349931], [2.502961581291312, 117.20214236049556], [2.2283686327297123, 117.07981854860172], [1.9537655412341033, 116.95754035313186], [1.6791535608730144, 116.83530213547392], [1.404533944119124, 116.71309826364578], [1.1299079420746418, 116.59092311135953], [0.8552768046962004, 116.46877105708738], [0.5806417810193498, 116.3466364831292], [0.30600411938272903, 116.22451377468107], [0.03136506765199663, 116.10239731890472], [-0.2432741265564098, 115.98028150399765], [-0.5179122156515942, 115.85816071826352], [-0.7925479518445377, 115.73602934918256], [-1.067180086924356, 115.61388178248183], [-1.3418073720344275, 115.49171240120471], [-1.6164285574482702, 115.36951558477983], [-1.8910423923451387, 115.24728570808881], [-2.1656476245852208, 115.12501714053248], [-2.4402430004843843, 115.00270424509573], [-2.714827264588375, 114.88034137741009], [-2.989399159446405, 114.75792288481419], [-3.2639574253840316, 114.63544310541187], [-3.538500800275261, 114.51289636712711], [-3.8130280193137938, 114.3902769867562], [-4.087537814783325, 114.26757926901631], [-4.36202891582683, 114.14479750559046], [-4.636500048214744, 114.02192597416844], [-4.910949934111944, 113.89895893748358], [-5.1853772918434755, 113.77589064234479], [-5.459780835658925, 113.65271531866387], [-5.734159275495336, 113.52942717847749], [-6.008511316738637, 113.40602041496392], [-6.282835659983413, 113.2824892014538], [-6.557131000791029, 113.15882769043482], [-6.831396029445924, 113.03503001255017], [-7.105629430710071, 112.9110902755901], [-7.37982988357544, 112.78700256347656]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_53cf4080a9ff49cf9c8af3607a2be137);
+        
+    
+        var popup_873f11d09ca7422aa0a60a7f75a6c7d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0fc01e0f96343099f373f9e60d07f20 = $(`<div id="html_d0fc01e0f96343099f373f9e60d07f20" style="width: 100.0%; height: 100.0%;">🏠WAQQ↔WARR<br />Distance: 704nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">LNI267</span> (B739) ↗️<br /><span style="color: #bada55">LNI268</span> (B739) ↘️<br /><span style="color: #bada55">LNI694</span> (B739) ↘️</div>`)[0];
+            popup_873f11d09ca7422aa0a60a7f75a6c7d6.setContent(html_d0fc01e0f96343099f373f9e60d07f20);
+        
+
+        poly_line_0d1e7e90fb794822b16852b532eafb70.bindPopup(popup_873f11d09ca7422aa0a60a7f75a6c7d6)
+        ;
+
+        
+    
+    
+            poly_line_0d1e7e90fb794822b16852b532eafb70.bindTooltip(
+                `<div>
+                     🏠WAQQ↔WARR<br />Distance: 704nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">LNI267</span> (B739) ↗️<br /><span style="color: #bada55">LNI268</span> (B739) ↘️<br /><span style="color: #bada55">LNI694</span> (B739) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7024bce3a5ce4ad483b4a4503eab5c2d = L.polyline(
+                [[3.326667, 117.569444], [3.0521120240029256, 117.44694942678191], [2.7775431310286005, 117.3245174349931], [2.502961581291312, 117.20214236049556], [2.2283686327297123, 117.07981854860172], [1.9537655412341033, 116.95754035313186], [1.6791535608730144, 116.83530213547392], [1.404533944119124, 116.71309826364578], [1.1299079420746418, 116.59092311135953], [0.8552768046962004, 116.46877105708738], [0.5806417810193498, 116.3466364831292], [0.30600411938272903, 116.22451377468107], [0.03136506765199663, 116.10239731890472], [-0.2432741265564098, 115.98028150399765], [-0.5179122156515942, 115.85816071826352], [-0.7925479518445377, 115.73602934918256], [-1.067180086924356, 115.61388178248183], [-1.3418073720344275, 115.49171240120471], [-1.6164285574482702, 115.36951558477983], [-1.8910423923451387, 115.24728570808881], [-2.1656476245852208, 115.12501714053248], [-2.4402430004843843, 115.00270424509573], [-2.714827264588375, 114.88034137741009], [-2.989399159446405, 114.75792288481419], [-3.2639574253840316, 114.63544310541187], [-3.538500800275261, 114.51289636712711], [-3.8130280193137938, 114.3902769867562], [-4.087537814783325, 114.26757926901631], [-4.36202891582683, 114.14479750559046], [-4.636500048214744, 114.02192597416844], [-4.910949934111944, 113.89895893748358], [-5.1853772918434755, 113.77589064234479], [-5.459780835658925, 113.65271531866387], [-5.734159275495336, 113.52942717847749], [-6.008511316738637, 113.40602041496392], [-6.282835659983413, 113.2824892014538], [-6.557131000791029, 113.15882769043482], [-6.831396029445924, 113.03503001255017], [-7.105629430710071, 112.9110902755901], [-7.37982988357544, 112.78700256347656]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_53cf4080a9ff49cf9c8af3607a2be137);
+        
+    
+        var popup_0541b00a382d44ddaf382e9369263d22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0960016d34124848b7b0c1f76c2a7f50 = $(`<div id="html_0960016d34124848b7b0c1f76c2a7f50" style="width: 100.0%; height: 100.0%;">🏠WAQQ↔WARR<br />Distance: 704nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">LNI267</span> (B739) ↗️<br /><span style="color: #bada55">LNI268</span> (B739) ↘️<br /><span style="color: #bada55">LNI694</span> (B739) ↘️</div>`)[0];
+            popup_0541b00a382d44ddaf382e9369263d22.setContent(html_0960016d34124848b7b0c1f76c2a7f50);
+        
+
+        poly_line_7024bce3a5ce4ad483b4a4503eab5c2d.bindPopup(popup_0541b00a382d44ddaf382e9369263d22)
+        ;
+
+        
+    
+    
+            poly_line_7024bce3a5ce4ad483b4a4503eab5c2d.bindTooltip(
+                `<div>
+                     🏠WAQQ↔WARR<br />Distance: 704nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">LNI267</span> (B739) ↗️<br /><span style="color: #bada55">LNI268</span> (B739) ↘️<br /><span style="color: #bada55">LNI694</span> (B739) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_29d159e3aeed4dc0ab2205e582a641e4 = L.circleMarker(
+                [-5.061629772186279, 119.5540008544922],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_53cf4080a9ff49cf9c8af3607a2be137);
+        
+    
+        var popup_f492cc873f4a421aa6ddd26c30a9d5af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6eda6f324ed14d199daab411152dce77 = $(`<div id="html_6eda6f324ed14d199daab411152dce77" style="width: 100.0%; height: 100.0%;"><div ><strong>Hasanuddin International Airport</strong> (WAAA)<br />Distance: 518nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">LNI739</span> (B739) ↘️<br /><span style="color: #bada55">LNI738</span> (B739) ↗️</div></div>`)[0];
+            popup_f492cc873f4a421aa6ddd26c30a9d5af.setContent(html_6eda6f324ed14d199daab411152dce77);
+        
+
+        circle_marker_29d159e3aeed4dc0ab2205e582a641e4.bindPopup(popup_f492cc873f4a421aa6ddd26c30a9d5af)
+        ;
+
+        
+    
+    
+            circle_marker_29d159e3aeed4dc0ab2205e582a641e4.bindTooltip(
+                `<div>
+                     <div ><strong>Hasanuddin International Airport</strong> (WAAA)<br />Distance: 518nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">LNI739</span> (B739) ↘️<br /><span style="color: #bada55">LNI738</span> (B739) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c9c3a10852cb4b48a8649968eafb495a = L.circle(
+                [3.326667, 117.569444],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 370400, "stroke": true, "weight": 1}
+            ).addTo(map_53cf4080a9ff49cf9c8af3607a2be137);
+        
+    
+        var popup_53101f61d3f04fff94baf458c665c343 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ff66eb0d42c48d48eb0487f8dafb8e8 = $(`<div id="html_6ff66eb0d42c48d48eb0487f8dafb8e8" style="width: 100.0%; height: 100.0%;">1 hr flight</div>`)[0];
+            popup_53101f61d3f04fff94baf458c665c343.setContent(html_6ff66eb0d42c48d48eb0487f8dafb8e8);
+        
+
+        circle_c9c3a10852cb4b48a8649968eafb495a.bindPopup(popup_53101f61d3f04fff94baf458c665c343)
+        ;
+
+        
+    
+    
+            var circle_373194bc8f2f4b7984540f13ec680292 = L.circle(
+                [3.326667, 117.569444],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1111000.0, "stroke": true, "weight": 1}
+            ).addTo(map_53cf4080a9ff49cf9c8af3607a2be137);
+        
+    
+        var popup_55517956d4994261b3e8dbe37661db47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_100b53e77002496c844cfecf21f8502c = $(`<div id="html_100b53e77002496c844cfecf21f8502c" style="width: 100.0%; height: 100.0%;">2 hr flight</div>`)[0];
+            popup_55517956d4994261b3e8dbe37661db47.setContent(html_100b53e77002496c844cfecf21f8502c);
+        
+
+        circle_373194bc8f2f4b7984540f13ec680292.bindPopup(popup_55517956d4994261b3e8dbe37661db47)
+        ;
+
+        
+    
+    
+            var circle_ebd823e6999a403690359563a90b40de = L.circle(
+                [3.326667, 117.569444],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1852000.0, "stroke": true, "weight": 1}
+            ).addTo(map_53cf4080a9ff49cf9c8af3607a2be137);
+        
+    
+        var popup_38d5a301645a4a32b4e678f2587d0eac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c16bb2f88450434380b4dc5cfc04c361 = $(`<div id="html_c16bb2f88450434380b4dc5cfc04c361" style="width: 100.0%; height: 100.0%;">3 hr flight</div>`)[0];
+            popup_38d5a301645a4a32b4e678f2587d0eac.setContent(html_c16bb2f88450434380b4dc5cfc04c361);
+        
+
+        circle_ebd823e6999a403690359563a90b40de.bindPopup(popup_38d5a301645a4a32b4e678f2587d0eac)
+        ;
+
+        
+    
+    
+            var circle_fe7675f3a3c043debda760287762f9fd = L.circle(
+                [3.326667, 117.569444],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2463160, "stroke": true, "weight": 1}
+            ).addTo(map_53cf4080a9ff49cf9c8af3607a2be137);
+        
+    
+        var popup_e9343719d2a34f47948d2031b5b90994 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58dcefdf29a54a59b028ae3a55e3bc2d = $(`<div id="html_58dcefdf29a54a59b028ae3a55e3bc2d" style="width: 100.0%; height: 100.0%;">4 hr flight</div>`)[0];
+            popup_e9343719d2a34f47948d2031b5b90994.setContent(html_58dcefdf29a54a59b028ae3a55e3bc2d);
+        
+
+        circle_fe7675f3a3c043debda760287762f9fd.bindPopup(popup_e9343719d2a34f47948d2031b5b90994)
+        ;
+
+        
+    
+    
+            var circle_marker_533333cec0434d68a708040ff06148c2 = L.circleMarker(
+                [3.326667, 117.569444],
+                {"bubblingMouseEvents": true, "color": "#FF6666", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF6666", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_53cf4080a9ff49cf9c8af3607a2be137);
+        
+    
+        var popup_74e1e0e5153d4ccfbef0da109017374e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c290cd63426a4c4eba5f02f099f8770c = $(`<div id="html_c290cd63426a4c4eba5f02f099f8770c" style="width: 100.0%; height: 100.0%;"><div ><strong>Juwata Airport</strong> (WAQQ)<br /></div></div>`)[0];
+            popup_74e1e0e5153d4ccfbef0da109017374e.setContent(html_c290cd63426a4c4eba5f02f099f8770c);
+        
+
+        circle_marker_533333cec0434d68a708040ff06148c2.bindPopup(popup_74e1e0e5153d4ccfbef0da109017374e)
+        ;
+
+        
+    
+    
+            circle_marker_533333cec0434d68a708040ff06148c2.bindTooltip(
+                `<div>
+                     <div ><strong>Juwata Airport</strong> (WAQQ)<br /></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ac38f1b1ebd042cfae36fd2b731b5e72 = L.circleMarker(
+                [-7.37982988357544, 112.78700256347656],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_53cf4080a9ff49cf9c8af3607a2be137);
+        
+    
+        var popup_f34ca9e557be411e84dce16885c2b6fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c9a3236f03f4890a615dc57281b5284 = $(`<div id="html_2c9a3236f03f4890a615dc57281b5284" style="width: 100.0%; height: 100.0%;"><div ><strong>Juanda International Airport</strong> (WARR)<br />Distance: 704nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">LNI267</span> (B739) ↘️<br /><span style="color: #bada55">LNI268</span> (B739) ↗️<br /><span style="color: #bada55">LNI694</span> (B739) ↗️</div></div>`)[0];
+            popup_f34ca9e557be411e84dce16885c2b6fb.setContent(html_2c9a3236f03f4890a615dc57281b5284);
+        
+
+        circle_marker_ac38f1b1ebd042cfae36fd2b731b5e72.bindPopup(popup_f34ca9e557be411e84dce16885c2b6fb)
+        ;
+
+        
+    
+    
+            circle_marker_ac38f1b1ebd042cfae36fd2b731b5e72.bindTooltip(
+                `<div>
+                     <div ><strong>Juanda International Airport</strong> (WARR)<br />Distance: 704nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">LNI267</span> (B739) ↘️<br /><span style="color: #bada55">LNI268</span> (B739) ↗️<br /><span style="color: #bada55">LNI694</span> (B739) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

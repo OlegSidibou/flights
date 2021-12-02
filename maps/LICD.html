@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_143bc99659754e0f8f6418cef331acab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_143bc99659754e0f8f6418cef331acab" ></div>
+        
+</body>
+<script>    
+    
+            var map_143bc99659754e0f8f6418cef331acab = L.map(
+                "map_143bc99659754e0f8f6418cef331acab",
+                {
+                    center: [35.497898, 12.6181],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2821d76062fb41af896b1a76d51a3e23 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+            var poly_line_ebf965f254484da8b9e0096669c4e061 = L.polyline(
+                [[35.497898, 12.6181], [35.56659003954869, 12.629822547130173], [35.6352809423805, 12.641565210188297], [35.70397070365459, 12.653328074505165], [35.772659318506996, 12.6651112258172], [35.84134678205039, 12.676914750269047], [35.910033089374, 12.688738734416171], [35.97871823554347, 12.700583265227507], [36.04740221560063, 12.712448430088102], [36.11608502456341, 12.724334316801787], [36.184766657425676, 12.736241013593862], [36.253447109157044, 12.748168609113812], [36.32212637470277, 12.76011719243804], [36.39080444898351, 12.77208685307261], [36.459481326895286, 12.784077680956024], [36.528157003309204, 12.796089766462016], [36.596831473071326, 12.808123200402353], [36.66550473100259, 12.82017807402968], [36.734176771898525, 12.832254479040389], [36.80284759052915, 12.844352507577458], [36.87151718163879, 12.856472252233388], [36.94018553994593, 12.8686138060531], [37.00885266014302, 12.880777262536895], [37.07751853689633, 12.892962715643403], [37.14618316484572, 12.905170259792571], [37.21484653860456, 12.917399989868692], [37.283508652759444, 12.929652001223415], [37.35216950187013, 12.941926389678823], [37.42082908046928, 12.954223251530493], [37.48948738306231, 12.966542683550601], [37.55814440412721, 12.978884782991063], [37.62680013811436, 12.991249647586676], [37.69545457944633, 13.003637375558286], [37.76410772251773, 13.016048065616], [37.832759561695, 13.028481816962401], [37.901410091316265, 13.040938729295803], [37.970059305691045, 13.053418902813506], [38.03870719910017, 13.065922438215129], [38.10735376579556, 13.078449436705888], [38.175999, 13.091]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_08914f0dc23e43198867aea8121a895d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfca58fa1f784f018e3cd9545d973849 = $(`<div id="html_cfca58fa1f784f018e3cd9545d973849" style="width: 100.0%; height: 100.0%;">🏠LICD↔LICJ<br />Distance: 162nm <br />Flights: 6 (Booked: 0)<br /><span style="color: #bada55">DTR1804</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1806</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1802</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1805</span> (AT72) ↘️<br /><span style="color: #bada55">DTR1803</span> (AT72) ↘️<br /><span style="color: #bada55">DTR1801</span> (AT72) ↘️</div>`)[0];
+            popup_08914f0dc23e43198867aea8121a895d.setContent(html_cfca58fa1f784f018e3cd9545d973849);
+        
+
+        poly_line_ebf965f254484da8b9e0096669c4e061.bindPopup(popup_08914f0dc23e43198867aea8121a895d)
+        ;
+
+        
+    
+    
+            poly_line_ebf965f254484da8b9e0096669c4e061.bindTooltip(
+                `<div>
+                     🏠LICD↔LICJ<br />Distance: 162nm <br />Flights: 6 (Booked: 0)<br /><span style="color: #bada55">DTR1804</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1806</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1802</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1805</span> (AT72) ↘️<br /><span style="color: #bada55">DTR1803</span> (AT72) ↘️<br /><span style="color: #bada55">DTR1801</span> (AT72) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c676927c63c7488995b566c442c24f29 = L.polyline(
+                [[35.497898, 12.6181], [35.56659003954869, 12.629822547130173], [35.6352809423805, 12.641565210188297], [35.70397070365459, 12.653328074505165], [35.772659318506996, 12.6651112258172], [35.84134678205039, 12.676914750269047], [35.910033089374, 12.688738734416171], [35.97871823554347, 12.700583265227507], [36.04740221560063, 12.712448430088102], [36.11608502456341, 12.724334316801787], [36.184766657425676, 12.736241013593862], [36.253447109157044, 12.748168609113812], [36.32212637470277, 12.76011719243804], [36.39080444898351, 12.77208685307261], [36.459481326895286, 12.784077680956024], [36.528157003309204, 12.796089766462016], [36.596831473071326, 12.808123200402353], [36.66550473100259, 12.82017807402968], [36.734176771898525, 12.832254479040389], [36.80284759052915, 12.844352507577458], [36.87151718163879, 12.856472252233388], [36.94018553994593, 12.8686138060531], [37.00885266014302, 12.880777262536895], [37.07751853689633, 12.892962715643403], [37.14618316484572, 12.905170259792571], [37.21484653860456, 12.917399989868692], [37.283508652759444, 12.929652001223415], [37.35216950187013, 12.941926389678823], [37.42082908046928, 12.954223251530493], [37.48948738306231, 12.966542683550601], [37.55814440412721, 12.978884782991063], [37.62680013811436, 12.991249647586676], [37.69545457944633, 13.003637375558286], [37.76410772251773, 13.016048065616], [37.832759561695, 13.028481816962401], [37.901410091316265, 13.040938729295803], [37.970059305691045, 13.053418902813506], [38.03870719910017, 13.065922438215129], [38.10735376579556, 13.078449436705888], [38.175999, 13.091]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_82888bc147ee450783440bafc5a7dde6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c58796034777489e984e19329af4c4ab = $(`<div id="html_c58796034777489e984e19329af4c4ab" style="width: 100.0%; height: 100.0%;">🏠LICD↔LICJ<br />Distance: 162nm <br />Flights: 6 (Booked: 0)<br /><span style="color: #bada55">DTR1804</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1806</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1802</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1805</span> (AT72) ↘️<br /><span style="color: #bada55">DTR1803</span> (AT72) ↘️<br /><span style="color: #bada55">DTR1801</span> (AT72) ↘️</div>`)[0];
+            popup_82888bc147ee450783440bafc5a7dde6.setContent(html_c58796034777489e984e19329af4c4ab);
+        
+
+        poly_line_c676927c63c7488995b566c442c24f29.bindPopup(popup_82888bc147ee450783440bafc5a7dde6)
+        ;
+
+        
+    
+    
+            poly_line_c676927c63c7488995b566c442c24f29.bindTooltip(
+                `<div>
+                     🏠LICD↔LICJ<br />Distance: 162nm <br />Flights: 6 (Booked: 0)<br /><span style="color: #bada55">DTR1804</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1806</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1802</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1805</span> (AT72) ↘️<br /><span style="color: #bada55">DTR1803</span> (AT72) ↘️<br /><span style="color: #bada55">DTR1801</span> (AT72) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f03c55a7449e46478c1217c85c3773c8 = L.polyline(
+                [[35.497898, 12.6181], [35.54899546469003, 12.679345962878163], [35.600061920875525, 12.740670013436151], [35.651097270459005, 12.802072351082439], [35.70210141505341, 12.863553175502346], [35.75307425598124, 12.925112686656991], [35.804015694273666, 12.986751084782167], [35.854925630669776, 13.048468570387232], [35.90580396561562, 13.110265344253971], [35.956650599263455, 13.172141607435425], [36.00746543147081, 13.234097561254716], [36.05824836179972, 13.29613340730386], [36.108999289515786, 13.358249347442507], [36.15971811358745, 13.420445583796745], [36.210404732684985, 13.482722318757789], [36.26105904517978, 13.545079754980728], [36.31168094914343, 13.607518095383215], [36.3622703423469, 13.670037543144115], [36.41282712225964, 13.732638301702165], [36.463351186048804, 13.795320574754625], [36.51384243057836, 13.858084566255835], [36.5643007524082, 13.920930480415839], [36.614726047793376, 13.983858521698917], [36.66511821268319, 14.046868894822145], [36.715477142720346, 14.109961804753883], [36.76580273324016, 14.173137456712283], [36.81609487926961, 14.236396056163745], [36.866353475526594, 14.29973780882136], [36.916578416418986, 14.363162920643358], [36.96676959604388, 14.426671597831442], [37.016926908186655, 14.490264046829227], [37.067050246320214, 14.553940474320536], [37.11713950360405, 14.617701087227745], [37.16719457288347, 14.681546092710084], [37.2172153466887, 14.745475698161886], [37.267201717234094, 14.809490111210863], [37.31715357641722, 14.873589539716297], [37.36707081581809, 14.937774191767268], [37.41695332669825, 15.002044275680797], [37.466801, 15.0664]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_09d2012c10f24910a9e3e619a064cc01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82d974b533c0487e9b897d41b102d67e = $(`<div id="html_82d974b533c0487e9b897d41b102d67e" style="width: 100.0%; height: 100.0%;">🏠LICD↔LICC<br />Distance: 167nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">DTR1842</span> (AT72) ↗️<br /><span style="color: #bada55">DRAG146</span> () ↗️<br /><span style="color: #bada55">DTR1841</span> (AT72) ↘️</div>`)[0];
+            popup_09d2012c10f24910a9e3e619a064cc01.setContent(html_82d974b533c0487e9b897d41b102d67e);
+        
+
+        poly_line_f03c55a7449e46478c1217c85c3773c8.bindPopup(popup_09d2012c10f24910a9e3e619a064cc01)
+        ;
+
+        
+    
+    
+            poly_line_f03c55a7449e46478c1217c85c3773c8.bindTooltip(
+                `<div>
+                     🏠LICD↔LICC<br />Distance: 167nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">DTR1842</span> (AT72) ↗️<br /><span style="color: #bada55">DRAG146</span> () ↗️<br /><span style="color: #bada55">DTR1841</span> (AT72) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5a190bee6dd344a98097581381a54595 = L.polyline(
+                [[35.497898, 12.6181], [35.54899546469003, 12.679345962878163], [35.600061920875525, 12.740670013436151], [35.651097270459005, 12.802072351082439], [35.70210141505341, 12.863553175502346], [35.75307425598124, 12.925112686656991], [35.804015694273666, 12.986751084782167], [35.854925630669776, 13.048468570387232], [35.90580396561562, 13.110265344253971], [35.956650599263455, 13.172141607435425], [36.00746543147081, 13.234097561254716], [36.05824836179972, 13.29613340730386], [36.108999289515786, 13.358249347442507], [36.15971811358745, 13.420445583796745], [36.210404732684985, 13.482722318757789], [36.26105904517978, 13.545079754980728], [36.31168094914343, 13.607518095383215], [36.3622703423469, 13.670037543144115], [36.41282712225964, 13.732638301702165], [36.463351186048804, 13.795320574754625], [36.51384243057836, 13.858084566255835], [36.5643007524082, 13.920930480415839], [36.614726047793376, 13.983858521698917], [36.66511821268319, 14.046868894822145], [36.715477142720346, 14.109961804753883], [36.76580273324016, 14.173137456712283], [36.81609487926961, 14.236396056163745], [36.866353475526594, 14.29973780882136], [36.916578416418986, 14.363162920643358], [36.96676959604388, 14.426671597831442], [37.016926908186655, 14.490264046829227], [37.067050246320214, 14.553940474320536], [37.11713950360405, 14.617701087227745], [37.16719457288347, 14.681546092710084], [37.2172153466887, 14.745475698161886], [37.267201717234094, 14.809490111210863], [37.31715357641722, 14.873589539716297], [37.36707081581809, 14.937774191767268], [37.41695332669825, 15.002044275680797], [37.466801, 15.0664]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_f579f16c533d43cda153318fad245201 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a05fe3242b904e2da6c5c33c99a927f8 = $(`<div id="html_a05fe3242b904e2da6c5c33c99a927f8" style="width: 100.0%; height: 100.0%;">🏠LICD↔LICC<br />Distance: 167nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">DTR1842</span> (AT72) ↗️<br /><span style="color: #bada55">DRAG146</span> () ↗️<br /><span style="color: #bada55">DTR1841</span> (AT72) ↘️</div>`)[0];
+            popup_f579f16c533d43cda153318fad245201.setContent(html_a05fe3242b904e2da6c5c33c99a927f8);
+        
+
+        poly_line_5a190bee6dd344a98097581381a54595.bindPopup(popup_f579f16c533d43cda153318fad245201)
+        ;
+
+        
+    
+    
+            poly_line_5a190bee6dd344a98097581381a54595.bindTooltip(
+                `<div>
+                     🏠LICD↔LICC<br />Distance: 167nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">DTR1842</span> (AT72) ↗️<br /><span style="color: #bada55">DRAG146</span> () ↗️<br /><span style="color: #bada55">DTR1841</span> (AT72) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3c529140cdb84d569bdbab4d30fb569e = L.polyline(
+                [[35.497898, 12.6181], [35.56494479172056, 12.635347730631388], [35.63198912281378, 12.652624346898957], [35.6990309830527, 12.669929967791349], [35.76607036216285, 12.687264712842], [35.8331072498219, 12.704628702132492], [35.900141635659416, 12.722022056295923], [35.96717350925647, 12.739444896520249], [36.03420286014544, 12.75689734455174], [36.10122967780963, 12.774379522698391], [36.168253951683006, 12.79189155383337], [36.235275671149864, 12.809433561398524], [36.30229482554454, 12.827005669407862], [36.36931140415107, 12.844608002451094], [36.43632539620287, 12.862240685697197], [36.50333679088247, 12.879903844897967], [36.57034557732114, 12.897597606391665], [36.63735174459859, 12.915322097106612], [36.70435528174264, 12.933077444564875], [36.77135617772888, 12.950863776885933], [36.838354421480396, 12.968681222790401], [36.90535000186731, 12.986529911603753], [36.972342907706626, 13.004409973260094], [37.039333127761736, 13.022321538305958], [37.10632065074214, 13.040264737904103], [37.17330546530316, 13.058239703837383], [37.24028756004546, 13.076246568512609], [37.307266923514845, 13.094285464964443], [37.3742435442018, 13.112356526859342], [37.44121741054122, 13.130459888499502], [37.508188510911985, 13.148595684826859], [37.57515683363664, 13.166764051427084], [37.64212236698105, 13.184965124533646], [37.70908509915398, 13.203199041031874], [37.77604501830682, 13.221465938463071], [37.84300211253309, 13.239765955028636], [37.9099563698682, 13.25809922959423], [37.97690777828899, 13.276465901693964], [38.04385632571339, 13.294866111534645], [38.110802, 13.3133]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_cfc27510ccab4f50a3c19aa73609d424 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e67f30b572c4a73a1b883a969f5c04b = $(`<div id="html_7e67f30b572c4a73a1b883a969f5c04b" style="width: 100.0%; height: 100.0%;">🏠LICD↔LICP<br />Distance: 160nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">I-TIKE</span> () ↗️</div>`)[0];
+            popup_cfc27510ccab4f50a3c19aa73609d424.setContent(html_7e67f30b572c4a73a1b883a969f5c04b);
+        
+
+        poly_line_3c529140cdb84d569bdbab4d30fb569e.bindPopup(popup_cfc27510ccab4f50a3c19aa73609d424)
+        ;
+
+        
+    
+    
+            poly_line_3c529140cdb84d569bdbab4d30fb569e.bindTooltip(
+                `<div>
+                     🏠LICD↔LICP<br />Distance: 160nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">I-TIKE</span> () ↗️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c2d7ddef52ab429fb3f5a14182530e9e = L.polyline(
+                [[35.497898, 12.6181], [35.56494479172056, 12.635347730631388], [35.63198912281378, 12.652624346898957], [35.6990309830527, 12.669929967791349], [35.76607036216285, 12.687264712842], [35.8331072498219, 12.704628702132492], [35.900141635659416, 12.722022056295923], [35.96717350925647, 12.739444896520249], [36.03420286014544, 12.75689734455174], [36.10122967780963, 12.774379522698391], [36.168253951683006, 12.79189155383337], [36.235275671149864, 12.809433561398524], [36.30229482554454, 12.827005669407862], [36.36931140415107, 12.844608002451094], [36.43632539620287, 12.862240685697197], [36.50333679088247, 12.879903844897967], [36.57034557732114, 12.897597606391665], [36.63735174459859, 12.915322097106612], [36.70435528174264, 12.933077444564875], [36.77135617772888, 12.950863776885933], [36.838354421480396, 12.968681222790401], [36.90535000186731, 12.986529911603753], [36.972342907706626, 13.004409973260094], [37.039333127761736, 13.022321538305958], [37.10632065074214, 13.040264737904103], [37.17330546530316, 13.058239703837383], [37.24028756004546, 13.076246568512609], [37.307266923514845, 13.094285464964443], [37.3742435442018, 13.112356526859342], [37.44121741054122, 13.130459888499502], [37.508188510911985, 13.148595684826859], [37.57515683363664, 13.166764051427084], [37.64212236698105, 13.184965124533646], [37.70908509915398, 13.203199041031874], [37.77604501830682, 13.221465938463071], [37.84300211253309, 13.239765955028636], [37.9099563698682, 13.25809922959423], [37.97690777828899, 13.276465901693964], [38.04385632571339, 13.294866111534645], [38.110802, 13.3133]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_25ddb6f53661470fa4fb0ae3e0c80055 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_541f43a3177843de90fe1858bd8b6251 = $(`<div id="html_541f43a3177843de90fe1858bd8b6251" style="width: 100.0%; height: 100.0%;">🏠LICD↔LICP<br />Distance: 160nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">I-TIKE</span> () ↗️</div>`)[0];
+            popup_25ddb6f53661470fa4fb0ae3e0c80055.setContent(html_541f43a3177843de90fe1858bd8b6251);
+        
+
+        poly_line_c2d7ddef52ab429fb3f5a14182530e9e.bindPopup(popup_25ddb6f53661470fa4fb0ae3e0c80055)
+        ;
+
+        
+    
+    
+            poly_line_c2d7ddef52ab429fb3f5a14182530e9e.bindTooltip(
+                `<div>
+                     🏠LICD↔LICP<br />Distance: 160nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">I-TIKE</span> () ↗️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e557766828cb46e89e954783b6114c33 = L.polyline(
+                [[35.497898, 12.6181], [35.7069195165028, 12.448155399951139], [35.91570088654166, 12.2773177441504], [36.124238982934294, 12.105576450029497], [36.33253063604423, 11.93292081823154], [36.540572633075605, 11.759340031276317], [36.748361717356616, 11.584823152223418], [36.95589458761144, 11.409359123333864], [37.16316789722046, 11.232936764730978], [37.370178253468524, 11.055544773061253], [37.576922216781334, 10.877171720156053], [37.7833962999496, 10.697806051695009], [37.98959696734086, 10.517436085871939], [38.19552063409894, 10.336050012064398], [38.40116366533074, 10.153635889507681], [38.606522375280214, 9.970181645974531], [38.81159302648964, 9.785675076461482], [39.01637182894767, 9.600103841883175], [39.220854939224324, 9.41345546777577], [39.425038459592685, 9.225717343010809], [39.62891843713711, 9.036876718520892], [39.83249086284795, 8.846920706038576], [40.03575167070254, 8.655836276850005], [40.23869673673245, 8.463610260564895], [40.44132187807683, 8.270229343904449], [40.643622852021636, 8.075680069509009], [40.845595355025, 7.879948834767235], [41.04723502172807, 7.683021890668688], [41.248537423951866, 7.48488534068185], [41.44949806967951, 7.285525139659656], [41.65011240202428, 7.0849270927746835], [41.85037579818291, 6.883076854486335], [42.05028356837456, 6.679959927542343], [42.24983095476499, 6.475561662017101], [42.44901313037629, 6.26986725438946], [42.64782519798185, 6.062861746662623], [42.84626218898672, 5.8545300255290345], [43.04431906229331, 5.644856821583188], [43.24199070315248, 5.4338267085854355], [43.439271922, 5.22142410278]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_0ffd576ef1e447ad99772c0759e7bdc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_accb68341c1849f4a93e7f077d5a5c14 = $(`<div id="html_accb68341c1849f4a93e7f077d5a5c14" style="width: 100.0%; height: 100.0%;">🏠LICD↔LFML<br />Distance: 587nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">WKT17</span> () ↘️</div>`)[0];
+            popup_0ffd576ef1e447ad99772c0759e7bdc3.setContent(html_accb68341c1849f4a93e7f077d5a5c14);
+        
+
+        poly_line_e557766828cb46e89e954783b6114c33.bindPopup(popup_0ffd576ef1e447ad99772c0759e7bdc3)
+        ;
+
+        
+    
+    
+            poly_line_e557766828cb46e89e954783b6114c33.bindTooltip(
+                `<div>
+                     🏠LICD↔LFML<br />Distance: 587nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">WKT17</span> () ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f32e60e549cd4ab79b97909feddd4ce8 = L.polyline(
+                [[35.497898, 12.6181], [35.7069195165028, 12.448155399951139], [35.91570088654166, 12.2773177441504], [36.124238982934294, 12.105576450029497], [36.33253063604423, 11.93292081823154], [36.540572633075605, 11.759340031276317], [36.748361717356616, 11.584823152223418], [36.95589458761144, 11.409359123333864], [37.16316789722046, 11.232936764730978], [37.370178253468524, 11.055544773061253], [37.576922216781334, 10.877171720156053], [37.7833962999496, 10.697806051695009], [37.98959696734086, 10.517436085871939], [38.19552063409894, 10.336050012064398], [38.40116366533074, 10.153635889507681], [38.606522375280214, 9.970181645974531], [38.81159302648964, 9.785675076461482], [39.01637182894767, 9.600103841883175], [39.220854939224324, 9.41345546777577], [39.425038459592685, 9.225717343010809], [39.62891843713711, 9.036876718520892], [39.83249086284795, 8.846920706038576], [40.03575167070254, 8.655836276850005], [40.23869673673245, 8.463610260564895], [40.44132187807683, 8.270229343904449], [40.643622852021636, 8.075680069509009], [40.845595355025, 7.879948834767235], [41.04723502172807, 7.683021890668688], [41.248537423951866, 7.48488534068185], [41.44949806967951, 7.285525139659656], [41.65011240202428, 7.0849270927746835], [41.85037579818291, 6.883076854486335], [42.05028356837456, 6.679959927542343], [42.24983095476499, 6.475561662017101], [42.44901313037629, 6.26986725438946], [42.64782519798185, 6.062861746662623], [42.84626218898672, 5.8545300255290345], [43.04431906229331, 5.644856821583188], [43.24199070315248, 5.4338267085854355], [43.439271922, 5.22142410278]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_d9357ae79e8b4c43b0f55a17289a811f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6fa236c0c144c238fda289d7cebb031 = $(`<div id="html_e6fa236c0c144c238fda289d7cebb031" style="width: 100.0%; height: 100.0%;">🏠LICD↔LFML<br />Distance: 587nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">WKT17</span> () ↘️</div>`)[0];
+            popup_d9357ae79e8b4c43b0f55a17289a811f.setContent(html_e6fa236c0c144c238fda289d7cebb031);
+        
+
+        poly_line_f32e60e549cd4ab79b97909feddd4ce8.bindPopup(popup_d9357ae79e8b4c43b0f55a17289a811f)
+        ;
+
+        
+    
+    
+            poly_line_f32e60e549cd4ab79b97909feddd4ce8.bindTooltip(
+                `<div>
+                     🏠LICD↔LFML<br />Distance: 587nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">WKT17</span> () ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e96a207481f348dca08d50a38d3ae7a1 = L.circleMarker(
+                [43.439271922, 5.22142410278],
+                {"bubblingMouseEvents": true, "color": "#a0db8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0db8e", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_a330557e9add49ba962ceda99da3e52d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7a72d227c0443ecaed997a7abe589e9 = $(`<div id="html_e7a72d227c0443ecaed997a7abe589e9" style="width: 100.0%; height: 100.0%;"><div ><strong>Marseille Provence Airport</strong> (LFML)<br />Distance: 587nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">WKT17</span> () ↗️</div></div>`)[0];
+            popup_a330557e9add49ba962ceda99da3e52d.setContent(html_e7a72d227c0443ecaed997a7abe589e9);
+        
+
+        circle_marker_e96a207481f348dca08d50a38d3ae7a1.bindPopup(popup_a330557e9add49ba962ceda99da3e52d)
+        ;
+
+        
+    
+    
+            circle_marker_e96a207481f348dca08d50a38d3ae7a1.bindTooltip(
+                `<div>
+                     <div ><strong>Marseille Provence Airport</strong> (LFML)<br />Distance: 587nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">WKT17</span> () ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1ebe153e517e4d3f993c2e11dd23939e = L.circleMarker(
+                [37.466801, 15.0664],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_dfe3aa01002e4843ad1a43aab9fbe90f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f78a77ae366f40c2a38f35f3f0693e73 = $(`<div id="html_f78a77ae366f40c2a38f35f3f0693e73" style="width: 100.0%; height: 100.0%;"><div ><strong>Catania-Fontanarossa Airport</strong> (LICC)<br />Distance: 167nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">DTR1842</span> (AT72) ↘️<br /><span style="color: #bada55">DRAG146</span> () ↘️<br /><span style="color: #bada55">DTR1841</span> (AT72) ↗️</div></div>`)[0];
+            popup_dfe3aa01002e4843ad1a43aab9fbe90f.setContent(html_f78a77ae366f40c2a38f35f3f0693e73);
+        
+
+        circle_marker_1ebe153e517e4d3f993c2e11dd23939e.bindPopup(popup_dfe3aa01002e4843ad1a43aab9fbe90f)
+        ;
+
+        
+    
+    
+            circle_marker_1ebe153e517e4d3f993c2e11dd23939e.bindTooltip(
+                `<div>
+                     <div ><strong>Catania-Fontanarossa Airport</strong> (LICC)<br />Distance: 167nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">DTR1842</span> (AT72) ↘️<br /><span style="color: #bada55">DRAG146</span> () ↘️<br /><span style="color: #bada55">DTR1841</span> (AT72) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1eb9862b1d3c4eac9d0117e0d1bbddf7 = L.circle(
+                [35.497898, 12.6181],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 370400, "stroke": true, "weight": 1}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_66f0d49c5feb4cea96b657c272ed5a2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2e3b9430932475a88054e480a6b1f08 = $(`<div id="html_b2e3b9430932475a88054e480a6b1f08" style="width: 100.0%; height: 100.0%;">1 hr flight</div>`)[0];
+            popup_66f0d49c5feb4cea96b657c272ed5a2e.setContent(html_b2e3b9430932475a88054e480a6b1f08);
+        
+
+        circle_1eb9862b1d3c4eac9d0117e0d1bbddf7.bindPopup(popup_66f0d49c5feb4cea96b657c272ed5a2e)
+        ;
+
+        
+    
+    
+            var circle_61a29d3a8483493a912bf6691ab7f6ec = L.circle(
+                [35.497898, 12.6181],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1111000.0, "stroke": true, "weight": 1}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_512c1131ff6c49f0b0b5f22d2cfe5ec5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9794c956350d4b03bd70f5fedc7a67ad = $(`<div id="html_9794c956350d4b03bd70f5fedc7a67ad" style="width: 100.0%; height: 100.0%;">2 hr flight</div>`)[0];
+            popup_512c1131ff6c49f0b0b5f22d2cfe5ec5.setContent(html_9794c956350d4b03bd70f5fedc7a67ad);
+        
+
+        circle_61a29d3a8483493a912bf6691ab7f6ec.bindPopup(popup_512c1131ff6c49f0b0b5f22d2cfe5ec5)
+        ;
+
+        
+    
+    
+            var circle_ec4341abc4b94c2b9d0efdf4be05e115 = L.circle(
+                [35.497898, 12.6181],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1852000.0, "stroke": true, "weight": 1}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_88981c446c7f4e62a2ccd87048c006d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc0cf9ca1e924b8ea407b091ef161e39 = $(`<div id="html_cc0cf9ca1e924b8ea407b091ef161e39" style="width: 100.0%; height: 100.0%;">3 hr flight</div>`)[0];
+            popup_88981c446c7f4e62a2ccd87048c006d7.setContent(html_cc0cf9ca1e924b8ea407b091ef161e39);
+        
+
+        circle_ec4341abc4b94c2b9d0efdf4be05e115.bindPopup(popup_88981c446c7f4e62a2ccd87048c006d7)
+        ;
+
+        
+    
+    
+            var circle_fb84a866714c40519e53c42a7eeb428f = L.circle(
+                [35.497898, 12.6181],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2463160, "stroke": true, "weight": 1}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_30ae034e6a744b0e903e68326cf30ee2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_baac7c0cc52e4d169783ae84e834b252 = $(`<div id="html_baac7c0cc52e4d169783ae84e834b252" style="width: 100.0%; height: 100.0%;">4 hr flight</div>`)[0];
+            popup_30ae034e6a744b0e903e68326cf30ee2.setContent(html_baac7c0cc52e4d169783ae84e834b252);
+        
+
+        circle_fb84a866714c40519e53c42a7eeb428f.bindPopup(popup_30ae034e6a744b0e903e68326cf30ee2)
+        ;
+
+        
+    
+    
+            var circle_marker_fee925a671404e7099b553a69a26299d = L.circleMarker(
+                [35.497898, 12.6181],
+                {"bubblingMouseEvents": true, "color": "#FF6666", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF6666", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_de44f57975bf4b84bb6f41c7e59c2020 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e766ac38193143ce86a09e4823135aa2 = $(`<div id="html_e766ac38193143ce86a09e4823135aa2" style="width: 100.0%; height: 100.0%;"><div ><strong>Lampedusa Airport</strong> (LICD)<br /><br />11 flights to 5 airports.<br />From here you can go to <a href="index.html">index page</a>.</div></div>`)[0];
+            popup_de44f57975bf4b84bb6f41c7e59c2020.setContent(html_e766ac38193143ce86a09e4823135aa2);
+        
+
+        circle_marker_fee925a671404e7099b553a69a26299d.bindPopup(popup_de44f57975bf4b84bb6f41c7e59c2020)
+        ;
+
+        
+    
+    
+            circle_marker_fee925a671404e7099b553a69a26299d.bindTooltip(
+                `<div>
+                     <div ><strong>Lampedusa Airport</strong> (LICD)<br /><br />11 flights to 5 airports.<br />From here you can go to <a href="index.html">index page</a>.</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6a830a270aa4450d9a183661d1928b84 = L.circleMarker(
+                [38.175999, 13.091],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_dd86b6ac61b74e69a96e9203b993f662 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_056dc7722cd94485ae6e33e82489c2ec = $(`<div id="html_056dc7722cd94485ae6e33e82489c2ec" style="width: 100.0%; height: 100.0%;"><div ><strong>Falcone–Borsellino Airport</strong> (LICJ)<br />Distance: 162nm <br />Flights: 6 (Booked: 0)<br /><span style="color: #bada55">DTR1804</span> (AT72) ↘️<br /><span style="color: #bada55">DTR1806</span> (AT72) ↘️<br /><span style="color: #bada55">DTR1802</span> (AT72) ↘️<br /><span style="color: #bada55">DTR1805</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1803</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1801</span> (AT72) ↗️</div></div>`)[0];
+            popup_dd86b6ac61b74e69a96e9203b993f662.setContent(html_056dc7722cd94485ae6e33e82489c2ec);
+        
+
+        circle_marker_6a830a270aa4450d9a183661d1928b84.bindPopup(popup_dd86b6ac61b74e69a96e9203b993f662)
+        ;
+
+        
+    
+    
+            circle_marker_6a830a270aa4450d9a183661d1928b84.bindTooltip(
+                `<div>
+                     <div ><strong>Falcone–Borsellino Airport</strong> (LICJ)<br />Distance: 162nm <br />Flights: 6 (Booked: 0)<br /><span style="color: #bada55">DTR1804</span> (AT72) ↘️<br /><span style="color: #bada55">DTR1806</span> (AT72) ↘️<br /><span style="color: #bada55">DTR1802</span> (AT72) ↘️<br /><span style="color: #bada55">DTR1805</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1803</span> (AT72) ↗️<br /><span style="color: #bada55">DTR1801</span> (AT72) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a6b66811706c44f2b06eb485a20a7601 = L.circleMarker(
+                [38.110802, 13.3133],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_143bc99659754e0f8f6418cef331acab);
+        
+    
+        var popup_5d63dc9110a14aa8aaf1aab6246e1cf9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_998f4b4f3b3e449aad249274d10b9299 = $(`<div id="html_998f4b4f3b3e449aad249274d10b9299" style="width: 100.0%; height: 100.0%;"><div ><strong>Palermo-Boccadifalco Airport</strong> (LICP)<br />Distance: 160nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">I-TIKE</span> () ↘️</div></div>`)[0];
+            popup_5d63dc9110a14aa8aaf1aab6246e1cf9.setContent(html_998f4b4f3b3e449aad249274d10b9299);
+        
+
+        circle_marker_a6b66811706c44f2b06eb485a20a7601.bindPopup(popup_5d63dc9110a14aa8aaf1aab6246e1cf9)
+        ;
+
+        
+    
+    
+            circle_marker_a6b66811706c44f2b06eb485a20a7601.bindTooltip(
+                `<div>
+                     <div ><strong>Palermo-Boccadifalco Airport</strong> (LICP)<br />Distance: 160nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">I-TIKE</span> () ↘️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

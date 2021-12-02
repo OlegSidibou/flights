@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ae43b364d470470a80618dc1e2ef437e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ae43b364d470470a80618dc1e2ef437e" ></div>
+        
+</body>
+<script>    
+    
+            var map_ae43b364d470470a80618dc1e2ef437e = L.map(
+                "map_ae43b364d470470a80618dc1e2ef437e",
+                {
+                    center: [25.671, 32.7066],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_55806e8960ba49f5906b457380d6d800 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+            var poly_line_b29a71c807bb4d0dbd78db8148fd6295 = L.polyline(
+                [[25.671, 32.7066], [25.70683776586632, 33.29041374085111], [25.74034919474931, 33.874567757719234], [25.771529491073853, 34.45903985211498], [25.800374185130458, 35.043807644425904], [25.826879135370408, 35.62884858623664], [25.85104053054018, 36.21413997283795], [25.872854891652405, 36.79965895591168], [25.892319073790592, 37.38538255637774], [25.909430267745165, 37.971287677389356], [25.92418600147853, 38.5573511174621], [25.936584141417267, 39.143549583722326], [25.946622893569504, 39.729859705260004], [25.95430080446607, 40.31625804657099], [25.959616761924018, 40.902721121073334], [25.96256999563152, 41.48922540468248], [25.963160077553294, 42.07574734942941], [25.961386922155977, 42.66226339710645], [25.957250786453212, 43.24874999292478], [25.950752269870243, 43.83518359916805], [25.941892313928385, 44.42154070882633], [25.93067220174964, 45.007797859194675], [25.917093557382273, 45.59393164542078], [25.901158344948207, 46.17991873398615], [25.882868867613492, 46.765735876105516], [25.862227766383175, 47.35135992102921], [25.83923801872236, 47.93676782923375], [25.813902937005246, 48.521936685485635], [25.78622616679436, 49.10684371176416], [25.75621168495233, 49.69146628002902], [25.723863797588667, 50.27578192481886], [25.689187137844574, 50.859768355667384], [25.65218666351854, 51.44340346932404], [25.612867654536092, 52.02666536176639], [25.571235710266976, 52.60953233999238], [25.527296746693462, 53.19198293358027], [25.481056993433434, 53.77399590600549], [25.432522990622203, 54.35555026570315], [25.381701585657183, 54.93662527686643], [25.32859992980957, 55.5172004699707]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_b494ecaf03be408babef09fffa9bbc1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17cfcca1e972479e8b9f8594fecf4de8 = $(`<div id="html_17cfcca1e972479e8b9f8594fecf4de8" style="width: 100.0%; height: 100.0%;">🏠HELX↔OMSJ<br />Distance: 1235nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">ABY615</span> (A320) ↗️<br /><span style="color: #bada55">ABY614</span> (A320) ↘️</div>`)[0];
+            popup_b494ecaf03be408babef09fffa9bbc1b.setContent(html_17cfcca1e972479e8b9f8594fecf4de8);
+        
+
+        poly_line_b29a71c807bb4d0dbd78db8148fd6295.bindPopup(popup_b494ecaf03be408babef09fffa9bbc1b)
+        ;
+
+        
+    
+    
+            poly_line_b29a71c807bb4d0dbd78db8148fd6295.bindTooltip(
+                `<div>
+                     🏠HELX↔OMSJ<br />Distance: 1235nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">ABY615</span> (A320) ↗️<br /><span style="color: #bada55">ABY614</span> (A320) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_500ee1126154494f90599fc658f56ff9 = L.polyline(
+                [[25.671, 32.7066], [25.70683776586632, 33.29041374085111], [25.74034919474931, 33.874567757719234], [25.771529491073853, 34.45903985211498], [25.800374185130458, 35.043807644425904], [25.826879135370408, 35.62884858623664], [25.85104053054018, 36.21413997283795], [25.872854891652405, 36.79965895591168], [25.892319073790592, 37.38538255637774], [25.909430267745165, 37.971287677389356], [25.92418600147853, 38.5573511174621], [25.936584141417267, 39.143549583722326], [25.946622893569504, 39.729859705260004], [25.95430080446607, 40.31625804657099], [25.959616761924018, 40.902721121073334], [25.96256999563152, 41.48922540468248], [25.963160077553294, 42.07574734942941], [25.961386922155977, 42.66226339710645], [25.957250786453212, 43.24874999292478], [25.950752269870243, 43.83518359916805], [25.941892313928385, 44.42154070882633], [25.93067220174964, 45.007797859194675], [25.917093557382273, 45.59393164542078], [25.901158344948207, 46.17991873398615], [25.882868867613492, 46.765735876105516], [25.862227766383175, 47.35135992102921], [25.83923801872236, 47.93676782923375], [25.813902937005246, 48.521936685485635], [25.78622616679436, 49.10684371176416], [25.75621168495233, 49.69146628002902], [25.723863797588667, 50.27578192481886], [25.689187137844574, 50.859768355667384], [25.65218666351854, 51.44340346932404], [25.612867654536092, 52.02666536176639], [25.571235710266976, 52.60953233999238], [25.527296746693462, 53.19198293358027], [25.481056993433434, 53.77399590600549], [25.432522990622203, 54.35555026570315], [25.381701585657183, 54.93662527686643], [25.32859992980957, 55.5172004699707]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_4e4b467ab6124783a0af76feb07cfc9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_624f26300987442ead519f6d919c17cb = $(`<div id="html_624f26300987442ead519f6d919c17cb" style="width: 100.0%; height: 100.0%;">🏠HELX↔OMSJ<br />Distance: 1235nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">ABY615</span> (A320) ↗️<br /><span style="color: #bada55">ABY614</span> (A320) ↘️</div>`)[0];
+            popup_4e4b467ab6124783a0af76feb07cfc9c.setContent(html_624f26300987442ead519f6d919c17cb);
+        
+
+        poly_line_500ee1126154494f90599fc658f56ff9.bindPopup(popup_4e4b467ab6124783a0af76feb07cfc9c)
+        ;
+
+        
+    
+    
+            poly_line_500ee1126154494f90599fc658f56ff9.bindTooltip(
+                `<div>
+                     🏠HELX↔OMSJ<br />Distance: 1235nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">ABY615</span> (A320) ↗️<br /><span style="color: #bada55">ABY614</span> (A320) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_182820ba4ae34e7fb84259d6c1e7a210 = L.polyline(
+                [[25.671, 32.7066], [25.785271864818327, 32.6745235096545], [25.899536682266366, 32.64238514961403], [26.013794402730532, 32.61018448817133], [26.128044976294703, 32.57792109104447], [26.242288352737287, 32.54559452135274], [26.356524481528318, 32.51320433959223], [26.470753311826517, 32.480750103611314], [26.584974792476316, 32.448231368585766], [26.69918887200482, 32.41564768699371], [26.81339549861883, 32.38299860859027], [26.927594620201702, 32.35028368038205], [27.041786184310315, 32.31750244660127], [27.155970138171885, 32.28465444867972], [27.27014642868085, 32.25173922522243], [27.384315002395645, 32.21875631198108], [27.498475805535477, 32.185705241827165], [27.612628783977097, 32.15258554472484], [27.72677388325146, 32.119396747703576], [27.840911048540427, 32.086138374830476], [27.9550402246734, 32.05280994718237], [28.06916135612392, 32.01941098281756], [28.183274387006243, 31.98594099674737], [28.29737926107186, 31.952399500907344], [28.411475921706018, 31.918786004128172], [28.525564311924153, 31.885100012106324], [28.639644374368327, 31.85134102737443], [28.753716051303623, 31.81750854927127], [28.86777928461449, 31.783602073911517], [28.981834015801013, 31.7496210941552], [29.09588018597526, 31.7155650995768], [29.20991773585744, 31.681433576434056], [29.32394660577218, 31.647226007636437], [29.437966735644544, 31.61294187271332], [29.551978064996298, 31.57858064778182], [29.66598053294186, 31.544141805514293], [29.7799740781844, 31.509624815105493], [29.893958639011768, 31.475029142239418], [30.00793415329251, 31.4403542490558], [30.12190055847168, 31.40559959411621]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_12519dbe410f4cdeb790fb9e5499ab98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e892b689bf94d499c6701cac9059ada = $(`<div id="html_0e892b689bf94d499c6701cac9059ada" style="width: 100.0%; height: 100.0%;">🏠HELX↔HECA<br />Distance: 276nm <br />Flights: 18 (Booked: 0)<br /><span style="color: #bada55">MSR67</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR75</span> (BCS3) ↗️<br /><span style="color: #bada55">NIA72</span> (A321) ↗️<br /><span style="color: #bada55">MSR263</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR63</span> (B738) ↗️<br /><span style="color: #bada55">MSR203</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR66</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR74</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR68</span> (BCS3) ↘️<br /><span style="color: #bada55">RBG367</span> (A320) ↘️<br /><span style="color: #bada55">MSR64</span> (BCS3) ↘️<br /><span style="color: #bada55">NIA71</span> (A321) ↘️<br /><span style="color: #bada55">MSR262</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR62</span> (B738) ↘️<br /><span style="color: #bada55">MSR60</span> (B738) ↘️<br /><span style="color: #bada55">MSR1</span> (B738) ↘️<br /><span style="color: #bada55">MSR266</span> (B738) ↘️<br /><span style="color: #bada55">MSR204</span> (BCS3) ↘️</div>`)[0];
+            popup_12519dbe410f4cdeb790fb9e5499ab98.setContent(html_0e892b689bf94d499c6701cac9059ada);
+        
+
+        poly_line_182820ba4ae34e7fb84259d6c1e7a210.bindPopup(popup_12519dbe410f4cdeb790fb9e5499ab98)
+        ;
+
+        
+    
+    
+            poly_line_182820ba4ae34e7fb84259d6c1e7a210.bindTooltip(
+                `<div>
+                     🏠HELX↔HECA<br />Distance: 276nm <br />Flights: 18 (Booked: 0)<br /><span style="color: #bada55">MSR67</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR75</span> (BCS3) ↗️<br /><span style="color: #bada55">NIA72</span> (A321) ↗️<br /><span style="color: #bada55">MSR263</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR63</span> (B738) ↗️<br /><span style="color: #bada55">MSR203</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR66</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR74</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR68</span> (BCS3) ↘️<br /><span style="color: #bada55">RBG367</span> (A320) ↘️<br /><span style="color: #bada55">MSR64</span> (BCS3) ↘️<br /><span style="color: #bada55">NIA71</span> (A321) ↘️<br /><span style="color: #bada55">MSR262</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR62</span> (B738) ↘️<br /><span style="color: #bada55">MSR60</span> (B738) ↘️<br /><span style="color: #bada55">MSR1</span> (B738) ↘️<br /><span style="color: #bada55">MSR266</span> (B738) ↘️<br /><span style="color: #bada55">MSR204</span> (BCS3) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b1b8e5a0a4f8426daeb643e03c3f426f = L.polyline(
+                [[25.671, 32.7066], [25.785271864818327, 32.6745235096545], [25.899536682266366, 32.64238514961403], [26.013794402730532, 32.61018448817133], [26.128044976294703, 32.57792109104447], [26.242288352737287, 32.54559452135274], [26.356524481528318, 32.51320433959223], [26.470753311826517, 32.480750103611314], [26.584974792476316, 32.448231368585766], [26.69918887200482, 32.41564768699371], [26.81339549861883, 32.38299860859027], [26.927594620201702, 32.35028368038205], [27.041786184310315, 32.31750244660127], [27.155970138171885, 32.28465444867972], [27.27014642868085, 32.25173922522243], [27.384315002395645, 32.21875631198108], [27.498475805535477, 32.185705241827165], [27.612628783977097, 32.15258554472484], [27.72677388325146, 32.119396747703576], [27.840911048540427, 32.086138374830476], [27.9550402246734, 32.05280994718237], [28.06916135612392, 32.01941098281756], [28.183274387006243, 31.98594099674737], [28.29737926107186, 31.952399500907344], [28.411475921706018, 31.918786004128172], [28.525564311924153, 31.885100012106324], [28.639644374368327, 31.85134102737443], [28.753716051303623, 31.81750854927127], [28.86777928461449, 31.783602073911517], [28.981834015801013, 31.7496210941552], [29.09588018597526, 31.7155650995768], [29.20991773585744, 31.681433576434056], [29.32394660577218, 31.647226007636437], [29.437966735644544, 31.61294187271332], [29.551978064996298, 31.57858064778182], [29.66598053294186, 31.544141805514293], [29.7799740781844, 31.509624815105493], [29.893958639011768, 31.475029142239418], [30.00793415329251, 31.4403542490558], [30.12190055847168, 31.40559959411621]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_31aa2e02fadd4c629182ee1ccb4bf742 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efc26ea72b1947aa82f6661b550aae14 = $(`<div id="html_efc26ea72b1947aa82f6661b550aae14" style="width: 100.0%; height: 100.0%;">🏠HELX↔HECA<br />Distance: 276nm <br />Flights: 18 (Booked: 0)<br /><span style="color: #bada55">MSR67</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR75</span> (BCS3) ↗️<br /><span style="color: #bada55">NIA72</span> (A321) ↗️<br /><span style="color: #bada55">MSR263</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR63</span> (B738) ↗️<br /><span style="color: #bada55">MSR203</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR66</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR74</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR68</span> (BCS3) ↘️<br /><span style="color: #bada55">RBG367</span> (A320) ↘️<br /><span style="color: #bada55">MSR64</span> (BCS3) ↘️<br /><span style="color: #bada55">NIA71</span> (A321) ↘️<br /><span style="color: #bada55">MSR262</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR62</span> (B738) ↘️<br /><span style="color: #bada55">MSR60</span> (B738) ↘️<br /><span style="color: #bada55">MSR1</span> (B738) ↘️<br /><span style="color: #bada55">MSR266</span> (B738) ↘️<br /><span style="color: #bada55">MSR204</span> (BCS3) ↘️</div>`)[0];
+            popup_31aa2e02fadd4c629182ee1ccb4bf742.setContent(html_efc26ea72b1947aa82f6661b550aae14);
+        
+
+        poly_line_b1b8e5a0a4f8426daeb643e03c3f426f.bindPopup(popup_31aa2e02fadd4c629182ee1ccb4bf742)
+        ;
+
+        
+    
+    
+            poly_line_b1b8e5a0a4f8426daeb643e03c3f426f.bindTooltip(
+                `<div>
+                     🏠HELX↔HECA<br />Distance: 276nm <br />Flights: 18 (Booked: 0)<br /><span style="color: #bada55">MSR67</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR75</span> (BCS3) ↗️<br /><span style="color: #bada55">NIA72</span> (A321) ↗️<br /><span style="color: #bada55">MSR263</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR63</span> (B738) ↗️<br /><span style="color: #bada55">MSR203</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR66</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR74</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR68</span> (BCS3) ↘️<br /><span style="color: #bada55">RBG367</span> (A320) ↘️<br /><span style="color: #bada55">MSR64</span> (BCS3) ↘️<br /><span style="color: #bada55">NIA71</span> (A321) ↘️<br /><span style="color: #bada55">MSR262</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR62</span> (B738) ↘️<br /><span style="color: #bada55">MSR60</span> (B738) ↘️<br /><span style="color: #bada55">MSR1</span> (B738) ↘️<br /><span style="color: #bada55">MSR266</span> (B738) ↘️<br /><span style="color: #bada55">MSR204</span> (BCS3) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b39eeb75f68d4ac28630c9beecfa379c = L.polyline(
+                [[25.671, 32.7066], [25.782318862049998, 33.085159125453], [25.8926562920765, 33.464426320597326], [26.00200561890434, 33.84440006409107], [26.110360191958364, 34.225078691328484], [26.217713382370597, 34.606460393334146], [26.324058584101973, 34.988543215692516], [26.42938921507842, 35.37132505751386], [26.53369871834092, 35.75480367043837], [26.636980563209242, 36.13897665767971], [26.739228246459152, 36.52384147310962], [26.84043529351239, 36.90939542038486], [26.940595259639547, 37.295635652118214], [27.039701731175008, 37.68255916909479], [27.137748326743804, 38.07016281953519], [27.23472869849991, 38.458443298406976], [27.330636533375483, 38.84739714678591], [27.425465554340676, 39.23702075126833], [27.51920952167348, 39.62731034343619], [27.611862234239222, 40.018261999376065], [27.703417530779003, 40.40987163925353], [27.793869291206786, 40.80213502694445], [27.883211437914504, 41.1950477697242], [27.97143793708453, 41.58860531801653], [28.058542800009146, 41.9828029652031], [28.1445200844162, 42.37763584749497], [28.22936389580057, 42.7730989438676], [28.313068388760588, 43.169187076060126], [28.395627768339, 43.565894908640416], [28.477036291367675, 43.96321694913698], [28.557288267815444, 44.36114754823871], [28.636378062138377, 44.75968090006378], [28.71430009463187, 45.158811042498385], [28.79104884278371, 45.55853185760659], [28.866618842627528, 45.95883707211212], [28.94100469009586, 46.359720257952894], [29.01420104237199, 46.76117483290927], [29.08620261924002, 47.16319406130663], [29.15700420443215, 47.56577105479313], [29.226600646972656, 47.96889877319336]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_523d6419b151403bbd56eebb16d7f055 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83eabb8817124cd290a749e1416ce1dc = $(`<div id="html_83eabb8817124cd290a749e1416ce1dc" style="width: 100.0%; height: 100.0%;">🏠HELX↔OKBK<br />Distance: 840nm <br />Flights: 4 (Booked: 0)<br /><span style="color: #bada55">RBG221</span> (A320) ↗️<br /><span style="color: #bada55">JZR708</span> (A320) ↗️<br /><span style="color: #bada55">JZR707</span> (A320) ↘️<br /><span style="color: #bada55">RBG222</span> (A320) ↘️</div>`)[0];
+            popup_523d6419b151403bbd56eebb16d7f055.setContent(html_83eabb8817124cd290a749e1416ce1dc);
+        
+
+        poly_line_b39eeb75f68d4ac28630c9beecfa379c.bindPopup(popup_523d6419b151403bbd56eebb16d7f055)
+        ;
+
+        
+    
+    
+            poly_line_b39eeb75f68d4ac28630c9beecfa379c.bindTooltip(
+                `<div>
+                     🏠HELX↔OKBK<br />Distance: 840nm <br />Flights: 4 (Booked: 0)<br /><span style="color: #bada55">RBG221</span> (A320) ↗️<br /><span style="color: #bada55">JZR708</span> (A320) ↗️<br /><span style="color: #bada55">JZR707</span> (A320) ↘️<br /><span style="color: #bada55">RBG222</span> (A320) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5d3a6eb4b54843a8a2656e3fa877b3c0 = L.polyline(
+                [[25.671, 32.7066], [25.782318862049998, 33.085159125453], [25.8926562920765, 33.464426320597326], [26.00200561890434, 33.84440006409107], [26.110360191958364, 34.225078691328484], [26.217713382370597, 34.606460393334146], [26.324058584101973, 34.988543215692516], [26.42938921507842, 35.37132505751386], [26.53369871834092, 35.75480367043837], [26.636980563209242, 36.13897665767971], [26.739228246459152, 36.52384147310962], [26.84043529351239, 36.90939542038486], [26.940595259639547, 37.295635652118214], [27.039701731175008, 37.68255916909479], [27.137748326743804, 38.07016281953519], [27.23472869849991, 38.458443298406976], [27.330636533375483, 38.84739714678591], [27.425465554340676, 39.23702075126833], [27.51920952167348, 39.62731034343619], [27.611862234239222, 40.018261999376065], [27.703417530779003, 40.40987163925353], [27.793869291206786, 40.80213502694445], [27.883211437914504, 41.1950477697242], [27.97143793708453, 41.58860531801653], [28.058542800009146, 41.9828029652031], [28.1445200844162, 42.37763584749497], [28.22936389580057, 42.7730989438676], [28.313068388760588, 43.169187076060126], [28.395627768339, 43.565894908640416], [28.477036291367675, 43.96321694913698], [28.557288267815444, 44.36114754823871], [28.636378062138377, 44.75968090006378], [28.71430009463187, 45.158811042498385], [28.79104884278371, 45.55853185760659], [28.866618842627528, 45.95883707211212], [28.94100469009586, 46.359720257952894], [29.01420104237199, 46.76117483290927], [29.08620261924002, 47.16319406130663], [29.15700420443215, 47.56577105479313], [29.226600646972656, 47.96889877319336]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_1691a73c3be7495eb1784a72b8f1763f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_622cc8a36eb740408525b90eb9fe5b48 = $(`<div id="html_622cc8a36eb740408525b90eb9fe5b48" style="width: 100.0%; height: 100.0%;">🏠HELX↔OKBK<br />Distance: 840nm <br />Flights: 4 (Booked: 0)<br /><span style="color: #bada55">RBG221</span> (A320) ↗️<br /><span style="color: #bada55">JZR708</span> (A320) ↗️<br /><span style="color: #bada55">JZR707</span> (A320) ↘️<br /><span style="color: #bada55">RBG222</span> (A320) ↘️</div>`)[0];
+            popup_1691a73c3be7495eb1784a72b8f1763f.setContent(html_622cc8a36eb740408525b90eb9fe5b48);
+        
+
+        poly_line_5d3a6eb4b54843a8a2656e3fa877b3c0.bindPopup(popup_1691a73c3be7495eb1784a72b8f1763f)
+        ;
+
+        
+    
+    
+            poly_line_5d3a6eb4b54843a8a2656e3fa877b3c0.bindTooltip(
+                `<div>
+                     🏠HELX↔OKBK<br />Distance: 840nm <br />Flights: 4 (Booked: 0)<br /><span style="color: #bada55">RBG221</span> (A320) ↗️<br /><span style="color: #bada55">JZR708</span> (A320) ↗️<br /><span style="color: #bada55">JZR707</span> (A320) ↘️<br /><span style="color: #bada55">RBG222</span> (A320) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7d739a7836d24dc4bc35fc9942319b90 = L.polyline(
+                [[25.671, 32.7066], [25.572129036880224, 32.87705254236746], [25.473060957610514, 33.04722353510009], [25.373796960558153, 33.21711413422191], [25.27433824016067, 33.38672550028144], [25.17468598692704, 33.55605879824725], [25.074841387439236, 33.7251151974049], [24.974805624354282, 33.8938958712551], [24.8745798764067, 34.062401997413296], [24.774165318411313, 34.230634757510465], [24.673563121266543, 34.39859533709521], [24.572774451958036, 34.56628492553715], [24.47180047356272, 34.7337047159316], [24.370642345253206, 34.900855905005585], [24.269301222302634, 35.0677396930249], [24.167778256089793, 35.23435728370276], [24.0660745941047, 35.40070988410934], [23.964191379954475, 35.56679870458292], [23.86212975336962, 35.732624958641956], [23.759890850210578, 35.89818986289858], [23.657475802474686, 36.06349463697325], [23.55488573830345, 36.228540503410606], [23.452121781990137, 36.39332868759656], [23.349185053987696, 36.55786041767657], [23.246076670916974, 36.722136924475144], [23.142797745575283, 36.88615944141644], [23.03934938694525, 37.049929204446144], [22.93573270020396, 37.213447451954444], [22.83194878673238, 37.3767154247002], [22.727998744125117, 37.53973436573622], [22.623883666200413, 37.70250552033579], [22.51960464301044, 37.865030135920115], [22.41516276085182, 38.027309461987194], [22.310559102276535, 38.189344750041506], [22.20579474610293, 38.35113725352504], [22.1008707674271, 38.512688227749265], [21.995788237634446, 38.673998929828265], [21.890548224411567, 38.835070618612974], [21.785151791758288, 38.9959045546264], [21.6796, 39.156502]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_a2e595a3245f4b7aa539cea1b0af5f40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bf072dd96c941a4825fb13abda65618 = $(`<div id="html_3bf072dd96c941a4825fb13abda65618" style="width: 100.0%; height: 100.0%;">🏠HELX↔OEJN<br />Distance: 428nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">RBG1205</span> (A320) ↗️<br /><span style="color: #bada55">MSR2661</span> (B738) ↗️<br /><span style="color: #bada55">RBG1206</span> (A320) ↘️</div>`)[0];
+            popup_a2e595a3245f4b7aa539cea1b0af5f40.setContent(html_3bf072dd96c941a4825fb13abda65618);
+        
+
+        poly_line_7d739a7836d24dc4bc35fc9942319b90.bindPopup(popup_a2e595a3245f4b7aa539cea1b0af5f40)
+        ;
+
+        
+    
+    
+            poly_line_7d739a7836d24dc4bc35fc9942319b90.bindTooltip(
+                `<div>
+                     🏠HELX↔OEJN<br />Distance: 428nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">RBG1205</span> (A320) ↗️<br /><span style="color: #bada55">MSR2661</span> (B738) ↗️<br /><span style="color: #bada55">RBG1206</span> (A320) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c59276f5319c41e9858d7cdcef57d402 = L.polyline(
+                [[25.671, 32.7066], [25.572129036880224, 32.87705254236746], [25.473060957610514, 33.04722353510009], [25.373796960558153, 33.21711413422191], [25.27433824016067, 33.38672550028144], [25.17468598692704, 33.55605879824725], [25.074841387439236, 33.7251151974049], [24.974805624354282, 33.8938958712551], [24.8745798764067, 34.062401997413296], [24.774165318411313, 34.230634757510465], [24.673563121266543, 34.39859533709521], [24.572774451958036, 34.56628492553715], [24.47180047356272, 34.7337047159316], [24.370642345253206, 34.900855905005585], [24.269301222302634, 35.0677396930249], [24.167778256089793, 35.23435728370276], [24.0660745941047, 35.40070988410934], [23.964191379954475, 35.56679870458292], [23.86212975336962, 35.732624958641956], [23.759890850210578, 35.89818986289858], [23.657475802474686, 36.06349463697325], [23.55488573830345, 36.228540503410606], [23.452121781990137, 36.39332868759656], [23.349185053987696, 36.55786041767657], [23.246076670916974, 36.722136924475144], [23.142797745575283, 36.88615944141644], [23.03934938694525, 37.049929204446144], [22.93573270020396, 37.213447451954444], [22.83194878673238, 37.3767154247002], [22.727998744125117, 37.53973436573622], [22.623883666200413, 37.70250552033579], [22.51960464301044, 37.865030135920115], [22.41516276085182, 38.027309461987194], [22.310559102276535, 38.189344750041506], [22.20579474610293, 38.35113725352504], [22.1008707674271, 38.512688227749265], [21.995788237634446, 38.673998929828265], [21.890548224411567, 38.835070618612974], [21.785151791758288, 38.9959045546264], [21.6796, 39.156502]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_ab73f8109a16445d820fb2f2969e86dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ec4ed0c918e4032b6d4c382fe9bfea2 = $(`<div id="html_6ec4ed0c918e4032b6d4c382fe9bfea2" style="width: 100.0%; height: 100.0%;">🏠HELX↔OEJN<br />Distance: 428nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">RBG1205</span> (A320) ↗️<br /><span style="color: #bada55">MSR2661</span> (B738) ↗️<br /><span style="color: #bada55">RBG1206</span> (A320) ↘️</div>`)[0];
+            popup_ab73f8109a16445d820fb2f2969e86dd.setContent(html_6ec4ed0c918e4032b6d4c382fe9bfea2);
+        
+
+        poly_line_c59276f5319c41e9858d7cdcef57d402.bindPopup(popup_ab73f8109a16445d820fb2f2969e86dd)
+        ;
+
+        
+    
+    
+            poly_line_c59276f5319c41e9858d7cdcef57d402.bindTooltip(
+                `<div>
+                     🏠HELX↔OEJN<br />Distance: 428nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">RBG1205</span> (A320) ↗️<br /><span style="color: #bada55">MSR2661</span> (B738) ↗️<br /><span style="color: #bada55">RBG1206</span> (A320) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_eeb3fcc6b29642f1bba96e04938328b1 = L.polyline(
+                [[25.671, 32.7066], [26.278731040591857, 32.233366633476635], [26.88489409419679, 31.75515651234447], [27.489430015731465, 31.271795506411785], [28.09227780781029, 30.78310515597612], [28.693374537674938, 30.288902533331658], [29.29265525087956, 29.78900010405305], [29.890052881618857, 29.283205588509425], [30.48549815958799, 28.771321824131586], [31.0789195132658, 28.25314662903163], [31.670242969516963, 27.728472667658497], [32.259392049413506, 27.19708731926672], [32.84628766018319, 26.658772550078485], [33.4308479832002, 26.113304790132688], [34.012988357944295, 25.5604548159393], [34.59262116186692, 24.999987640194725], [35.16965568611836, 24.431662409962954], [35.74399800710719, 23.85523231489188], [36.31555085388567, 23.27044450721193], [36.884213471378786, 22.677040035458546], [37.44988147950386, 22.074753794070094], [38.01244672826164, 21.463314491240215], [38.57179714891777, 20.84244463764819], [39.12781660143845, 20.21186055895389], [39.68038471839417, 19.571272435224483], [40.22937674560317, 18.920384370759216], [40.77466337985089, 18.25889449809457], [41.31611060409518, 17.586495120305727], [41.85357952064899, 16.902872896068214], [42.386926182923936, 16.20770907230519], [42.916001426420856, 15.500679769617888], [43.44065069976628, 14.78145632607485], [43.960713896719504, 14.049705705315917], [44.47602519021202, 13.305090975302784], [44.98641286963244, 12.547271864411726], [45.491699182733164, 11.775905401907336], [45.991700183713455, 10.99064665014696], [46.48622558922434, 10.191149536131853], [46.97507864424527, 9.37706779022701], [47.458056, 8.548056]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_e290c6acfc534c029b9a7cfce49c3947 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7554583e5fb4bafbe7c83a0083815fb = $(`<div id="html_a7554583e5fb4bafbe7c83a0083815fb" style="width: 100.0%; height: 100.0%;">🏠HELX↔LSZH<br />Distance: 1737nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">SAZ66</span> (CL60) ↗️<br /><span style="color: #bada55">SAZ74</span> (CL60) ↗️<br /><span style="color: #bada55">SAZ71</span> (CL60) ↘️</div>`)[0];
+            popup_e290c6acfc534c029b9a7cfce49c3947.setContent(html_a7554583e5fb4bafbe7c83a0083815fb);
+        
+
+        poly_line_eeb3fcc6b29642f1bba96e04938328b1.bindPopup(popup_e290c6acfc534c029b9a7cfce49c3947)
+        ;
+
+        
+    
+    
+            poly_line_eeb3fcc6b29642f1bba96e04938328b1.bindTooltip(
+                `<div>
+                     🏠HELX↔LSZH<br />Distance: 1737nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">SAZ66</span> (CL60) ↗️<br /><span style="color: #bada55">SAZ74</span> (CL60) ↗️<br /><span style="color: #bada55">SAZ71</span> (CL60) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0678ec4420aa4304aeb126ed54d69f3f = L.polyline(
+                [[25.671, 32.7066], [26.278731040591857, 32.233366633476635], [26.88489409419679, 31.75515651234447], [27.489430015731465, 31.271795506411785], [28.09227780781029, 30.78310515597612], [28.693374537674938, 30.288902533331658], [29.29265525087956, 29.78900010405305], [29.890052881618857, 29.283205588509425], [30.48549815958799, 28.771321824131586], [31.0789195132658, 28.25314662903163], [31.670242969516963, 27.728472667658497], [32.259392049413506, 27.19708731926672], [32.84628766018319, 26.658772550078485], [33.4308479832002, 26.113304790132688], [34.012988357944295, 25.5604548159393], [34.59262116186692, 24.999987640194725], [35.16965568611836, 24.431662409962954], [35.74399800710719, 23.85523231489188], [36.31555085388567, 23.27044450721193], [36.884213471378786, 22.677040035458546], [37.44988147950386, 22.074753794070094], [38.01244672826164, 21.463314491240215], [38.57179714891777, 20.84244463764819], [39.12781660143845, 20.21186055895389], [39.68038471839417, 19.571272435224483], [40.22937674560317, 18.920384370759216], [40.77466337985089, 18.25889449809457], [41.31611060409518, 17.586495120305727], [41.85357952064899, 16.902872896068214], [42.386926182923936, 16.20770907230519], [42.916001426420856, 15.500679769617888], [43.44065069976628, 14.78145632607485], [43.960713896719504, 14.049705705315917], [44.47602519021202, 13.305090975302784], [44.98641286963244, 12.547271864411726], [45.491699182733164, 11.775905401907336], [45.991700183713455, 10.99064665014696], [46.48622558922434, 10.191149536131853], [46.97507864424527, 9.37706779022701], [47.458056, 8.548056]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_854652c6b0ac466db46c24b6cf4e3393 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44bccd1700784ec08c13d7fc116561d8 = $(`<div id="html_44bccd1700784ec08c13d7fc116561d8" style="width: 100.0%; height: 100.0%;">🏠HELX↔LSZH<br />Distance: 1737nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">SAZ66</span> (CL60) ↗️<br /><span style="color: #bada55">SAZ74</span> (CL60) ↗️<br /><span style="color: #bada55">SAZ71</span> (CL60) ↘️</div>`)[0];
+            popup_854652c6b0ac466db46c24b6cf4e3393.setContent(html_44bccd1700784ec08c13d7fc116561d8);
+        
+
+        poly_line_0678ec4420aa4304aeb126ed54d69f3f.bindPopup(popup_854652c6b0ac466db46c24b6cf4e3393)
+        ;
+
+        
+    
+    
+            poly_line_0678ec4420aa4304aeb126ed54d69f3f.bindTooltip(
+                `<div>
+                     🏠HELX↔LSZH<br />Distance: 1737nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">SAZ66</span> (CL60) ↗️<br /><span style="color: #bada55">SAZ74</span> (CL60) ↗️<br /><span style="color: #bada55">SAZ71</span> (CL60) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4f0d696dca5640bca749451c36b8eee5 = L.polyline(
+                [[25.671, 32.7066], [25.694280509366752, 33.28343085532325], [25.715291271663204, 33.8604762925208], [25.73402935401601, 34.43771455332598], [25.75049213801359, 35.015123772007755], [25.76467732102265, 35.59268198741344], [25.77658291734845, 36.170367155116516], [25.786207259237184, 36.74815715965629], [25.793548997719302, 37.326029826856136], [25.798607103292472, 37.90396293620676], [25.801380866443363, 38.481934233300876], [25.801869898007517, 39.05992144230549], [25.800074129366852, 39.6379022784581], [25.795993812484454, 40.21585446057265], [25.789629519776735, 40.7937557235417], [25.780982143823003, 41.37158383082061], [25.770052896912926, 41.949316586879945], [25.756843310432473, 42.52693184961253], [25.74135523408908, 43.1044075426811], [25.72359083497726, 43.68172166779333], [25.703552596485675, 44.25885231689047], [25.68124331704735, 44.83577768423672], [25.656666108734534, 45.41247607839612], [25.629824395700172, 45.98892593408405], [25.600721912467975, 46.56510582388109], [25.569362702073416, 47.140994469796816], [25.53575111405807, 47.71657075467165], [25.49989180231986, 48.29181373340509], [25.461789722822182, 48.86670264399928], [25.421450131164594, 49.441216918406724], [25.378878580018522, 50.015336193172054], [25.334080916431034, 50.589040319857446], [25.287063279000236, 51.16230937524229], [25.23783209492579, 51.735123671287774], [25.18639407693835, 52.307463764857786], [25.132756220111666, 52.87931046718779], [25.076925798561355, 53.45064485309387], [25.018910362034358, 54.021448269914885], [24.95871773239332, 54.59170234618062], [24.896356, 55.161389]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_87b155daa4d041c4b3062b4799266421 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2750982e39774509bc3256fd0804aead = $(`<div id="html_2750982e39774509bc3256fd0804aead" style="width: 100.0%; height: 100.0%;">🏠HELX↔OMDW<br />Distance: 1218nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">IJM566</span> (LJ75) ↗️</div>`)[0];
+            popup_87b155daa4d041c4b3062b4799266421.setContent(html_2750982e39774509bc3256fd0804aead);
+        
+
+        poly_line_4f0d696dca5640bca749451c36b8eee5.bindPopup(popup_87b155daa4d041c4b3062b4799266421)
+        ;
+
+        
+    
+    
+            poly_line_4f0d696dca5640bca749451c36b8eee5.bindTooltip(
+                `<div>
+                     🏠HELX↔OMDW<br />Distance: 1218nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">IJM566</span> (LJ75) ↗️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ace2f118d59b4c58af59547585804340 = L.polyline(
+                [[25.671, 32.7066], [25.694280509366752, 33.28343085532325], [25.715291271663204, 33.8604762925208], [25.73402935401601, 34.43771455332598], [25.75049213801359, 35.015123772007755], [25.76467732102265, 35.59268198741344], [25.77658291734845, 36.170367155116516], [25.786207259237184, 36.74815715965629], [25.793548997719302, 37.326029826856136], [25.798607103292472, 37.90396293620676], [25.801380866443363, 38.481934233300876], [25.801869898007517, 39.05992144230549], [25.800074129366852, 39.6379022784581], [25.795993812484454, 40.21585446057265], [25.789629519776735, 40.7937557235417], [25.780982143823003, 41.37158383082061], [25.770052896912926, 41.949316586879945], [25.756843310432473, 42.52693184961253], [25.74135523408908, 43.1044075426811], [25.72359083497726, 43.68172166779333], [25.703552596485675, 44.25885231689047], [25.68124331704735, 44.83577768423672], [25.656666108734534, 45.41247607839612], [25.629824395700172, 45.98892593408405], [25.600721912467975, 46.56510582388109], [25.569362702073416, 47.140994469796816], [25.53575111405807, 47.71657075467165], [25.49989180231986, 48.29181373340509], [25.461789722822182, 48.86670264399928], [25.421450131164594, 49.441216918406724], [25.378878580018522, 50.015336193172054], [25.334080916431034, 50.589040319857446], [25.287063279000236, 51.16230937524229], [25.23783209492579, 51.735123671287774], [25.18639407693835, 52.307463764857786], [25.132756220111666, 52.87931046718779], [25.076925798561355, 53.45064485309387], [25.018910362034358, 54.021448269914885], [24.95871773239332, 54.59170234618062], [24.896356, 55.161389]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_481c793d88da4a46b5755394da1ddb92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cdf77a350894288a2e9041011f6b44f = $(`<div id="html_0cdf77a350894288a2e9041011f6b44f" style="width: 100.0%; height: 100.0%;">🏠HELX↔OMDW<br />Distance: 1218nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">IJM566</span> (LJ75) ↗️</div>`)[0];
+            popup_481c793d88da4a46b5755394da1ddb92.setContent(html_0cdf77a350894288a2e9041011f6b44f);
+        
+
+        poly_line_ace2f118d59b4c58af59547585804340.bindPopup(popup_481c793d88da4a46b5755394da1ddb92)
+        ;
+
+        
+    
+    
+            poly_line_ace2f118d59b4c58af59547585804340.bindTooltip(
+                `<div>
+                     🏠HELX↔OMDW<br />Distance: 1218nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">IJM566</span> (LJ75) ↗️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0abe0b7e15284db2bab544032828395e = L.polyline(
+                [[25.671, 32.7066], [26.422366842847193, 32.10894464326129], [27.17121682209382, 31.50346229825976], [27.917432289298123, 30.88981523639556], [28.660891011519844, 30.267655454067565], [29.401465918734633, 29.636624288085], [30.13902483934073, 28.996352034131917], [30.873430223306283, 28.346457570862942], [31.604538852527803, 27.68654799265517], [32.33220153800254, 27.016218254546473], [33.05626280345902, 26.33505083345815], [33.77656055514484, 25.642615410438204], [34.49292573753985, 24.93846857937578], [35.20518197484892, 24.222153588434466], [35.91314519823347, 23.49320012133871], [36.6166232588703, 22.751124126629556], [37.31541552707944, 21.99542770408984], [38.00931247794779, 21.2255990587286], [38.69809526409287, 20.441112534014938], [39.38153527646763, 19.64142873746322], [40.059393694407355, 18.8259947731953], [40.731421026467395, 17.994244597736053], [41.397356644003125, 17.14559951702875], [42.05692830990479, 16.27946884447251], [42.709851705426665, 15.395250741664885], [43.35582995864762, 14.492333265449822], [43.99455317877282, 13.570095646785433], [44.62569800124, 12.627909828806335], [45.24892714943067, 11.665142293195691], [45.863889019708395, 10.681156205520647], [46.47021729751442, 9.675313911420444], [47.06753061333895, 8.646979816346558], [47.655432248551364, 7.595523681794456], [48.23350990229845, 6.520324370467062], [48.801335531954, 5.420774071378123], [49.358465280896404, 4.296283033321671], [49.9044395086754, 3.1462848311654064], [50.43878293986041, 1.970242183817825], [50.96100494898974, 0.7676533352130519], [51.4706, -0.461941]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_0f246b940b13445d95ea88446b44676f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3c2c857b14949438ffd369cf8724b3a = $(`<div id="html_f3c2c857b14949438ffd369cf8724b3a" style="width: 100.0%; height: 100.0%;">🏠HELX↔EGLL<br />Distance: 2162nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">MSR761</span> (B738) ↗️<br /><span style="color: #bada55">MSR762</span> (B738) ↘️</div>`)[0];
+            popup_0f246b940b13445d95ea88446b44676f.setContent(html_f3c2c857b14949438ffd369cf8724b3a);
+        
+
+        poly_line_0abe0b7e15284db2bab544032828395e.bindPopup(popup_0f246b940b13445d95ea88446b44676f)
+        ;
+
+        
+    
+    
+            poly_line_0abe0b7e15284db2bab544032828395e.bindTooltip(
+                `<div>
+                     🏠HELX↔EGLL<br />Distance: 2162nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">MSR761</span> (B738) ↗️<br /><span style="color: #bada55">MSR762</span> (B738) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_28478523ee684b9baf2b4fcfac36f480 = L.polyline(
+                [[25.671, 32.7066], [26.422366842847193, 32.10894464326129], [27.17121682209382, 31.50346229825976], [27.917432289298123, 30.88981523639556], [28.660891011519844, 30.267655454067565], [29.401465918734633, 29.636624288085], [30.13902483934073, 28.996352034131917], [30.873430223306283, 28.346457570862942], [31.604538852527803, 27.68654799265517], [32.33220153800254, 27.016218254546473], [33.05626280345902, 26.33505083345815], [33.77656055514484, 25.642615410438204], [34.49292573753985, 24.93846857937578], [35.20518197484892, 24.222153588434466], [35.91314519823347, 23.49320012133871], [36.6166232588703, 22.751124126629556], [37.31541552707944, 21.99542770408984], [38.00931247794779, 21.2255990587286], [38.69809526409287, 20.441112534014938], [39.38153527646763, 19.64142873746322], [40.059393694407355, 18.8259947731953], [40.731421026467395, 17.994244597736053], [41.397356644003125, 17.14559951702875], [42.05692830990479, 16.27946884447251], [42.709851705426665, 15.395250741664885], [43.35582995864762, 14.492333265449822], [43.99455317877282, 13.570095646785433], [44.62569800124, 12.627909828806335], [45.24892714943067, 11.665142293195691], [45.863889019708395, 10.681156205520647], [46.47021729751442, 9.675313911420444], [47.06753061333895, 8.646979816346558], [47.655432248551364, 7.595523681794456], [48.23350990229845, 6.520324370467062], [48.801335531954, 5.420774071378123], [49.358465280896404, 4.296283033321671], [49.9044395086754, 3.1462848311654064], [50.43878293986041, 1.970242183817825], [50.96100494898974, 0.7676533352130519], [51.4706, -0.461941]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_5da98ff034114565859765a082b0c7d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8825dffd7f93455094a4e343dd3cd7dd = $(`<div id="html_8825dffd7f93455094a4e343dd3cd7dd" style="width: 100.0%; height: 100.0%;">🏠HELX↔EGLL<br />Distance: 2162nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">MSR761</span> (B738) ↗️<br /><span style="color: #bada55">MSR762</span> (B738) ↘️</div>`)[0];
+            popup_5da98ff034114565859765a082b0c7d9.setContent(html_8825dffd7f93455094a4e343dd3cd7dd);
+        
+
+        poly_line_28478523ee684b9baf2b4fcfac36f480.bindPopup(popup_5da98ff034114565859765a082b0c7d9)
+        ;
+
+        
+    
+    
+            poly_line_28478523ee684b9baf2b4fcfac36f480.bindTooltip(
+                `<div>
+                     🏠HELX↔EGLL<br />Distance: 2162nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">MSR761</span> (B738) ↗️<br /><span style="color: #bada55">MSR762</span> (B738) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_91236e2525d14fcf97eb815031fe716f = L.polyline(
+                [[25.671, 32.7066], [24.91221614816667, 32.90979721698002], [24.153160356432142, 33.11050949955333], [23.393845154687767, 33.308850513505654], [22.634282602516716, 33.50492974082711], [21.874484317884487, 33.69885273118667], [21.11446150409625, 33.890721338603925], [20.354224975154523, 34.08063394443111], [19.593785179639926, 34.268685667672344], [18.833152223228193, 34.45496856358778], [18.072335889947382, 34.63957181145918], [17.311345662271812, 34.822581892327676], [16.55019074014116, 35.00408275745515], [15.788880058987429, 35.184155988206435], [15.027422306845594, 35.36288094799983], [14.265825940618964, 35.540334926928736], [13.504099201564893, 35.71659327961565], [12.742250130062079, 35.891729556822675], [11.98028657971662, 36.065815631308226], [11.218216230860213, 36.23892181838914], [10.456046603490464, 36.4111169916383], [9.693785069700303, 36.58246869412334], [8.931438865640574, 36.753043245567426], [8.16901510305755, 36.92290584579347], [7.406520780444623, 37.092120674792994], [6.643962793845636, 37.260750989744395], [5.881347947345299, 37.428859219289855], [5.118682963280623, 37.59650705536653], [4.355974492205855, 37.76375554287554], [3.59322912264211, 37.9306651674616], [2.8304533906418547, 38.09729594166707], [2.0676537891973807, 38.26370748971629], [1.304836777521747, 38.429959131179054], [0.5420087902299117, 38.59610996375747], [-0.2208237535526284, 38.76221894543537], [-0.983654441126818, 38.92834497622708], [-1.746476857175896, 39.094546979759926], [-2.509284574713576, 39.26088398492451], [-3.272071145997876, 39.42741520782677], [-4.034830093383789, 39.594200134277344]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_3d56f8b117044f9aaff4d4ea83e3fbfe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5bb4d74841d545b0a2a2bf88ba23d287 = $(`<div id="html_5bb4d74841d545b0a2a2bf88ba23d287" style="width: 100.0%; height: 100.0%;">🏠HELX↔HKMO<br />Distance: 1828nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SAZ65</span> (CL60) ↘️</div>`)[0];
+            popup_3d56f8b117044f9aaff4d4ea83e3fbfe.setContent(html_5bb4d74841d545b0a2a2bf88ba23d287);
+        
+
+        poly_line_91236e2525d14fcf97eb815031fe716f.bindPopup(popup_3d56f8b117044f9aaff4d4ea83e3fbfe)
+        ;
+
+        
+    
+    
+            poly_line_91236e2525d14fcf97eb815031fe716f.bindTooltip(
+                `<div>
+                     🏠HELX↔HKMO<br />Distance: 1828nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SAZ65</span> (CL60) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_772cd8ea2deb4965a930831f2503768f = L.polyline(
+                [[25.671, 32.7066], [24.91221614816667, 32.90979721698002], [24.153160356432142, 33.11050949955333], [23.393845154687767, 33.308850513505654], [22.634282602516716, 33.50492974082711], [21.874484317884487, 33.69885273118667], [21.11446150409625, 33.890721338603925], [20.354224975154523, 34.08063394443111], [19.593785179639926, 34.268685667672344], [18.833152223228193, 34.45496856358778], [18.072335889947382, 34.63957181145918], [17.311345662271812, 34.822581892327676], [16.55019074014116, 35.00408275745515], [15.788880058987429, 35.184155988206435], [15.027422306845594, 35.36288094799983], [14.265825940618964, 35.540334926928736], [13.504099201564893, 35.71659327961565], [12.742250130062079, 35.891729556822675], [11.98028657971662, 36.065815631308226], [11.218216230860213, 36.23892181838914], [10.456046603490464, 36.4111169916383], [9.693785069700303, 36.58246869412334], [8.931438865640574, 36.753043245567426], [8.16901510305755, 36.92290584579347], [7.406520780444623, 37.092120674792994], [6.643962793845636, 37.260750989744395], [5.881347947345299, 37.428859219289855], [5.118682963280623, 37.59650705536653], [4.355974492205855, 37.76375554287554], [3.59322912264211, 37.9306651674616], [2.8304533906418547, 38.09729594166707], [2.0676537891973807, 38.26370748971629], [1.304836777521747, 38.429959131179054], [0.5420087902299117, 38.59610996375747], [-0.2208237535526284, 38.76221894543537], [-0.983654441126818, 38.92834497622708], [-1.746476857175896, 39.094546979759926], [-2.509284574713576, 39.26088398492451], [-3.272071145997876, 39.42741520782677], [-4.034830093383789, 39.594200134277344]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_95cea574f1f54a21a6a05a6d7ea98aec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b83f07a4d5342b9af1d021ff11ac5ce = $(`<div id="html_9b83f07a4d5342b9af1d021ff11ac5ce" style="width: 100.0%; height: 100.0%;">🏠HELX↔HKMO<br />Distance: 1828nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SAZ65</span> (CL60) ↘️</div>`)[0];
+            popup_95cea574f1f54a21a6a05a6d7ea98aec.setContent(html_9b83f07a4d5342b9af1d021ff11ac5ce);
+        
+
+        poly_line_772cd8ea2deb4965a930831f2503768f.bindPopup(popup_95cea574f1f54a21a6a05a6d7ea98aec)
+        ;
+
+        
+    
+    
+            poly_line_772cd8ea2deb4965a930831f2503768f.bindTooltip(
+                `<div>
+                     🏠HELX↔HKMO<br />Distance: 1828nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SAZ65</span> (CL60) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_69d31bd2e4a44ac2a42a649554aa233d = L.polyline(
+                [[25.671, 32.7066], [26.165848969812505, 31.92628462178771], [26.656456203934443, 31.13934729057422], [27.142692528310818, 30.345645987949553], [27.624426434318924, 29.54504049917655], [28.101524064861124, 28.737392687845706], [28.573849205773627, 27.922566789349666], [29.041263283024794, 27.10042972364626], [29.503625366198417, 26.270851427712085], [29.96079217877851, 25.433705208008835], [30.412618115771714, 24.5888681131916], [30.858955269221546, 23.73622132718055], [31.299653462184327, 22.875650582594005], [31.734560291750242, 22.007046594401793], [32.16352118170264, 21.13030551350083], [32.586379445415666, 20.245329399740548], [33.00297635959224, 19.35202671373352], [33.41315124944214, 18.45031282657534], [33.816741585891656, 17.54011054636886], [34.213583095402726, 16.62135066020021], [34.603509882957766, 15.693972489949447], [34.98635456873917, 14.757924460037271], [35.36194843899505, 13.813164674913674], [35.730121611538706, 12.859661503785118], [36.09070321627419, 11.897394169758124], [36.44352159107665, 10.926353340250792], [36.788404493281675, 9.946541715193929], [37.125179326952825, 8.95797460921486], [37.45367338600105, 7.960680523673686], [37.773714113122644, 6.954701704110398], [38.085129374405746, 5.940094678366813], [38.387747749327154, 4.916930770377579], [38.681398835723634, 3.8852965843856584], [38.965913569175484, 2.845294454137899], [39.24112455608474, 1.7970428514627073], [39.50686641956909, 0.7406767485326013], [39.762976157125, -0.323652071923156], [40.00929350884401, -1.3957747641590585], [40.24566133479297, -2.4755052303027587], [40.471926, -3.56264]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_dc508b409ef14ec59c3ce1ca2257bd78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e18dcaf4d23041219476fc534e0ac259 = $(`<div id="html_e18dcaf4d23041219476fc534e0ac259" style="width: 100.0%; height: 100.0%;">🏠HELX↔LEMD<br />Distance: 2011nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">MSR754</span> (B738) ↘️</div>`)[0];
+            popup_dc508b409ef14ec59c3ce1ca2257bd78.setContent(html_e18dcaf4d23041219476fc534e0ac259);
+        
+
+        poly_line_69d31bd2e4a44ac2a42a649554aa233d.bindPopup(popup_dc508b409ef14ec59c3ce1ca2257bd78)
+        ;
+
+        
+    
+    
+            poly_line_69d31bd2e4a44ac2a42a649554aa233d.bindTooltip(
+                `<div>
+                     🏠HELX↔LEMD<br />Distance: 2011nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">MSR754</span> (B738) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b04e03688e054ba6bb9a709e7fdcdb92 = L.polyline(
+                [[25.671, 32.7066], [26.165848969812505, 31.92628462178771], [26.656456203934443, 31.13934729057422], [27.142692528310818, 30.345645987949553], [27.624426434318924, 29.54504049917655], [28.101524064861124, 28.737392687845706], [28.573849205773627, 27.922566789349666], [29.041263283024794, 27.10042972364626], [29.503625366198417, 26.270851427712085], [29.96079217877851, 25.433705208008835], [30.412618115771714, 24.5888681131916], [30.858955269221546, 23.73622132718055], [31.299653462184327, 22.875650582594005], [31.734560291750242, 22.007046594401793], [32.16352118170264, 21.13030551350083], [32.586379445415666, 20.245329399740548], [33.00297635959224, 19.35202671373352], [33.41315124944214, 18.45031282657534], [33.816741585891656, 17.54011054636886], [34.213583095402726, 16.62135066020021], [34.603509882957766, 15.693972489949447], [34.98635456873917, 14.757924460037271], [35.36194843899505, 13.813164674913674], [35.730121611538706, 12.859661503785118], [36.09070321627419, 11.897394169758124], [36.44352159107665, 10.926353340250792], [36.788404493281675, 9.946541715193929], [37.125179326952825, 8.95797460921486], [37.45367338600105, 7.960680523673686], [37.773714113122644, 6.954701704110398], [38.085129374405746, 5.940094678366813], [38.387747749327154, 4.916930770377579], [38.681398835723634, 3.8852965843856584], [38.965913569175484, 2.845294454137899], [39.24112455608474, 1.7970428514627073], [39.50686641956909, 0.7406767485326013], [39.762976157125, -0.323652071923156], [40.00929350884401, -1.3957747641590585], [40.24566133479297, -2.4755052303027587], [40.471926, -3.56264]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_3a8e3c14a74e459b94fbe2656e9ec8c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45a44ddfce5e41f48995c93c6d2f815d = $(`<div id="html_45a44ddfce5e41f48995c93c6d2f815d" style="width: 100.0%; height: 100.0%;">🏠HELX↔LEMD<br />Distance: 2011nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">MSR754</span> (B738) ↘️</div>`)[0];
+            popup_3a8e3c14a74e459b94fbe2656e9ec8c1.setContent(html_45a44ddfce5e41f48995c93c6d2f815d);
+        
+
+        poly_line_b04e03688e054ba6bb9a709e7fdcdb92.bindPopup(popup_3a8e3c14a74e459b94fbe2656e9ec8c1)
+        ;
+
+        
+    
+    
+            poly_line_b04e03688e054ba6bb9a709e7fdcdb92.bindTooltip(
+                `<div>
+                     🏠HELX↔LEMD<br />Distance: 2011nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">MSR754</span> (B738) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_56c922603dd9423a805848cca345a64a = L.polyline(
+                [[25.671, 32.7066], [25.730380698754036, 32.749051263188726], [25.78974908433424, 32.791544948355565], [25.84910511174884, 32.83408120166267], [25.90844873587217, 32.87666016963651], [25.967779911444026, 32.919281999169186], [26.02709859306911, 32.96194683751979], [26.086404735216412, 33.00465483231569], [26.145698292218622, 33.047406131553835], [26.204979218271493, 33.09020088360214], [26.26424746743326, 33.13303923720076], [26.323502993624004, 33.175921341463436], [26.38274575062507, 33.21884734587883], [26.44197569207844, 33.26181740031187], [26.501192771486078, 33.304831655005074], [26.560396942209373, 33.347890260579874], [26.61958815746846, 33.390993368038025], [26.67876637034162, 33.43414112876284], [26.737931533764648, 33.47733369452065], [26.797083600530236, 33.5205712174621], [26.856222523287286, 33.56385385012348], [26.91534825454035, 33.607181745428136], [26.97446074664894, 33.650555056687786], [27.03355995182689, 33.693973937603886], [27.09264582214172, 33.73743854226901], [27.151718309514017, 33.78094902516821], [27.21077736571673, 33.82450554118037], [27.269822942374553, 33.86810824557956], [27.328854990963276, 33.911757294036484], [27.3878734628091, 33.955452842619735], [27.446878309088, 33.9991950477973], [27.505869480825062, 34.04298406643783], [27.564846928893804, 34.0868200558121], [27.623810604015517, 34.130703173594334], [27.682760456758594, 34.17463357786364], [27.741696437537847, 34.21861142710536], [27.800618496613847, 34.26263688021248], [27.859526584092237, 34.30671009648703], [27.918420649923043, 34.35083123564145], [27.9773006439, 34.3950004578]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_f13daceac7e74cba9edb7f150f3c6b5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edbea2c71ae24e1bad32817f1a4f57f2 = $(`<div id="html_edbea2c71ae24e1bad32817f1a4f57f2" style="width: 100.0%; height: 100.0%;">🏠HELX↔HESH<br />Distance: 165nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">MSR202</span> (BCS3) ↘️</div>`)[0];
+            popup_f13daceac7e74cba9edb7f150f3c6b5e.setContent(html_edbea2c71ae24e1bad32817f1a4f57f2);
+        
+
+        poly_line_56c922603dd9423a805848cca345a64a.bindPopup(popup_f13daceac7e74cba9edb7f150f3c6b5e)
+        ;
+
+        
+    
+    
+            poly_line_56c922603dd9423a805848cca345a64a.bindTooltip(
+                `<div>
+                     🏠HELX↔HESH<br />Distance: 165nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">MSR202</span> (BCS3) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f77b8ab8d6024b7a872bb77c3d2ae27d = L.polyline(
+                [[25.671, 32.7066], [25.730380698754036, 32.749051263188726], [25.78974908433424, 32.791544948355565], [25.84910511174884, 32.83408120166267], [25.90844873587217, 32.87666016963651], [25.967779911444026, 32.919281999169186], [26.02709859306911, 32.96194683751979], [26.086404735216412, 33.00465483231569], [26.145698292218622, 33.047406131553835], [26.204979218271493, 33.09020088360214], [26.26424746743326, 33.13303923720076], [26.323502993624004, 33.175921341463436], [26.38274575062507, 33.21884734587883], [26.44197569207844, 33.26181740031187], [26.501192771486078, 33.304831655005074], [26.560396942209373, 33.347890260579874], [26.61958815746846, 33.390993368038025], [26.67876637034162, 33.43414112876284], [26.737931533764648, 33.47733369452065], [26.797083600530236, 33.5205712174621], [26.856222523287286, 33.56385385012348], [26.91534825454035, 33.607181745428136], [26.97446074664894, 33.650555056687786], [27.03355995182689, 33.693973937603886], [27.09264582214172, 33.73743854226901], [27.151718309514017, 33.78094902516821], [27.21077736571673, 33.82450554118037], [27.269822942374553, 33.86810824557956], [27.328854990963276, 33.911757294036484], [27.3878734628091, 33.955452842619735], [27.446878309088, 33.9991950477973], [27.505869480825062, 34.04298406643783], [27.564846928893804, 34.0868200558121], [27.623810604015517, 34.130703173594334], [27.682760456758594, 34.17463357786364], [27.741696437537847, 34.21861142710536], [27.800618496613847, 34.26263688021248], [27.859526584092237, 34.30671009648703], [27.918420649923043, 34.35083123564145], [27.9773006439, 34.3950004578]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_e4052834cf8a49abbeaf96239cc932a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6eec15f6dcc94aef81de7fd04f266531 = $(`<div id="html_6eec15f6dcc94aef81de7fd04f266531" style="width: 100.0%; height: 100.0%;">🏠HELX↔HESH<br />Distance: 165nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">MSR202</span> (BCS3) ↘️</div>`)[0];
+            popup_e4052834cf8a49abbeaf96239cc932a8.setContent(html_6eec15f6dcc94aef81de7fd04f266531);
+        
+
+        poly_line_f77b8ab8d6024b7a872bb77c3d2ae27d.bindPopup(popup_e4052834cf8a49abbeaf96239cc932a8)
+        ;
+
+        
+    
+    
+            poly_line_f77b8ab8d6024b7a872bb77c3d2ae27d.bindTooltip(
+                `<div>
+                     🏠HELX↔HESH<br />Distance: 165nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">MSR202</span> (BCS3) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1273bf678502426d957ea7ef0a1db6c8 = L.polyline(
+                [[25.671, 32.7066], [24.92466092993902, 33.37986557492837], [24.175334792948533, 34.04501282162094], [23.42315746819489, 34.70238078351233], [22.668260240772124, 35.352300124805296], [21.910770037210476, 35.995093404722816], [21.150809652033093, 36.63107535915028], [20.38849796565596, 37.260553187741294], [19.623950153943838, 37.88382684482883], [18.857277889748193, 38.50118933272328], [18.088589536761987, 39.11292699619243], [17.317990336032043, 39.719319817108335], [16.545582585472772, 40.32064170841499], [15.771465812725486, 40.91716080671981], [14.995736941706515, 41.50913976294447], [14.218490453184714, 42.09683603058736], [13.439818539724738, 42.680502151252675], [12.659811255328206, 43.260386037191985], [11.878556660098809, 43.83673125068357], [11.096140960252091, 44.40977728014436], [10.312648643783907, 44.97975981293078], [9.528162612105502, 45.54691100483763], [8.742764307946656, 46.1114597463507], [7.956533839821999, 46.6736319257493], [7.169550103349481, 47.23365068918961], [6.381890899704166, 47.79173669793008], [5.5936330514848125, 48.34810838288583], [4.804852516265612, 48.902982196721894], [4.015624498100622, 49.45657286371289], [3.2260235572440883, 50.009093627614206], [2.4361237183459767, 50.56075649780154], [1.645998577378718, 51.11177249394801], [0.8557214075482957, 51.66235188951579], [0.06536526444053456, 52.21270445434695], [-0.7249969093482967, 52.76303969664255], [-1.5152921798486425, 53.313567104623026], [-2.3054475173752498, 53.86449638816407], [-3.0953896919579678, 54.41603772070285], [-3.885045168297886, 54.96840198170751], [-4.67434, 55.521801]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_0e40e904b1114a07a46c43c8e84c2db8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_faba5180d7584fe9bbb96ebe44d1647f = $(`<div id="html_faba5180d7584fe9bbb96ebe44d1647f" style="width: 100.0%; height: 100.0%;">🏠HELX↔FSIA<br />Distance: 2255nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SAZ73</span> (CL60) ↘️</div>`)[0];
+            popup_0e40e904b1114a07a46c43c8e84c2db8.setContent(html_faba5180d7584fe9bbb96ebe44d1647f);
+        
+
+        poly_line_1273bf678502426d957ea7ef0a1db6c8.bindPopup(popup_0e40e904b1114a07a46c43c8e84c2db8)
+        ;
+
+        
+    
+    
+            poly_line_1273bf678502426d957ea7ef0a1db6c8.bindTooltip(
+                `<div>
+                     🏠HELX↔FSIA<br />Distance: 2255nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SAZ73</span> (CL60) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8595ebd38b0145848c29d949ecb53a46 = L.polyline(
+                [[25.671, 32.7066], [24.92466092993902, 33.37986557492837], [24.175334792948533, 34.04501282162094], [23.42315746819489, 34.70238078351233], [22.668260240772124, 35.352300124805296], [21.910770037210476, 35.995093404722816], [21.150809652033093, 36.63107535915028], [20.38849796565596, 37.260553187741294], [19.623950153943838, 37.88382684482883], [18.857277889748193, 38.50118933272328], [18.088589536761987, 39.11292699619243], [17.317990336032043, 39.719319817108335], [16.545582585472772, 40.32064170841499], [15.771465812725486, 40.91716080671981], [14.995736941706515, 41.50913976294447], [14.218490453184714, 42.09683603058736], [13.439818539724738, 42.680502151252675], [12.659811255328206, 43.260386037191985], [11.878556660098809, 43.83673125068357], [11.096140960252091, 44.40977728014436], [10.312648643783907, 44.97975981293078], [9.528162612105502, 45.54691100483763], [8.742764307946656, 46.1114597463507], [7.956533839821999, 46.6736319257493], [7.169550103349481, 47.23365068918961], [6.381890899704166, 47.79173669793008], [5.5936330514848125, 48.34810838288583], [4.804852516265612, 48.902982196721894], [4.015624498100622, 49.45657286371289], [3.2260235572440883, 50.009093627614206], [2.4361237183459767, 50.56075649780154], [1.645998577378718, 51.11177249394801], [0.8557214075482957, 51.66235188951579], [0.06536526444053456, 52.21270445434695], [-0.7249969093482967, 52.76303969664255], [-1.5152921798486425, 53.313567104623026], [-2.3054475173752498, 53.86449638816407], [-3.0953896919579678, 54.41603772070285], [-3.885045168297886, 54.96840198170751], [-4.67434, 55.521801]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_fa560b2170bf4db08afc482f12f1fa74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c681bd62007643f5875ba3434e9fbbc7 = $(`<div id="html_c681bd62007643f5875ba3434e9fbbc7" style="width: 100.0%; height: 100.0%;">🏠HELX↔FSIA<br />Distance: 2255nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SAZ73</span> (CL60) ↘️</div>`)[0];
+            popup_fa560b2170bf4db08afc482f12f1fa74.setContent(html_c681bd62007643f5875ba3434e9fbbc7);
+        
+
+        poly_line_8595ebd38b0145848c29d949ecb53a46.bindPopup(popup_fa560b2170bf4db08afc482f12f1fa74)
+        ;
+
+        
+    
+    
+            poly_line_8595ebd38b0145848c29d949ecb53a46.bindTooltip(
+                `<div>
+                     🏠HELX↔FSIA<br />Distance: 2255nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SAZ73</span> (CL60) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e05f185d6f8d46c5b81294cdffa18b3d = L.polyline(
+                [[25.671, 32.7066], [26.3453197186306, 32.13526516716827], [27.017347223954047, 31.557242796106852], [27.68698652247468, 30.972277050655144], [28.354138326857573, 30.380105551919694], [29.0186998981102, 29.780459191190864], [29.68056488171603, 29.173061949143598], [30.339623137582524, 28.55763072296614], [30.99576056368652, 27.933875163280835], [31.64885891332569, 27.301497522963764], [32.29879560591435, 26.660192520236546], [32.94544353129908, 26.009647218696546], [33.58867084761221, 25.349540927271715], [34.228340772731976, 24.679545123435364], [34.86431136947789, 23.999323403395753], [35.49643532473779, 23.308531463385787], [36.12455972280421, 22.60681711662168], [36.748525813287635, 21.893820350974117], [37.368168774080516, 21.169173432904003], [37.983317469964604, 20.43250106375327], [38.59379420759029, 19.683420595049697], [39.19941448770937, 18.921542310079282], [39.79998675571508, 18.146469779596003], [40.39531215173625, 17.357800300170705], [40.985184261746355, 16.555125424320043], [41.569388871387254, 15.738031592192893], [42.147703724468656, 14.90610087521092], [42.71989828839328, 14.058911842646946], [43.285733529070406, 13.196040562658169], [43.844961698220494, 12.317061749747383], [44.39732613633879, 11.421550070975606], [44.94256109497456, 10.509081623459961], [45.48039158239417, 9.579235595722869], [46.01053323712566, 8.631596125268523], [46.53269223432624, 7.665754364300382], [47.04656523036468, 6.681310764704915], [47.55183935146152, 5.677877592252457], [48.04819223266892, 4.655081678342971], [48.53529211388815, 3.6125674154875145], [49.012798, 2.55]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_86024b3a68b04eed9e09f63ddaa57bdf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_830a1bb75c5440a5890d31877f201562 = $(`<div id="html_830a1bb75c5440a5890d31877f201562" style="width: 100.0%; height: 100.0%;">🏠HELX↔LFPG<br />Distance: 1985nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">NIA7156</span> (A320) ↘️</div>`)[0];
+            popup_86024b3a68b04eed9e09f63ddaa57bdf.setContent(html_830a1bb75c5440a5890d31877f201562);
+        
+
+        poly_line_e05f185d6f8d46c5b81294cdffa18b3d.bindPopup(popup_86024b3a68b04eed9e09f63ddaa57bdf)
+        ;
+
+        
+    
+    
+            poly_line_e05f185d6f8d46c5b81294cdffa18b3d.bindTooltip(
+                `<div>
+                     🏠HELX↔LFPG<br />Distance: 1985nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">NIA7156</span> (A320) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7801b27a83c04462981f024375a2b205 = L.polyline(
+                [[25.671, 32.7066], [26.3453197186306, 32.13526516716827], [27.017347223954047, 31.557242796106852], [27.68698652247468, 30.972277050655144], [28.354138326857573, 30.380105551919694], [29.0186998981102, 29.780459191190864], [29.68056488171603, 29.173061949143598], [30.339623137582524, 28.55763072296614], [30.99576056368652, 27.933875163280835], [31.64885891332569, 27.301497522963764], [32.29879560591435, 26.660192520236546], [32.94544353129908, 26.009647218696546], [33.58867084761221, 25.349540927271715], [34.228340772731976, 24.679545123435364], [34.86431136947789, 23.999323403395753], [35.49643532473779, 23.308531463385787], [36.12455972280421, 22.60681711662168], [36.748525813287635, 21.893820350974117], [37.368168774080516, 21.169173432904003], [37.983317469964604, 20.43250106375327], [38.59379420759029, 19.683420595049697], [39.19941448770937, 18.921542310079282], [39.79998675571508, 18.146469779596003], [40.39531215173625, 17.357800300170705], [40.985184261746355, 16.555125424320043], [41.569388871387254, 15.738031592192893], [42.147703724468656, 14.90610087521092], [42.71989828839328, 14.058911842646946], [43.285733529070406, 13.196040562658169], [43.844961698220494, 12.317061749747383], [44.39732613633879, 11.421550070975606], [44.94256109497456, 10.509081623459961], [45.48039158239417, 9.579235595722869], [46.01053323712566, 8.631596125268523], [46.53269223432624, 7.665754364300382], [47.04656523036468, 6.681310764704915], [47.55183935146152, 5.677877592252457], [48.04819223266892, 4.655081678342971], [48.53529211388815, 3.6125674154875145], [49.012798, 2.55]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_1d5b0586c6eb40c78588cdca08e2624c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad151da147d24db2b839c10447bd1d98 = $(`<div id="html_ad151da147d24db2b839c10447bd1d98" style="width: 100.0%; height: 100.0%;">🏠HELX↔LFPG<br />Distance: 1985nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">NIA7156</span> (A320) ↘️</div>`)[0];
+            popup_1d5b0586c6eb40c78588cdca08e2624c.setContent(html_ad151da147d24db2b839c10447bd1d98);
+        
+
+        poly_line_7801b27a83c04462981f024375a2b205.bindPopup(popup_1d5b0586c6eb40c78588cdca08e2624c)
+        ;
+
+        
+    
+    
+            poly_line_7801b27a83c04462981f024375a2b205.bindTooltip(
+                `<div>
+                     🏠HELX↔LFPG<br />Distance: 1985nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">NIA7156</span> (A320) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_816f6929370043019aaa55564be91654 = L.circleMarker(
+                [51.4706, -0.461941],
+                {"bubblingMouseEvents": true, "color": "#a0db8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0db8e", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_ce1f9e444b9d47a7aa8ce41e6d8e896f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f68628836c7c4963b02979c66c2313e6 = $(`<div id="html_f68628836c7c4963b02979c66c2313e6" style="width: 100.0%; height: 100.0%;"><div ><strong>London Heathrow Airport</strong> (EGLL)<br />Distance: 2162nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">MSR761</span> (B738) ↘️<br /><span style="color: #bada55">MSR762</span> (B738) ↗️</div></div>`)[0];
+            popup_ce1f9e444b9d47a7aa8ce41e6d8e896f.setContent(html_f68628836c7c4963b02979c66c2313e6);
+        
+
+        circle_marker_816f6929370043019aaa55564be91654.bindPopup(popup_ce1f9e444b9d47a7aa8ce41e6d8e896f)
+        ;
+
+        
+    
+    
+            circle_marker_816f6929370043019aaa55564be91654.bindTooltip(
+                `<div>
+                     <div ><strong>London Heathrow Airport</strong> (EGLL)<br />Distance: 2162nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">MSR761</span> (B738) ↘️<br /><span style="color: #bada55">MSR762</span> (B738) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aac57809bda348228fb5796238ca4b7c = L.circleMarker(
+                [-4.67434, 55.521801],
+                {"bubblingMouseEvents": true, "color": "#a0db8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0db8e", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_19fd003079294414a1c7e7fa22af361b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa40c1f3104d4c34b97626aaadec4b87 = $(`<div id="html_fa40c1f3104d4c34b97626aaadec4b87" style="width: 100.0%; height: 100.0%;"><div ><strong>Seychelles International Airport</strong> (FSIA)<br />Distance: 2255nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SAZ73</span> (CL60) ↗️</div></div>`)[0];
+            popup_19fd003079294414a1c7e7fa22af361b.setContent(html_fa40c1f3104d4c34b97626aaadec4b87);
+        
+
+        circle_marker_aac57809bda348228fb5796238ca4b7c.bindPopup(popup_19fd003079294414a1c7e7fa22af361b)
+        ;
+
+        
+    
+    
+            circle_marker_aac57809bda348228fb5796238ca4b7c.bindTooltip(
+                `<div>
+                     <div ><strong>Seychelles International Airport</strong> (FSIA)<br />Distance: 2255nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SAZ73</span> (CL60) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef36bac68ff443e8829a5b927deba403 = L.circleMarker(
+                [30.12190055847168, 31.40559959411621],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_19d1a8c2d6de40c1bfeda00d99ba8ecc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e97b7baf3eaa472ab0dea89d0894aeeb = $(`<div id="html_e97b7baf3eaa472ab0dea89d0894aeeb" style="width: 100.0%; height: 100.0%;"><div ><strong>Cairo International Airport</strong> (HECA)<br />Distance: 276nm <br />Flights: 18 (Booked: 0)<br /><span style="color: #bada55">MSR67</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR75</span> (BCS3) ↘️<br /><span style="color: #bada55">NIA72</span> (A321) ↘️<br /><span style="color: #bada55">MSR263</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR63</span> (B738) ↘️<br /><span style="color: #bada55">MSR203</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR66</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR74</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR68</span> (BCS3) ↗️<br /><span style="color: #bada55">RBG367</span> (A320) ↗️<br /><span style="color: #bada55">MSR64</span> (BCS3) ↗️<br /><span style="color: #bada55">NIA71</span> (A321) ↗️<br /><span style="color: #bada55">MSR262</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR62</span> (B738) ↗️<br /><span style="color: #bada55">MSR60</span> (B738) ↗️<br /><span style="color: #bada55">MSR1</span> (B738) ↗️<br /><span style="color: #bada55">MSR266</span> (B738) ↗️<br /><span style="color: #bada55">MSR204</span> (BCS3) ↗️</div></div>`)[0];
+            popup_19d1a8c2d6de40c1bfeda00d99ba8ecc.setContent(html_e97b7baf3eaa472ab0dea89d0894aeeb);
+        
+
+        circle_marker_ef36bac68ff443e8829a5b927deba403.bindPopup(popup_19d1a8c2d6de40c1bfeda00d99ba8ecc)
+        ;
+
+        
+    
+    
+            circle_marker_ef36bac68ff443e8829a5b927deba403.bindTooltip(
+                `<div>
+                     <div ><strong>Cairo International Airport</strong> (HECA)<br />Distance: 276nm <br />Flights: 18 (Booked: 0)<br /><span style="color: #bada55">MSR67</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR75</span> (BCS3) ↘️<br /><span style="color: #bada55">NIA72</span> (A321) ↘️<br /><span style="color: #bada55">MSR263</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR63</span> (B738) ↘️<br /><span style="color: #bada55">MSR203</span> (BCS3) ↘️<br /><span style="color: #bada55">MSR66</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR74</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR68</span> (BCS3) ↗️<br /><span style="color: #bada55">RBG367</span> (A320) ↗️<br /><span style="color: #bada55">MSR64</span> (BCS3) ↗️<br /><span style="color: #bada55">NIA71</span> (A321) ↗️<br /><span style="color: #bada55">MSR262</span> (BCS3) ↗️<br /><span style="color: #bada55">MSR62</span> (B738) ↗️<br /><span style="color: #bada55">MSR60</span> (B738) ↗️<br /><span style="color: #bada55">MSR1</span> (B738) ↗️<br /><span style="color: #bada55">MSR266</span> (B738) ↗️<br /><span style="color: #bada55">MSR204</span> (BCS3) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d0e8235c95014bc89b4eb5e93e3324fd = L.circle(
+                [25.671, 32.7066],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 370400, "stroke": true, "weight": 1}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_01b8ae499a864f5f9fda72f3c564cac8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d7199ed138140408171be8eef43703d = $(`<div id="html_7d7199ed138140408171be8eef43703d" style="width: 100.0%; height: 100.0%;">1 hr flight</div>`)[0];
+            popup_01b8ae499a864f5f9fda72f3c564cac8.setContent(html_7d7199ed138140408171be8eef43703d);
+        
+
+        circle_d0e8235c95014bc89b4eb5e93e3324fd.bindPopup(popup_01b8ae499a864f5f9fda72f3c564cac8)
+        ;
+
+        
+    
+    
+            var circle_9f9e644fde894f7d931ca125b91bd4a4 = L.circle(
+                [25.671, 32.7066],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1111000.0, "stroke": true, "weight": 1}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_b639eb567fbd4102b44b46c7ed1dbb63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7c52c892cfa4916b7fc5a63cea5e098 = $(`<div id="html_d7c52c892cfa4916b7fc5a63cea5e098" style="width: 100.0%; height: 100.0%;">2 hr flight</div>`)[0];
+            popup_b639eb567fbd4102b44b46c7ed1dbb63.setContent(html_d7c52c892cfa4916b7fc5a63cea5e098);
+        
+
+        circle_9f9e644fde894f7d931ca125b91bd4a4.bindPopup(popup_b639eb567fbd4102b44b46c7ed1dbb63)
+        ;
+
+        
+    
+    
+            var circle_b8c0f4a4439d4f65bcafaac51ed230ff = L.circle(
+                [25.671, 32.7066],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1852000.0, "stroke": true, "weight": 1}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_7066424b040c42e68e3872f8f7d6c58a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2411a7e68c6b4c838c97014be7fd5b91 = $(`<div id="html_2411a7e68c6b4c838c97014be7fd5b91" style="width: 100.0%; height: 100.0%;">3 hr flight</div>`)[0];
+            popup_7066424b040c42e68e3872f8f7d6c58a.setContent(html_2411a7e68c6b4c838c97014be7fd5b91);
+        
+
+        circle_b8c0f4a4439d4f65bcafaac51ed230ff.bindPopup(popup_7066424b040c42e68e3872f8f7d6c58a)
+        ;
+
+        
+    
+    
+            var circle_84a748575bc04766a619397e4f7afc86 = L.circle(
+                [25.671, 32.7066],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2463160, "stroke": true, "weight": 1}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_688f2a5c59b943328408ba21ac9fb677 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_345b5181741849b9b27a11978d384d0f = $(`<div id="html_345b5181741849b9b27a11978d384d0f" style="width: 100.0%; height: 100.0%;">4 hr flight</div>`)[0];
+            popup_688f2a5c59b943328408ba21ac9fb677.setContent(html_345b5181741849b9b27a11978d384d0f);
+        
+
+        circle_84a748575bc04766a619397e4f7afc86.bindPopup(popup_688f2a5c59b943328408ba21ac9fb677)
+        ;
+
+        
+    
+    
+            var circle_marker_cf15d0ee73344ec5aa0513ba91c148a5 = L.circleMarker(
+                [25.671, 32.7066],
+                {"bubblingMouseEvents": true, "color": "#FF6666", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF6666", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_f07c8e1eccd94c37b652032213af45c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4260118f73ac4de8917babef828c6e08 = $(`<div id="html_4260118f73ac4de8917babef828c6e08" style="width: 100.0%; height: 100.0%;"><div ><strong>Luxor International Airport</strong> (HELX)<br /></div></div>`)[0];
+            popup_f07c8e1eccd94c37b652032213af45c7.setContent(html_4260118f73ac4de8917babef828c6e08);
+        
+
+        circle_marker_cf15d0ee73344ec5aa0513ba91c148a5.bindPopup(popup_f07c8e1eccd94c37b652032213af45c7)
+        ;
+
+        
+    
+    
+            circle_marker_cf15d0ee73344ec5aa0513ba91c148a5.bindTooltip(
+                `<div>
+                     <div ><strong>Luxor International Airport</strong> (HELX)<br /></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2266277e6e6c4769afa579833a0aad56 = L.circleMarker(
+                [27.9773006439, 34.3950004578],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_187330f6467446e98151088dcd82b68b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_094d47b2f71640c08688638c764c9940 = $(`<div id="html_094d47b2f71640c08688638c764c9940" style="width: 100.0%; height: 100.0%;"><div ><strong>Sharm El Sheikh International Airport</strong> (HESH)<br />Distance: 165nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">MSR202</span> (BCS3) ↗️</div></div>`)[0];
+            popup_187330f6467446e98151088dcd82b68b.setContent(html_094d47b2f71640c08688638c764c9940);
+        
+
+        circle_marker_2266277e6e6c4769afa579833a0aad56.bindPopup(popup_187330f6467446e98151088dcd82b68b)
+        ;
+
+        
+    
+    
+            circle_marker_2266277e6e6c4769afa579833a0aad56.bindTooltip(
+                `<div>
+                     <div ><strong>Sharm El Sheikh International Airport</strong> (HESH)<br />Distance: 165nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">MSR202</span> (BCS3) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_78f6aabdaeea450cb10c74b1e625eaac = L.circleMarker(
+                [-4.034830093383789, 39.594200134277344],
+                {"bubblingMouseEvents": true, "color": "#a0db8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0db8e", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_9e6f739cb6914ea0bf66328d4b922fc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb02eee12dc74a4b83581a025dab490d = $(`<div id="html_bb02eee12dc74a4b83581a025dab490d" style="width: 100.0%; height: 100.0%;"><div ><strong>Mombasa Moi International Airport</strong> (HKMO)<br />Distance: 1828nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SAZ65</span> (CL60) ↗️</div></div>`)[0];
+            popup_9e6f739cb6914ea0bf66328d4b922fc8.setContent(html_bb02eee12dc74a4b83581a025dab490d);
+        
+
+        circle_marker_78f6aabdaeea450cb10c74b1e625eaac.bindPopup(popup_9e6f739cb6914ea0bf66328d4b922fc8)
+        ;
+
+        
+    
+    
+            circle_marker_78f6aabdaeea450cb10c74b1e625eaac.bindTooltip(
+                `<div>
+                     <div ><strong>Mombasa Moi International Airport</strong> (HKMO)<br />Distance: 1828nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SAZ65</span> (CL60) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ad758960c58a443894b79edff61faf5b = L.circleMarker(
+                [40.471926, -3.56264],
+                {"bubblingMouseEvents": true, "color": "#a0db8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0db8e", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_642fd88513bf425083bf066ebdea0d1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_732133f2142e47f29b08a0ee4a9899b3 = $(`<div id="html_732133f2142e47f29b08a0ee4a9899b3" style="width: 100.0%; height: 100.0%;"><div ><strong>Adolfo Suárez Madrid–Barajas Airport</strong> (LEMD)<br />Distance: 2011nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">MSR754</span> (B738) ↗️</div></div>`)[0];
+            popup_642fd88513bf425083bf066ebdea0d1f.setContent(html_732133f2142e47f29b08a0ee4a9899b3);
+        
+
+        circle_marker_ad758960c58a443894b79edff61faf5b.bindPopup(popup_642fd88513bf425083bf066ebdea0d1f)
+        ;
+
+        
+    
+    
+            circle_marker_ad758960c58a443894b79edff61faf5b.bindTooltip(
+                `<div>
+                     <div ><strong>Adolfo Suárez Madrid–Barajas Airport</strong> (LEMD)<br />Distance: 2011nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">MSR754</span> (B738) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_98386dbbdede4407929cd07ae763b98a = L.circleMarker(
+                [49.012798, 2.55],
+                {"bubblingMouseEvents": true, "color": "#a0db8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0db8e", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_aa405f17679e40e6874e5776b9f27716 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fee751aba11842fea875fd5f3854851f = $(`<div id="html_fee751aba11842fea875fd5f3854851f" style="width: 100.0%; height: 100.0%;"><div ><strong>Charles de Gaulle International Airport</strong> (LFPG)<br />Distance: 1985nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">NIA7156</span> (A320) ↗️</div></div>`)[0];
+            popup_aa405f17679e40e6874e5776b9f27716.setContent(html_fee751aba11842fea875fd5f3854851f);
+        
+
+        circle_marker_98386dbbdede4407929cd07ae763b98a.bindPopup(popup_aa405f17679e40e6874e5776b9f27716)
+        ;
+
+        
+    
+    
+            circle_marker_98386dbbdede4407929cd07ae763b98a.bindTooltip(
+                `<div>
+                     <div ><strong>Charles de Gaulle International Airport</strong> (LFPG)<br />Distance: 1985nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">NIA7156</span> (A320) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_08817ac62c0a4e53bbd5729b980f181b = L.circleMarker(
+                [47.458056, 8.548056],
+                {"bubblingMouseEvents": true, "color": "#a0db8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0db8e", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_0add0ef5c7d849179ae03c8f1e950884 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fafd1d5ab0dc4c52b7b4b31ccde3bf77 = $(`<div id="html_fafd1d5ab0dc4c52b7b4b31ccde3bf77" style="width: 100.0%; height: 100.0%;"><div ><strong>Zürich Airport</strong> (LSZH)<br />Distance: 1737nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">SAZ66</span> (CL60) ↘️<br /><span style="color: #bada55">SAZ74</span> (CL60) ↘️<br /><span style="color: #bada55">SAZ71</span> (CL60) ↗️</div></div>`)[0];
+            popup_0add0ef5c7d849179ae03c8f1e950884.setContent(html_fafd1d5ab0dc4c52b7b4b31ccde3bf77);
+        
+
+        circle_marker_08817ac62c0a4e53bbd5729b980f181b.bindPopup(popup_0add0ef5c7d849179ae03c8f1e950884)
+        ;
+
+        
+    
+    
+            circle_marker_08817ac62c0a4e53bbd5729b980f181b.bindTooltip(
+                `<div>
+                     <div ><strong>Zürich Airport</strong> (LSZH)<br />Distance: 1737nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">SAZ66</span> (CL60) ↘️<br /><span style="color: #bada55">SAZ74</span> (CL60) ↘️<br /><span style="color: #bada55">SAZ71</span> (CL60) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a48e1ec916a9495798011b9e7b953a7e = L.circleMarker(
+                [21.6796, 39.156502],
+                {"bubblingMouseEvents": true, "color": "#a0db8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0db8e", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_f7df47c06ba74fc7a8193103d4afcc79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a775ebbeebc6485ebd2219c0ea267f22 = $(`<div id="html_a775ebbeebc6485ebd2219c0ea267f22" style="width: 100.0%; height: 100.0%;"><div ><strong>King Abdulaziz International Airport</strong> (OEJN)<br />Distance: 428nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">RBG1205</span> (A320) ↘️<br /><span style="color: #bada55">MSR2661</span> (B738) ↘️<br /><span style="color: #bada55">RBG1206</span> (A320) ↗️</div></div>`)[0];
+            popup_f7df47c06ba74fc7a8193103d4afcc79.setContent(html_a775ebbeebc6485ebd2219c0ea267f22);
+        
+
+        circle_marker_a48e1ec916a9495798011b9e7b953a7e.bindPopup(popup_f7df47c06ba74fc7a8193103d4afcc79)
+        ;
+
+        
+    
+    
+            circle_marker_a48e1ec916a9495798011b9e7b953a7e.bindTooltip(
+                `<div>
+                     <div ><strong>King Abdulaziz International Airport</strong> (OEJN)<br />Distance: 428nm <br />Flights: 3 (Booked: 0)<br /><span style="color: #bada55">RBG1205</span> (A320) ↘️<br /><span style="color: #bada55">MSR2661</span> (B738) ↘️<br /><span style="color: #bada55">RBG1206</span> (A320) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_277a66c5c3cd41a69d1d0a14ac2fd97f = L.circleMarker(
+                [29.226600646972656, 47.96889877319336],
+                {"bubblingMouseEvents": true, "color": "#a0db8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0db8e", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_4d1dd262bfff4b41bbbf290aa1fe6008 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_512923da40484a5aba03d13fdbef70c5 = $(`<div id="html_512923da40484a5aba03d13fdbef70c5" style="width: 100.0%; height: 100.0%;"><div ><strong>Kuwait International Airport</strong> (OKBK)<br />Distance: 840nm <br />Flights: 4 (Booked: 0)<br /><span style="color: #bada55">RBG221</span> (A320) ↘️<br /><span style="color: #bada55">JZR708</span> (A320) ↘️<br /><span style="color: #bada55">JZR707</span> (A320) ↗️<br /><span style="color: #bada55">RBG222</span> (A320) ↗️</div></div>`)[0];
+            popup_4d1dd262bfff4b41bbbf290aa1fe6008.setContent(html_512923da40484a5aba03d13fdbef70c5);
+        
+
+        circle_marker_277a66c5c3cd41a69d1d0a14ac2fd97f.bindPopup(popup_4d1dd262bfff4b41bbbf290aa1fe6008)
+        ;
+
+        
+    
+    
+            circle_marker_277a66c5c3cd41a69d1d0a14ac2fd97f.bindTooltip(
+                `<div>
+                     <div ><strong>Kuwait International Airport</strong> (OKBK)<br />Distance: 840nm <br />Flights: 4 (Booked: 0)<br /><span style="color: #bada55">RBG221</span> (A320) ↘️<br /><span style="color: #bada55">JZR708</span> (A320) ↘️<br /><span style="color: #bada55">JZR707</span> (A320) ↗️<br /><span style="color: #bada55">RBG222</span> (A320) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f67390e23b7b47cbb2f732a0390093cf = L.circleMarker(
+                [24.896356, 55.161389],
+                {"bubblingMouseEvents": true, "color": "#a0db8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0db8e", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_881efed1ffc04aeaae9b1fb591648afe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b53aa05384249c7a0cf1160cd23091c = $(`<div id="html_9b53aa05384249c7a0cf1160cd23091c" style="width: 100.0%; height: 100.0%;"><div ><strong>Al Maktoum International Airport</strong> (OMDW)<br />Distance: 1218nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">IJM566</span> (LJ75) ↘️</div></div>`)[0];
+            popup_881efed1ffc04aeaae9b1fb591648afe.setContent(html_9b53aa05384249c7a0cf1160cd23091c);
+        
+
+        circle_marker_f67390e23b7b47cbb2f732a0390093cf.bindPopup(popup_881efed1ffc04aeaae9b1fb591648afe)
+        ;
+
+        
+    
+    
+            circle_marker_f67390e23b7b47cbb2f732a0390093cf.bindTooltip(
+                `<div>
+                     <div ><strong>Al Maktoum International Airport</strong> (OMDW)<br />Distance: 1218nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">IJM566</span> (LJ75) ↘️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_43fb6cfdd25047d899bae04ef72044d0 = L.circleMarker(
+                [25.32859992980957, 55.5172004699707],
+                {"bubblingMouseEvents": true, "color": "#a0db8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0db8e", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ae43b364d470470a80618dc1e2ef437e);
+        
+    
+        var popup_abf726eac06d4e20ac1080c91952b2a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee140bb886ff4368bf6edb6dc8f47103 = $(`<div id="html_ee140bb886ff4368bf6edb6dc8f47103" style="width: 100.0%; height: 100.0%;"><div ><strong>Sharjah International Airport</strong> (OMSJ)<br />Distance: 1235nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">ABY615</span> (A320) ↘️<br /><span style="color: #bada55">ABY614</span> (A320) ↗️</div></div>`)[0];
+            popup_abf726eac06d4e20ac1080c91952b2a9.setContent(html_ee140bb886ff4368bf6edb6dc8f47103);
+        
+
+        circle_marker_43fb6cfdd25047d899bae04ef72044d0.bindPopup(popup_abf726eac06d4e20ac1080c91952b2a9)
+        ;
+
+        
+    
+    
+            circle_marker_43fb6cfdd25047d899bae04ef72044d0.bindTooltip(
+                `<div>
+                     <div ><strong>Sharjah International Airport</strong> (OMSJ)<br />Distance: 1235nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">ABY615</span> (A320) ↘️<br /><span style="color: #bada55">ABY614</span> (A320) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

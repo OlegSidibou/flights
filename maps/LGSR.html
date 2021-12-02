@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ddef159143f643d6907f974f64c403a6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ddef159143f643d6907f974f64c403a6" ></div>
+        
+</body>
+<script>    
+    
+            var map_ddef159143f643d6907f974f64c403a6 = L.map(
+                "map_ddef159143f643d6907f974f64c403a6",
+                {
+                    center: [36.399200439453125, 25.47929954528809],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5d2aaebca3b34df9926f09bb84085ce3 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ddef159143f643d6907f974f64c403a6);
+        
+    
+            var poly_line_c2c33fb802e2478cbd12a6d7e1003551 = L.polyline(
+                [[36.399200439453125, 25.47929954528809], [36.438859358214174, 25.440715544201293], [36.4785058485075, 25.402092092954327], [36.51813987959308, 25.363429106383744], [36.55776142065368, 25.32472649917334], [36.59737044079472, 25.285984185854012], [36.63696690904403, 25.247202080803557], [36.67655079435158, 25.208380098246533], [36.716122065589296, 25.169518152254078], [36.75568069155084, 25.130616156743752], [36.79522664095138, 25.091674025479385], [36.83475988242733, 25.0526916720709], [36.87428038453616, 25.013669009974166], [36.913788115756205, 24.97460595249084], [36.95328304448633, 24.93550241276821], [36.992765139045794, 24.896358303799033], [37.03223436767401, 24.85717353842141], [37.07169069853028, 24.817948029318583], [37.11113409969362, 24.778681689018853], [37.150564539162445, 24.73937442989538], [37.18998198485445, 24.700026164166044], [37.22938640460627, 24.660636803893333], [37.268777766173336, 24.62120626098417], [37.3081560372296, 24.58173444718977], [37.34752118536731, 24.542221274105522], [37.386873178096764, 24.502666653170827], [37.426211982846105, 24.463070495668987], [37.46553756696107, 24.423432712727042], [37.50484989770475, 24.38375321531567], [37.54414894225741, 24.34403191424904], [37.58343466771612, 24.30426872018465], [37.62270704109467, 24.26446354362327], [37.66196602932329, 24.224616294908746], [37.70121159924832, 24.18472688422794], [37.74044371763211, 24.14479522161055], [37.77966235115268, 24.104821216929025], [37.81886746640355, 24.06480477989844], [37.85805902989345, 24.02474582007638], [37.89723700804611, 23.98464424686281], [37.9364013672, 23.9444999695]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ddef159143f643d6907f974f64c403a6);
+        
+    
+        var popup_aea9efb0f0614c5089721318921afa95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9d5859b856c49cda4f5b17ea08d9d19 = $(`<div id="html_f9d5859b856c49cda4f5b17ea08d9d19" style="width: 100.0%; height: 100.0%;">🏠LGSR↔LGAV<br />Distance: 118nm <br />Flights: 23 (Booked: 0)<br /><span style="color: #bada55">OAL3981</span> (A20N) ↗️<br /><span style="color: #bada55">AEE355</span> (A20N) ↗️<br /><span style="color: #bada55">SEH341</span> (AT43) ↗️<br /><span style="color: #bada55">OAL351</span> (DH8D) ↗️<br /><span style="color: #bada55">SEH347</span> (AT43) ↗️<br /><span style="color: #bada55">SEH345</span> (AT43) ↗️<br /><span style="color: #bada55">OAL359</span> (DH8D) ↗️<br /><span style="color: #bada55">SEH343</span> (AT43) ↗️<br /><span style="color: #bada55">OAL365</span> (A321) ↗️<br /><span style="color: #bada55">345</span> () ↗️<br /><span style="color: #bada55">OAL3985</span> (A320) ↗️<br /><span style="color: #bada55">SX-BLE</span> () ↗️<br /><span style="color: #bada55">SEH344</span> (AT43) ↘️<br /><span style="color: #bada55">OAL358</span> (DH8D) ↘️<br /><span style="color: #bada55">OAL3980</span> (A20N) ↘️<br /><span style="color: #bada55">SEH340</span> (AT43) ↘️<br /><span style="color: #bada55">OAL364</span> (DH8D) ↘️<br /><span style="color: #bada55">SEH346</span> (AT43) ↘️<br /><span style="color: #bada55">SEH342</span> (AT43) ↘️<br /><span style="color: #bada55">AEE354</span> (A20N) ↘️<br /><span style="color: #bada55">OAL3002</span> () ↘️<br /><span style="color: #bada55">344</span> () ↘️<br /><span style="color: #bada55">SEH46</span> () ↘️</div>`)[0];
+            popup_aea9efb0f0614c5089721318921afa95.setContent(html_f9d5859b856c49cda4f5b17ea08d9d19);
+        
+
+        poly_line_c2c33fb802e2478cbd12a6d7e1003551.bindPopup(popup_aea9efb0f0614c5089721318921afa95)
+        ;
+
+        
+    
+    
+            poly_line_c2c33fb802e2478cbd12a6d7e1003551.bindTooltip(
+                `<div>
+                     🏠LGSR↔LGAV<br />Distance: 118nm <br />Flights: 23 (Booked: 0)<br /><span style="color: #bada55">OAL3981</span> (A20N) ↗️<br /><span style="color: #bada55">AEE355</span> (A20N) ↗️<br /><span style="color: #bada55">SEH341</span> (AT43) ↗️<br /><span style="color: #bada55">OAL351</span> (DH8D) ↗️<br /><span style="color: #bada55">SEH347</span> (AT43) ↗️<br /><span style="color: #bada55">SEH345</span> (AT43) ↗️<br /><span style="color: #bada55">OAL359</span> (DH8D) ↗️<br /><span style="color: #bada55">SEH343</span> (AT43) ↗️<br /><span style="color: #bada55">OAL365</span> (A321) ↗️<br /><span style="color: #bada55">345</span> () ↗️<br /><span style="color: #bada55">OAL3985</span> (A320) ↗️<br /><span style="color: #bada55">SX-BLE</span> () ↗️<br /><span style="color: #bada55">SEH344</span> (AT43) ↘️<br /><span style="color: #bada55">OAL358</span> (DH8D) ↘️<br /><span style="color: #bada55">OAL3980</span> (A20N) ↘️<br /><span style="color: #bada55">SEH340</span> (AT43) ↘️<br /><span style="color: #bada55">OAL364</span> (DH8D) ↘️<br /><span style="color: #bada55">SEH346</span> (AT43) ↘️<br /><span style="color: #bada55">SEH342</span> (AT43) ↘️<br /><span style="color: #bada55">AEE354</span> (A20N) ↘️<br /><span style="color: #bada55">OAL3002</span> () ↘️<br /><span style="color: #bada55">344</span> () ↘️<br /><span style="color: #bada55">SEH46</span> () ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ddc5ae0a835a42e0ad150599c78f1ed8 = L.polyline(
+                [[36.399200439453125, 25.47929954528809], [36.438859358214174, 25.440715544201293], [36.4785058485075, 25.402092092954327], [36.51813987959308, 25.363429106383744], [36.55776142065368, 25.32472649917334], [36.59737044079472, 25.285984185854012], [36.63696690904403, 25.247202080803557], [36.67655079435158, 25.208380098246533], [36.716122065589296, 25.169518152254078], [36.75568069155084, 25.130616156743752], [36.79522664095138, 25.091674025479385], [36.83475988242733, 25.0526916720709], [36.87428038453616, 25.013669009974166], [36.913788115756205, 24.97460595249084], [36.95328304448633, 24.93550241276821], [36.992765139045794, 24.896358303799033], [37.03223436767401, 24.85717353842141], [37.07169069853028, 24.817948029318583], [37.11113409969362, 24.778681689018853], [37.150564539162445, 24.73937442989538], [37.18998198485445, 24.700026164166044], [37.22938640460627, 24.660636803893333], [37.268777766173336, 24.62120626098417], [37.3081560372296, 24.58173444718977], [37.34752118536731, 24.542221274105522], [37.386873178096764, 24.502666653170827], [37.426211982846105, 24.463070495668987], [37.46553756696107, 24.423432712727042], [37.50484989770475, 24.38375321531567], [37.54414894225741, 24.34403191424904], [37.58343466771612, 24.30426872018465], [37.62270704109467, 24.26446354362327], [37.66196602932329, 24.224616294908746], [37.70121159924832, 24.18472688422794], [37.74044371763211, 24.14479522161055], [37.77966235115268, 24.104821216929025], [37.81886746640355, 24.06480477989844], [37.85805902989345, 24.02474582007638], [37.89723700804611, 23.98464424686281], [37.9364013672, 23.9444999695]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_ddef159143f643d6907f974f64c403a6);
+        
+    
+        var popup_0f0fdf478d5d47bf84b6907a96d3f79c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0176441189ec4b9ea54c2ec3c980576a = $(`<div id="html_0176441189ec4b9ea54c2ec3c980576a" style="width: 100.0%; height: 100.0%;">🏠LGSR↔LGAV<br />Distance: 118nm <br />Flights: 23 (Booked: 0)<br /><span style="color: #bada55">OAL3981</span> (A20N) ↗️<br /><span style="color: #bada55">AEE355</span> (A20N) ↗️<br /><span style="color: #bada55">SEH341</span> (AT43) ↗️<br /><span style="color: #bada55">OAL351</span> (DH8D) ↗️<br /><span style="color: #bada55">SEH347</span> (AT43) ↗️<br /><span style="color: #bada55">SEH345</span> (AT43) ↗️<br /><span style="color: #bada55">OAL359</span> (DH8D) ↗️<br /><span style="color: #bada55">SEH343</span> (AT43) ↗️<br /><span style="color: #bada55">OAL365</span> (A321) ↗️<br /><span style="color: #bada55">345</span> () ↗️<br /><span style="color: #bada55">OAL3985</span> (A320) ↗️<br /><span style="color: #bada55">SX-BLE</span> () ↗️<br /><span style="color: #bada55">SEH344</span> (AT43) ↘️<br /><span style="color: #bada55">OAL358</span> (DH8D) ↘️<br /><span style="color: #bada55">OAL3980</span> (A20N) ↘️<br /><span style="color: #bada55">SEH340</span> (AT43) ↘️<br /><span style="color: #bada55">OAL364</span> (DH8D) ↘️<br /><span style="color: #bada55">SEH346</span> (AT43) ↘️<br /><span style="color: #bada55">SEH342</span> (AT43) ↘️<br /><span style="color: #bada55">AEE354</span> (A20N) ↘️<br /><span style="color: #bada55">OAL3002</span> () ↘️<br /><span style="color: #bada55">344</span> () ↘️<br /><span style="color: #bada55">SEH46</span> () ↘️</div>`)[0];
+            popup_0f0fdf478d5d47bf84b6907a96d3f79c.setContent(html_0176441189ec4b9ea54c2ec3c980576a);
+        
+
+        poly_line_ddc5ae0a835a42e0ad150599c78f1ed8.bindPopup(popup_0f0fdf478d5d47bf84b6907a96d3f79c)
+        ;
+
+        
+    
+    
+            poly_line_ddc5ae0a835a42e0ad150599c78f1ed8.bindTooltip(
+                `<div>
+                     🏠LGSR↔LGAV<br />Distance: 118nm <br />Flights: 23 (Booked: 0)<br /><span style="color: #bada55">OAL3981</span> (A20N) ↗️<br /><span style="color: #bada55">AEE355</span> (A20N) ↗️<br /><span style="color: #bada55">SEH341</span> (AT43) ↗️<br /><span style="color: #bada55">OAL351</span> (DH8D) ↗️<br /><span style="color: #bada55">SEH347</span> (AT43) ↗️<br /><span style="color: #bada55">SEH345</span> (AT43) ↗️<br /><span style="color: #bada55">OAL359</span> (DH8D) ↗️<br /><span style="color: #bada55">SEH343</span> (AT43) ↗️<br /><span style="color: #bada55">OAL365</span> (A321) ↗️<br /><span style="color: #bada55">345</span> () ↗️<br /><span style="color: #bada55">OAL3985</span> (A320) ↗️<br /><span style="color: #bada55">SX-BLE</span> () ↗️<br /><span style="color: #bada55">SEH344</span> (AT43) ↘️<br /><span style="color: #bada55">OAL358</span> (DH8D) ↘️<br /><span style="color: #bada55">OAL3980</span> (A20N) ↘️<br /><span style="color: #bada55">SEH340</span> (AT43) ↘️<br /><span style="color: #bada55">OAL364</span> (DH8D) ↘️<br /><span style="color: #bada55">SEH346</span> (AT43) ↘️<br /><span style="color: #bada55">SEH342</span> (AT43) ↘️<br /><span style="color: #bada55">AEE354</span> (A20N) ↘️<br /><span style="color: #bada55">OAL3002</span> () ↘️<br /><span style="color: #bada55">344</span> () ↘️<br /><span style="color: #bada55">SEH46</span> () ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_be7bbcb73dc6444c985825cd8165a293 = L.polyline(
+                [[36.399200439453125, 25.47929954528809], [36.37204308200096, 25.471531964788646], [36.34488522207409, 25.463769805697986], [36.31772686052133, 25.456013058958074], [36.29056799818987, 25.44826171552782], [36.26340863592527, 25.44051576638308], [36.23624877457149, 25.432775202516545], [36.20908841497089, 25.425040014937743], [36.181927557964215, 25.417310194672982], [36.15476620439063, 25.40958573276533], [36.12760435508769, 25.40186662027454], [36.10044201089136, 25.394152848277013], [36.073279172636035, 25.38644440786581], [36.04611584115451, 25.378741290150533], [36.018952017278025, 25.371043486257342], [35.991787701836216, 25.363350987328875], [35.96462289565718, 25.355663784524246], [35.937457599567416, 25.34798186901897], [35.9102918143919, 25.34030523200494], [35.88312554095402, 25.332633864690386], [35.85595878007561, 25.324967758299817], [35.82879153257698, 25.317306904074027], [35.801623799276854, 25.309651293269987], [35.77445558099245, 25.302000917160868], [35.74728687853945, 25.294355767035967], [35.72011769273195, 25.28671583420066], [35.69294802438257, 25.279081109976417], [35.66577787430238, 25.27145158570067], [35.63860724330093, 25.26382725272687], [35.611436132186256, 25.256208102424385], [35.58426454176487, 25.248594126178478], [35.55709247284177, 25.24098531539029], [35.52991992622046, 25.23338166147675], [35.502746902702924, 25.225783155870598], [35.475573403089655, 25.218189790020293], [35.44839942817965, 25.210601555390014], [35.42122497877042, 25.203018443459595], [35.394050055657964, 25.19544044572449], [35.3668746596368, 25.18786755369576], [35.3396987915, 25.1802997589]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ddef159143f643d6907f974f64c403a6);
+        
+    
+        var popup_443eb347472d4e008ec0840c26922d3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1beaf3010c0b4d519e7703b6aea95377 = $(`<div id="html_1beaf3010c0b4d519e7703b6aea95377" style="width: 100.0%; height: 100.0%;">🏠LGSR↔LGIR<br />Distance: 65nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">HAF404</span> () ↗️<br /><span style="color: #bada55">OAL3981</span> () ↗️</div>`)[0];
+            popup_443eb347472d4e008ec0840c26922d3a.setContent(html_1beaf3010c0b4d519e7703b6aea95377);
+        
+
+        poly_line_be7bbcb73dc6444c985825cd8165a293.bindPopup(popup_443eb347472d4e008ec0840c26922d3a)
+        ;
+
+        
+    
+    
+            poly_line_be7bbcb73dc6444c985825cd8165a293.bindTooltip(
+                `<div>
+                     🏠LGSR↔LGIR<br />Distance: 65nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">HAF404</span> () ↗️<br /><span style="color: #bada55">OAL3981</span> () ↗️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1bfebb1dc8a94076a065af6965a6aa86 = L.polyline(
+                [[36.399200439453125, 25.47929954528809], [36.37204308200096, 25.471531964788646], [36.34488522207409, 25.463769805697986], [36.31772686052133, 25.456013058958074], [36.29056799818987, 25.44826171552782], [36.26340863592527, 25.44051576638308], [36.23624877457149, 25.432775202516545], [36.20908841497089, 25.425040014937743], [36.181927557964215, 25.417310194672982], [36.15476620439063, 25.40958573276533], [36.12760435508769, 25.40186662027454], [36.10044201089136, 25.394152848277013], [36.073279172636035, 25.38644440786581], [36.04611584115451, 25.378741290150533], [36.018952017278025, 25.371043486257342], [35.991787701836216, 25.363350987328875], [35.96462289565718, 25.355663784524246], [35.937457599567416, 25.34798186901897], [35.9102918143919, 25.34030523200494], [35.88312554095402, 25.332633864690386], [35.85595878007561, 25.324967758299817], [35.82879153257698, 25.317306904074027], [35.801623799276854, 25.309651293269987], [35.77445558099245, 25.302000917160868], [35.74728687853945, 25.294355767035967], [35.72011769273195, 25.28671583420066], [35.69294802438257, 25.279081109976417], [35.66577787430238, 25.27145158570067], [35.63860724330093, 25.26382725272687], [35.611436132186256, 25.256208102424385], [35.58426454176487, 25.248594126178478], [35.55709247284177, 25.24098531539029], [35.52991992622046, 25.23338166147675], [35.502746902702924, 25.225783155870598], [35.475573403089655, 25.218189790020293], [35.44839942817965, 25.210601555390014], [35.42122497877042, 25.203018443459595], [35.394050055657964, 25.19544044572449], [35.3668746596368, 25.18786755369576], [35.3396987915, 25.1802997589]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_ddef159143f643d6907f974f64c403a6);
+        
+    
+        var popup_3106afa9d2b24b99817338c775c1ab0d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab28c7dd213d4b54ae4e6b82f67bd943 = $(`<div id="html_ab28c7dd213d4b54ae4e6b82f67bd943" style="width: 100.0%; height: 100.0%;">🏠LGSR↔LGIR<br />Distance: 65nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">HAF404</span> () ↗️<br /><span style="color: #bada55">OAL3981</span> () ↗️</div>`)[0];
+            popup_3106afa9d2b24b99817338c775c1ab0d.setContent(html_ab28c7dd213d4b54ae4e6b82f67bd943);
+        
+
+        poly_line_1bfebb1dc8a94076a065af6965a6aa86.bindPopup(popup_3106afa9d2b24b99817338c775c1ab0d)
+        ;
+
+        
+    
+    
+            poly_line_1bfebb1dc8a94076a065af6965a6aa86.bindTooltip(
+                `<div>
+                     🏠LGSR↔LGIR<br />Distance: 65nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">HAF404</span> () ↗️<br /><span style="color: #bada55">OAL3981</span> () ↗️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5ed086dfcf954106ae92522e59de9b2c = L.circleMarker(
+                [37.9364013672, 23.9444999695],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ddef159143f643d6907f974f64c403a6);
+        
+    
+        var popup_44f3189ae4ad43c9a6c1055201e9e750 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79e8be9d9e4c4f9598dd3f003225af72 = $(`<div id="html_79e8be9d9e4c4f9598dd3f003225af72" style="width: 100.0%; height: 100.0%;"><div ><strong>Eleftherios Venizelos International Airport</strong> (LGAV)<br />Distance: 118nm <br />Flights: 23 (Booked: 0)<br /><span style="color: #bada55">OAL3981</span> (A20N) ↘️<br /><span style="color: #bada55">AEE355</span> (A20N) ↘️<br /><span style="color: #bada55">SEH341</span> (AT43) ↘️<br /><span style="color: #bada55">OAL351</span> (DH8D) ↘️<br /><span style="color: #bada55">SEH347</span> (AT43) ↘️<br /><span style="color: #bada55">SEH345</span> (AT43) ↘️<br /><span style="color: #bada55">OAL359</span> (DH8D) ↘️<br /><span style="color: #bada55">SEH343</span> (AT43) ↘️<br /><span style="color: #bada55">OAL365</span> (A321) ↘️<br /><span style="color: #bada55">345</span> () ↘️<br /><span style="color: #bada55">OAL3985</span> (A320) ↘️<br /><span style="color: #bada55">SX-BLE</span> () ↘️<br /><span style="color: #bada55">SEH344</span> (AT43) ↗️<br /><span style="color: #bada55">OAL358</span> (DH8D) ↗️<br /><span style="color: #bada55">OAL3980</span> (A20N) ↗️<br /><span style="color: #bada55">SEH340</span> (AT43) ↗️<br /><span style="color: #bada55">OAL364</span> (DH8D) ↗️<br /><span style="color: #bada55">SEH346</span> (AT43) ↗️<br /><span style="color: #bada55">SEH342</span> (AT43) ↗️<br /><span style="color: #bada55">AEE354</span> (A20N) ↗️<br /><span style="color: #bada55">OAL3002</span> () ↗️<br /><span style="color: #bada55">344</span> () ↗️<br /><span style="color: #bada55">SEH46</span> () ↗️</div></div>`)[0];
+            popup_44f3189ae4ad43c9a6c1055201e9e750.setContent(html_79e8be9d9e4c4f9598dd3f003225af72);
+        
+
+        circle_marker_5ed086dfcf954106ae92522e59de9b2c.bindPopup(popup_44f3189ae4ad43c9a6c1055201e9e750)
+        ;
+
+        
+    
+    
+            circle_marker_5ed086dfcf954106ae92522e59de9b2c.bindTooltip(
+                `<div>
+                     <div ><strong>Eleftherios Venizelos International Airport</strong> (LGAV)<br />Distance: 118nm <br />Flights: 23 (Booked: 0)<br /><span style="color: #bada55">OAL3981</span> (A20N) ↘️<br /><span style="color: #bada55">AEE355</span> (A20N) ↘️<br /><span style="color: #bada55">SEH341</span> (AT43) ↘️<br /><span style="color: #bada55">OAL351</span> (DH8D) ↘️<br /><span style="color: #bada55">SEH347</span> (AT43) ↘️<br /><span style="color: #bada55">SEH345</span> (AT43) ↘️<br /><span style="color: #bada55">OAL359</span> (DH8D) ↘️<br /><span style="color: #bada55">SEH343</span> (AT43) ↘️<br /><span style="color: #bada55">OAL365</span> (A321) ↘️<br /><span style="color: #bada55">345</span> () ↘️<br /><span style="color: #bada55">OAL3985</span> (A320) ↘️<br /><span style="color: #bada55">SX-BLE</span> () ↘️<br /><span style="color: #bada55">SEH344</span> (AT43) ↗️<br /><span style="color: #bada55">OAL358</span> (DH8D) ↗️<br /><span style="color: #bada55">OAL3980</span> (A20N) ↗️<br /><span style="color: #bada55">SEH340</span> (AT43) ↗️<br /><span style="color: #bada55">OAL364</span> (DH8D) ↗️<br /><span style="color: #bada55">SEH346</span> (AT43) ↗️<br /><span style="color: #bada55">SEH342</span> (AT43) ↗️<br /><span style="color: #bada55">AEE354</span> (A20N) ↗️<br /><span style="color: #bada55">OAL3002</span> () ↗️<br /><span style="color: #bada55">344</span> () ↗️<br /><span style="color: #bada55">SEH46</span> () ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1330b71a977e4348a719f35caf204460 = L.circleMarker(
+                [35.3396987915, 25.1802997589],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ddef159143f643d6907f974f64c403a6);
+        
+    
+        var popup_2a1b3ad27fdd49e6a6a0273a087c0575 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_978d1980d34b446a86aa248b8f64cfa7 = $(`<div id="html_978d1980d34b446a86aa248b8f64cfa7" style="width: 100.0%; height: 100.0%;"><div ><strong>Heraklion International Nikos Kazantzakis Airport</strong> (LGIR)<br />Distance: 65nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">HAF404</span> () ↘️<br /><span style="color: #bada55">OAL3981</span> () ↘️</div></div>`)[0];
+            popup_2a1b3ad27fdd49e6a6a0273a087c0575.setContent(html_978d1980d34b446a86aa248b8f64cfa7);
+        
+
+        circle_marker_1330b71a977e4348a719f35caf204460.bindPopup(popup_2a1b3ad27fdd49e6a6a0273a087c0575)
+        ;
+
+        
+    
+    
+            circle_marker_1330b71a977e4348a719f35caf204460.bindTooltip(
+                `<div>
+                     <div ><strong>Heraklion International Nikos Kazantzakis Airport</strong> (LGIR)<br />Distance: 65nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">HAF404</span> () ↘️<br /><span style="color: #bada55">OAL3981</span> () ↘️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_19d690ed7c9343cf8f3116d5ab26216d = L.circle(
+                [36.399200439453125, 25.47929954528809],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 370400, "stroke": true, "weight": 1}
+            ).addTo(map_ddef159143f643d6907f974f64c403a6);
+        
+    
+        var popup_723fa88908214d1fb5740ca266125249 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8012d06f188c4a2abd6a20274149daf8 = $(`<div id="html_8012d06f188c4a2abd6a20274149daf8" style="width: 100.0%; height: 100.0%;">1 hr flight</div>`)[0];
+            popup_723fa88908214d1fb5740ca266125249.setContent(html_8012d06f188c4a2abd6a20274149daf8);
+        
+
+        circle_19d690ed7c9343cf8f3116d5ab26216d.bindPopup(popup_723fa88908214d1fb5740ca266125249)
+        ;
+
+        
+    
+    
+            var circle_517d92c60ee845f69fa8f319895bb009 = L.circle(
+                [36.399200439453125, 25.47929954528809],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1111000.0, "stroke": true, "weight": 1}
+            ).addTo(map_ddef159143f643d6907f974f64c403a6);
+        
+    
+        var popup_4c0a61c8234d41e5a780eeb9c822cd76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee48ae8ed49c4cd7ab9d2d49dd0c5d63 = $(`<div id="html_ee48ae8ed49c4cd7ab9d2d49dd0c5d63" style="width: 100.0%; height: 100.0%;">2 hr flight</div>`)[0];
+            popup_4c0a61c8234d41e5a780eeb9c822cd76.setContent(html_ee48ae8ed49c4cd7ab9d2d49dd0c5d63);
+        
+
+        circle_517d92c60ee845f69fa8f319895bb009.bindPopup(popup_4c0a61c8234d41e5a780eeb9c822cd76)
+        ;
+
+        
+    
+    
+            var circle_a9dd056ddfc64ef0b7193036704a5cf5 = L.circle(
+                [36.399200439453125, 25.47929954528809],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1852000.0, "stroke": true, "weight": 1}
+            ).addTo(map_ddef159143f643d6907f974f64c403a6);
+        
+    
+        var popup_42ee68daaac14b368776c18585041659 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e85bc12358b14ec3b50511af9ba30197 = $(`<div id="html_e85bc12358b14ec3b50511af9ba30197" style="width: 100.0%; height: 100.0%;">3 hr flight</div>`)[0];
+            popup_42ee68daaac14b368776c18585041659.setContent(html_e85bc12358b14ec3b50511af9ba30197);
+        
+
+        circle_a9dd056ddfc64ef0b7193036704a5cf5.bindPopup(popup_42ee68daaac14b368776c18585041659)
+        ;
+
+        
+    
+    
+            var circle_00267c57c9d74defaf976817859798bf = L.circle(
+                [36.399200439453125, 25.47929954528809],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2463160, "stroke": true, "weight": 1}
+            ).addTo(map_ddef159143f643d6907f974f64c403a6);
+        
+    
+        var popup_e851789a252f4807bd4d366bc76164d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc282ad7934b4dd98c772429e49173e6 = $(`<div id="html_bc282ad7934b4dd98c772429e49173e6" style="width: 100.0%; height: 100.0%;">4 hr flight</div>`)[0];
+            popup_e851789a252f4807bd4d366bc76164d0.setContent(html_bc282ad7934b4dd98c772429e49173e6);
+        
+
+        circle_00267c57c9d74defaf976817859798bf.bindPopup(popup_e851789a252f4807bd4d366bc76164d0)
+        ;
+
+        
+    
+    
+            var circle_marker_685688af390e4b91a21995024587fa7c = L.circleMarker(
+                [36.399200439453125, 25.47929954528809],
+                {"bubblingMouseEvents": true, "color": "#FF6666", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF6666", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ddef159143f643d6907f974f64c403a6);
+        
+    
+        var popup_976ba7ab596348a1bbd2724c933c9257 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_add8b1d4a0cd4f93a1ebb7de2dccbb5c = $(`<div id="html_add8b1d4a0cd4f93a1ebb7de2dccbb5c" style="width: 100.0%; height: 100.0%;"><div ><strong>Santorini Airport</strong> (LGSR)<br /><br />25 flights to 3 airports.<br />From here you can go to <a href="index.html">index page</a>.</div></div>`)[0];
+            popup_976ba7ab596348a1bbd2724c933c9257.setContent(html_add8b1d4a0cd4f93a1ebb7de2dccbb5c);
+        
+
+        circle_marker_685688af390e4b91a21995024587fa7c.bindPopup(popup_976ba7ab596348a1bbd2724c933c9257)
+        ;
+
+        
+    
+    
+            circle_marker_685688af390e4b91a21995024587fa7c.bindTooltip(
+                `<div>
+                     <div ><strong>Santorini Airport</strong> (LGSR)<br /><br />25 flights to 3 airports.<br />From here you can go to <a href="index.html">index page</a>.</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

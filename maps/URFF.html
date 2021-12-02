@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8dc15e4181d340d3a511f33c1582507b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8dc15e4181d340d3a511f33c1582507b" ></div>
+        
+</body>
+<script>    
+    
+            var map_8dc15e4181d340d3a511f33c1582507b = L.map(
+                "map_8dc15e4181d340d3a511f33c1582507b",
+                {
+                    center: [45.0522, 33.975101],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_89cbb743fa7a4b2ca2b841dbca5279b7 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+            var poly_line_937ab04735a84939b9942c45c601b23b = L.polyline(
+                [[45.0522, 33.975101], [45.33331030323457, 34.04570515496636], [45.61437667357928, 34.11701367492579], [45.89539823304701, 34.189040523008934], [46.17637408165857, 34.261800008066814], [46.45730329673887, 34.335306795582504], [46.738184932186215, 34.409575918991685], [47.01901801771378, 34.4846227914299], [47.2998015580616, 34.56046321792514], [47.580534532178056, 34.63711340805555], [47.86121589236936, 34.71458998909273], [48.14184456341561, 34.79291001965244], [48.42241944165183, 34.87209100387533], [48.70293939401246, 34.952150906161734], [48.983403257037516, 35.033108166485626], [49.263809835838686, 35.11498171631414], [49.54415790302345, 35.197790995160545], [49.824446197575256, 35.28155596779986], [50.10467342368766, 35.36629714217794], [50.384838249550114, 35.45203558804639], [50.664939306083326, 35.53879295635754], [50.9449751856215, 35.626591499455294], [51.224944440538906, 35.71545409209976], [51.504845581818145, 35.80540425336565], [51.78467707755716, 35.896466169456396], [52.06443735141196, 35.9886647174784], [52.34412478097168, 36.08202549022225], [52.62373769606294, 36.17657482200019], [52.90327437697941, 36.272339815591955], [53.18273305263323, 36.36934837035408], [53.462111898623924, 36.46762921155068], [53.74140903522065, 36.56721192096703], [54.02062252525338, 36.668126968871015], [54.29975037190794, 36.77040574739064], [54.57879051642016, 36.874080605380485], [54.85774083566348, 36.97918488485344], [55.136599139624444, 37.08575295905905], [55.41536316876008, 37.19382027229417], [55.69403059123046, 37.30342338153688], [55.972599, 37.4146]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_8eaa41d78b8f43f4b4d5390ff5b82dac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e928378899b47818c581812619533fe = $(`<div id="html_2e928378899b47818c581812619533fe" style="width: 100.0%; height: 100.0%;">🏠URFF↔UUEE<br />Distance: 668nm <br />Flights: 13 (Booked: 0)<br /><span style="color: #bada55">AFL1625</span> (A321) ↗️<br /><span style="color: #bada55">AFL1621</span> (A321) ↗️<br /><span style="color: #bada55">AFL1637</span> (A321) ↗️<br /><span style="color: #bada55">AFL1631</span> (A321) ↗️<br /><span style="color: #bada55">KAR134</span> (B772) ↗️<br /><span style="color: #bada55">NWS134</span> (A321) ↗️<br /><span style="color: #bada55">NWS124</span> (A321) ↗️<br /><span style="color: #bada55">AFL1624</span> (A321) ↘️<br /><span style="color: #bada55">AFL1620</span> (A321) ↘️<br /><span style="color: #bada55">AFL1636</span> (A321) ↘️<br /><span style="color: #bada55">NWS123</span> (A321) ↘️<br /><span style="color: #bada55">AFL1630</span> (A321) ↘️<br /><span style="color: #bada55">KAR123</span> (B772) ↘️</div>`)[0];
+            popup_8eaa41d78b8f43f4b4d5390ff5b82dac.setContent(html_2e928378899b47818c581812619533fe);
+        
+
+        poly_line_937ab04735a84939b9942c45c601b23b.bindPopup(popup_8eaa41d78b8f43f4b4d5390ff5b82dac)
+        ;
+
+        
+    
+    
+            poly_line_937ab04735a84939b9942c45c601b23b.bindTooltip(
+                `<div>
+                     🏠URFF↔UUEE<br />Distance: 668nm <br />Flights: 13 (Booked: 0)<br /><span style="color: #bada55">AFL1625</span> (A321) ↗️<br /><span style="color: #bada55">AFL1621</span> (A321) ↗️<br /><span style="color: #bada55">AFL1637</span> (A321) ↗️<br /><span style="color: #bada55">AFL1631</span> (A321) ↗️<br /><span style="color: #bada55">KAR134</span> (B772) ↗️<br /><span style="color: #bada55">NWS134</span> (A321) ↗️<br /><span style="color: #bada55">NWS124</span> (A321) ↗️<br /><span style="color: #bada55">AFL1624</span> (A321) ↘️<br /><span style="color: #bada55">AFL1620</span> (A321) ↘️<br /><span style="color: #bada55">AFL1636</span> (A321) ↘️<br /><span style="color: #bada55">NWS123</span> (A321) ↘️<br /><span style="color: #bada55">AFL1630</span> (A321) ↘️<br /><span style="color: #bada55">KAR123</span> (B772) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5daf94127cf84bccb14f91f90285db44 = L.polyline(
+                [[45.0522, 33.975101], [45.33331030323457, 34.04570515496636], [45.61437667357928, 34.11701367492579], [45.89539823304701, 34.189040523008934], [46.17637408165857, 34.261800008066814], [46.45730329673887, 34.335306795582504], [46.738184932186215, 34.409575918991685], [47.01901801771378, 34.4846227914299], [47.2998015580616, 34.56046321792514], [47.580534532178056, 34.63711340805555], [47.86121589236936, 34.71458998909273], [48.14184456341561, 34.79291001965244], [48.42241944165183, 34.87209100387533], [48.70293939401246, 34.952150906161734], [48.983403257037516, 35.033108166485626], [49.263809835838686, 35.11498171631414], [49.54415790302345, 35.197790995160545], [49.824446197575256, 35.28155596779986], [50.10467342368766, 35.36629714217794], [50.384838249550114, 35.45203558804639], [50.664939306083326, 35.53879295635754], [50.9449751856215, 35.626591499455294], [51.224944440538906, 35.71545409209976], [51.504845581818145, 35.80540425336565], [51.78467707755716, 35.896466169456396], [52.06443735141196, 35.9886647174784], [52.34412478097168, 36.08202549022225], [52.62373769606294, 36.17657482200019], [52.90327437697941, 36.272339815591955], [53.18273305263323, 36.36934837035408], [53.462111898623924, 36.46762921155068], [53.74140903522065, 36.56721192096703], [54.02062252525338, 36.668126968871015], [54.29975037190794, 36.77040574739064], [54.57879051642016, 36.874080605380485], [54.85774083566348, 36.97918488485344], [55.136599139624444, 37.08575295905905], [55.41536316876008, 37.19382027229417], [55.69403059123046, 37.30342338153688], [55.972599, 37.4146]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_625b4714b1f44683b9119a1d3288e138 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57373a25fed04911ba1dcc76254a88b7 = $(`<div id="html_57373a25fed04911ba1dcc76254a88b7" style="width: 100.0%; height: 100.0%;">🏠URFF↔UUEE<br />Distance: 668nm <br />Flights: 13 (Booked: 0)<br /><span style="color: #bada55">AFL1625</span> (A321) ↗️<br /><span style="color: #bada55">AFL1621</span> (A321) ↗️<br /><span style="color: #bada55">AFL1637</span> (A321) ↗️<br /><span style="color: #bada55">AFL1631</span> (A321) ↗️<br /><span style="color: #bada55">KAR134</span> (B772) ↗️<br /><span style="color: #bada55">NWS134</span> (A321) ↗️<br /><span style="color: #bada55">NWS124</span> (A321) ↗️<br /><span style="color: #bada55">AFL1624</span> (A321) ↘️<br /><span style="color: #bada55">AFL1620</span> (A321) ↘️<br /><span style="color: #bada55">AFL1636</span> (A321) ↘️<br /><span style="color: #bada55">NWS123</span> (A321) ↘️<br /><span style="color: #bada55">AFL1630</span> (A321) ↘️<br /><span style="color: #bada55">KAR123</span> (B772) ↘️</div>`)[0];
+            popup_625b4714b1f44683b9119a1d3288e138.setContent(html_57373a25fed04911ba1dcc76254a88b7);
+        
+
+        poly_line_5daf94127cf84bccb14f91f90285db44.bindPopup(popup_625b4714b1f44683b9119a1d3288e138)
+        ;
+
+        
+    
+    
+            poly_line_5daf94127cf84bccb14f91f90285db44.bindTooltip(
+                `<div>
+                     🏠URFF↔UUEE<br />Distance: 668nm <br />Flights: 13 (Booked: 0)<br /><span style="color: #bada55">AFL1625</span> (A321) ↗️<br /><span style="color: #bada55">AFL1621</span> (A321) ↗️<br /><span style="color: #bada55">AFL1637</span> (A321) ↗️<br /><span style="color: #bada55">AFL1631</span> (A321) ↗️<br /><span style="color: #bada55">KAR134</span> (B772) ↗️<br /><span style="color: #bada55">NWS134</span> (A321) ↗️<br /><span style="color: #bada55">NWS124</span> (A321) ↗️<br /><span style="color: #bada55">AFL1624</span> (A321) ↘️<br /><span style="color: #bada55">AFL1620</span> (A321) ↘️<br /><span style="color: #bada55">AFL1636</span> (A321) ↘️<br /><span style="color: #bada55">NWS123</span> (A321) ↘️<br /><span style="color: #bada55">AFL1630</span> (A321) ↘️<br /><span style="color: #bada55">KAR123</span> (B772) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_06f54b8db0cb4caa98b4f779642ddf6b = L.polyline(
+                [[45.0522, 33.975101], [45.319205854860954, 34.05689162365457], [45.58615278191171, 34.13945666824135], [45.853039663643536, 34.22281064406938], [46.11986535608271, 34.30696839914145], [46.3866286879926, 34.39194512912224], [46.65332846004722, 34.47775638765339], [46.91996344397517, 34.56441809702961], [47.18653238167244, 34.65194655925041], [47.45303398428317, 34.74035846746258], [47.719466931246544, 34.82967091780953], [47.985829869308816, 34.919901421704104], [48.25212141149873, 35.0110679185423], [48.51834013606472, 35.10318878887617], [48.784484585372496, 35.19628286806502], [49.05055326476102, 35.29036946042499], [49.31654464135521, 35.385468353897735], [49.58245714283345, 35.481599835260404], [49.84828915614782, 35.57878470589965], [50.11403902619516, 35.677044298173925], [50.37970505443644, 35.77640049238909], [50.645285497462474, 35.876875734413886], [50.910778565503314, 35.97849305396285], [51.17618242087883, 36.08127608357585], [51.441495176387804, 36.185249078324425], [51.70671489363273, 36.29043693627718], [51.97183958127734, 36.39686521975736], [52.23686719323364, 36.50456017742811], [52.50179562677532, 36.61354876724192], [52.76662272057392, 36.72385868029325], [53.03134625265428, 36.83551836561482], [53.29596393826522, 36.948557055960165], [53.56047342766153, 37.06300479461745], [53.82487230379307, 37.17889246330137], [54.08915807989623, 37.296251811172816], [54.3533281969833, 37.41511548503795], [54.617380021224534, 37.53551706078167], [54.881310841217704, 37.657491076092505], [55.14511786513959, 37.7810730645395], [55.40879821777344, 37.90629959106445]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_819786f535524778a4ccd930dcc44e93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3fbf4801cf734958902dc6d1d8c9b3af = $(`<div id="html_3fbf4801cf734958902dc6d1d8c9b3af" style="width: 100.0%; height: 100.0%;">🏠URFF↔UUDD<br />Distance: 640nm <br />Flights: 21 (Booked: 0)<br /><span style="color: #bada55">SBI2012</span> (A21N) ↗️<br /><span style="color: #bada55">SVR522</span> (A20N) ↗️<br /><span style="color: #bada55">SVR2832</span> (A320) ↗️<br /><span style="color: #bada55">SBI2008</span> (A321) ↗️<br /><span style="color: #bada55">SBI2002</span> (A320) ↗️<br /><span style="color: #bada55">SVR526</span> (A320) ↗️<br /><span style="color: #bada55">SVR2842</span> (A21N) ↗️<br /><span style="color: #bada55">SBI2016</span> (A321) ↗️<br /><span style="color: #bada55">SVR36</span> (A321) ↗️<br /><span style="color: #bada55">IAE556</span> (A319) ↗️<br /><span style="color: #bada55">SVR8</span> () ↗️<br /><span style="color: #bada55">SBI2011</span> (A21N) ↘️<br /><span style="color: #bada55">SVR521</span> (A20N) ↘️<br /><span style="color: #bada55">SBI2007</span> (A321) ↘️<br /><span style="color: #bada55">SVR2831</span> (A320) ↘️<br /><span style="color: #bada55">SBI2001</span> (A320) ↘️<br /><span style="color: #bada55">SVR525</span> (A320) ↘️<br /><span style="color: #bada55">SBI2015</span> (A321) ↘️<br /><span style="color: #bada55">SVR2841</span> (A21N) ↘️<br /><span style="color: #bada55">SVR35</span> (A321) ↘️<br /><span style="color: #bada55">IAE555</span> (A319) ↘️</div>`)[0];
+            popup_819786f535524778a4ccd930dcc44e93.setContent(html_3fbf4801cf734958902dc6d1d8c9b3af);
+        
+
+        poly_line_06f54b8db0cb4caa98b4f779642ddf6b.bindPopup(popup_819786f535524778a4ccd930dcc44e93)
+        ;
+
+        
+    
+    
+            poly_line_06f54b8db0cb4caa98b4f779642ddf6b.bindTooltip(
+                `<div>
+                     🏠URFF↔UUDD<br />Distance: 640nm <br />Flights: 21 (Booked: 0)<br /><span style="color: #bada55">SBI2012</span> (A21N) ↗️<br /><span style="color: #bada55">SVR522</span> (A20N) ↗️<br /><span style="color: #bada55">SVR2832</span> (A320) ↗️<br /><span style="color: #bada55">SBI2008</span> (A321) ↗️<br /><span style="color: #bada55">SBI2002</span> (A320) ↗️<br /><span style="color: #bada55">SVR526</span> (A320) ↗️<br /><span style="color: #bada55">SVR2842</span> (A21N) ↗️<br /><span style="color: #bada55">SBI2016</span> (A321) ↗️<br /><span style="color: #bada55">SVR36</span> (A321) ↗️<br /><span style="color: #bada55">IAE556</span> (A319) ↗️<br /><span style="color: #bada55">SVR8</span> () ↗️<br /><span style="color: #bada55">SBI2011</span> (A21N) ↘️<br /><span style="color: #bada55">SVR521</span> (A20N) ↘️<br /><span style="color: #bada55">SBI2007</span> (A321) ↘️<br /><span style="color: #bada55">SVR2831</span> (A320) ↘️<br /><span style="color: #bada55">SBI2001</span> (A320) ↘️<br /><span style="color: #bada55">SVR525</span> (A320) ↘️<br /><span style="color: #bada55">SBI2015</span> (A321) ↘️<br /><span style="color: #bada55">SVR2841</span> (A21N) ↘️<br /><span style="color: #bada55">SVR35</span> (A321) ↘️<br /><span style="color: #bada55">IAE555</span> (A319) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2892e83927af49b48afddfec7dc7f42a = L.polyline(
+                [[45.0522, 33.975101], [45.319205854860954, 34.05689162365457], [45.58615278191171, 34.13945666824135], [45.853039663643536, 34.22281064406938], [46.11986535608271, 34.30696839914145], [46.3866286879926, 34.39194512912224], [46.65332846004722, 34.47775638765339], [46.91996344397517, 34.56441809702961], [47.18653238167244, 34.65194655925041], [47.45303398428317, 34.74035846746258], [47.719466931246544, 34.82967091780953], [47.985829869308816, 34.919901421704104], [48.25212141149873, 35.0110679185423], [48.51834013606472, 35.10318878887617], [48.784484585372496, 35.19628286806502], [49.05055326476102, 35.29036946042499], [49.31654464135521, 35.385468353897735], [49.58245714283345, 35.481599835260404], [49.84828915614782, 35.57878470589965], [50.11403902619516, 35.677044298173925], [50.37970505443644, 35.77640049238909], [50.645285497462474, 35.876875734413886], [50.910778565503314, 35.97849305396285], [51.17618242087883, 36.08127608357585], [51.441495176387804, 36.185249078324425], [51.70671489363273, 36.29043693627718], [51.97183958127734, 36.39686521975736], [52.23686719323364, 36.50456017742811], [52.50179562677532, 36.61354876724192], [52.76662272057392, 36.72385868029325], [53.03134625265428, 36.83551836561482], [53.29596393826522, 36.948557055960165], [53.56047342766153, 37.06300479461745], [53.82487230379307, 37.17889246330137], [54.08915807989623, 37.296251811172816], [54.3533281969833, 37.41511548503795], [54.617380021224534, 37.53551706078167], [54.881310841217704, 37.657491076092505], [55.14511786513959, 37.7810730645395], [55.40879821777344, 37.90629959106445]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_f99862908149443d911fc2811a170001 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74cf1f727b7845a6b772ff096b0c4067 = $(`<div id="html_74cf1f727b7845a6b772ff096b0c4067" style="width: 100.0%; height: 100.0%;">🏠URFF↔UUDD<br />Distance: 640nm <br />Flights: 21 (Booked: 0)<br /><span style="color: #bada55">SBI2012</span> (A21N) ↗️<br /><span style="color: #bada55">SVR522</span> (A20N) ↗️<br /><span style="color: #bada55">SVR2832</span> (A320) ↗️<br /><span style="color: #bada55">SBI2008</span> (A321) ↗️<br /><span style="color: #bada55">SBI2002</span> (A320) ↗️<br /><span style="color: #bada55">SVR526</span> (A320) ↗️<br /><span style="color: #bada55">SVR2842</span> (A21N) ↗️<br /><span style="color: #bada55">SBI2016</span> (A321) ↗️<br /><span style="color: #bada55">SVR36</span> (A321) ↗️<br /><span style="color: #bada55">IAE556</span> (A319) ↗️<br /><span style="color: #bada55">SVR8</span> () ↗️<br /><span style="color: #bada55">SBI2011</span> (A21N) ↘️<br /><span style="color: #bada55">SVR521</span> (A20N) ↘️<br /><span style="color: #bada55">SBI2007</span> (A321) ↘️<br /><span style="color: #bada55">SVR2831</span> (A320) ↘️<br /><span style="color: #bada55">SBI2001</span> (A320) ↘️<br /><span style="color: #bada55">SVR525</span> (A320) ↘️<br /><span style="color: #bada55">SBI2015</span> (A321) ↘️<br /><span style="color: #bada55">SVR2841</span> (A21N) ↘️<br /><span style="color: #bada55">SVR35</span> (A321) ↘️<br /><span style="color: #bada55">IAE555</span> (A319) ↘️</div>`)[0];
+            popup_f99862908149443d911fc2811a170001.setContent(html_74cf1f727b7845a6b772ff096b0c4067);
+        
+
+        poly_line_2892e83927af49b48afddfec7dc7f42a.bindPopup(popup_f99862908149443d911fc2811a170001)
+        ;
+
+        
+    
+    
+            poly_line_2892e83927af49b48afddfec7dc7f42a.bindTooltip(
+                `<div>
+                     🏠URFF↔UUDD<br />Distance: 640nm <br />Flights: 21 (Booked: 0)<br /><span style="color: #bada55">SBI2012</span> (A21N) ↗️<br /><span style="color: #bada55">SVR522</span> (A20N) ↗️<br /><span style="color: #bada55">SVR2832</span> (A320) ↗️<br /><span style="color: #bada55">SBI2008</span> (A321) ↗️<br /><span style="color: #bada55">SBI2002</span> (A320) ↗️<br /><span style="color: #bada55">SVR526</span> (A320) ↗️<br /><span style="color: #bada55">SVR2842</span> (A21N) ↗️<br /><span style="color: #bada55">SBI2016</span> (A321) ↗️<br /><span style="color: #bada55">SVR36</span> (A321) ↗️<br /><span style="color: #bada55">IAE556</span> (A319) ↗️<br /><span style="color: #bada55">SVR8</span> () ↗️<br /><span style="color: #bada55">SBI2011</span> (A21N) ↘️<br /><span style="color: #bada55">SVR521</span> (A20N) ↘️<br /><span style="color: #bada55">SBI2007</span> (A321) ↘️<br /><span style="color: #bada55">SVR2831</span> (A320) ↘️<br /><span style="color: #bada55">SBI2001</span> (A320) ↘️<br /><span style="color: #bada55">SVR525</span> (A320) ↘️<br /><span style="color: #bada55">SBI2015</span> (A321) ↘️<br /><span style="color: #bada55">SVR2841</span> (A21N) ↘️<br /><span style="color: #bada55">SVR35</span> (A321) ↘️<br /><span style="color: #bada55">IAE555</span> (A319) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_12479dd7d8a14d24b8b3d4737bff8366 = L.polyline(
+                [[45.0522, 33.975101], [45.431541376211456, 33.90613823310861], [45.810840692796575, 33.83624220019765], [46.19009680840416, 33.76538768343117], [46.569308542619645, 33.69354860709313], [46.948474674248416, 33.62069800015661], [47.327593939508745, 33.54680795689908], [47.70666503012869, 33.47184959544345], [48.08568659134104, 33.395793014097436], [48.464657219769784, 33.318607245353526], [48.84357546120127, 33.24026020740315], [49.22243980823275, 33.16071865300724], [49.60124869779017, 33.07994811555423], [49.98000050850692, 32.99791285212449], [50.358693557954204, 32.91457578336627], [50.73732609971336, 32.829898429974], [51.11589632027925, 32.74384084554424], [51.49440233578371, 32.65636154556717], [51.87284218852634, 32.56741743229316], [52.25121384329971, 32.476963715194074], [52.62951518349437, 32.38495382671664], [53.007744006968466, 32.29133933300193], [53.385898021665135, 32.196069839218914], [53.763974840959605, 32.09909288913164], [54.14197197871639, 32.00035385848938], [54.519886844035675, 31.899795841795108], [54.897716735665526, 31.79735953197127], [55.275458836055435, 31.692983092401825], [55.65311020502394, 31.586602020785662], [56.030667773010975, 31.478149004188847], [56.408128333883106, 31.367553764630454], [56.78548853725693, 31.254742894479516], [57.16274488030265, 31.139639680877345], [57.539893698986766, 31.022163918330314], [57.916931158708735, 30.902231708542118], [58.29385324428259, 30.779755246470607], [58.67065574920956, 30.654642591502288], [59.047334264183355, 30.526797422535864], [59.4238841647632, 30.396118775654088], [59.80030059814453, 30.262500762939453]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_69e353fe151449618f9663c4d8b10f1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58d641345fb74b86ab321b9145d3007d = $(`<div id="html_58d641345fb74b86ab321b9145d3007d" style="width: 100.0%; height: 100.0%;">🏠URFF↔ULLI<br />Distance: 896nm <br />Flights: 8 (Booked: 0)<br /><span style="color: #bada55">NWS130</span> (B738) ↗️<br /><span style="color: #bada55">SDM6986</span> (A320) ↗️<br /><span style="color: #bada55">SDM6892</span> (A320) ↗️<br /><span style="color: #bada55">SDM6896</span> (A319) ↗️<br /><span style="color: #bada55">NWS129</span> (B738) ↘️<br /><span style="color: #bada55">SDM6985</span> (A320) ↘️<br /><span style="color: #bada55">SDM6891</span> (A320) ↘️<br /><span style="color: #bada55">SDM6895</span> (A319) ↘️</div>`)[0];
+            popup_69e353fe151449618f9663c4d8b10f1b.setContent(html_58d641345fb74b86ab321b9145d3007d);
+        
+
+        poly_line_12479dd7d8a14d24b8b3d4737bff8366.bindPopup(popup_69e353fe151449618f9663c4d8b10f1b)
+        ;
+
+        
+    
+    
+            poly_line_12479dd7d8a14d24b8b3d4737bff8366.bindTooltip(
+                `<div>
+                     🏠URFF↔ULLI<br />Distance: 896nm <br />Flights: 8 (Booked: 0)<br /><span style="color: #bada55">NWS130</span> (B738) ↗️<br /><span style="color: #bada55">SDM6986</span> (A320) ↗️<br /><span style="color: #bada55">SDM6892</span> (A320) ↗️<br /><span style="color: #bada55">SDM6896</span> (A319) ↗️<br /><span style="color: #bada55">NWS129</span> (B738) ↘️<br /><span style="color: #bada55">SDM6985</span> (A320) ↘️<br /><span style="color: #bada55">SDM6891</span> (A320) ↘️<br /><span style="color: #bada55">SDM6895</span> (A319) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fd3633eb0c0e4645907fd56b053f5909 = L.polyline(
+                [[45.0522, 33.975101], [45.431541376211456, 33.90613823310861], [45.810840692796575, 33.83624220019765], [46.19009680840416, 33.76538768343117], [46.569308542619645, 33.69354860709313], [46.948474674248416, 33.62069800015661], [47.327593939508745, 33.54680795689908], [47.70666503012869, 33.47184959544345], [48.08568659134104, 33.395793014097436], [48.464657219769784, 33.318607245353526], [48.84357546120127, 33.24026020740315], [49.22243980823275, 33.16071865300724], [49.60124869779017, 33.07994811555423], [49.98000050850692, 32.99791285212449], [50.358693557954204, 32.91457578336627], [50.73732609971336, 32.829898429974], [51.11589632027925, 32.74384084554424], [51.49440233578371, 32.65636154556717], [51.87284218852634, 32.56741743229316], [52.25121384329971, 32.476963715194074], [52.62951518349437, 32.38495382671664], [53.007744006968466, 32.29133933300193], [53.385898021665135, 32.196069839218914], [53.763974840959605, 32.09909288913164], [54.14197197871639, 32.00035385848938], [54.519886844035675, 31.899795841795108], [54.897716735665526, 31.79735953197127], [55.275458836055435, 31.692983092401825], [55.65311020502394, 31.586602020785662], [56.030667773010975, 31.478149004188847], [56.408128333883106, 31.367553764630454], [56.78548853725693, 31.254742894479516], [57.16274488030265, 31.139639680877345], [57.539893698986766, 31.022163918330314], [57.916931158708735, 30.902231708542118], [58.29385324428259, 30.779755246470607], [58.67065574920956, 30.654642591502288], [59.047334264183355, 30.526797422535864], [59.4238841647632, 30.396118775654088], [59.80030059814453, 30.262500762939453]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_aeb1805f974247d88f583e0d0964d9cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c2308d57de6465e803c3d0b9fb9b601 = $(`<div id="html_0c2308d57de6465e803c3d0b9fb9b601" style="width: 100.0%; height: 100.0%;">🏠URFF↔ULLI<br />Distance: 896nm <br />Flights: 8 (Booked: 0)<br /><span style="color: #bada55">NWS130</span> (B738) ↗️<br /><span style="color: #bada55">SDM6986</span> (A320) ↗️<br /><span style="color: #bada55">SDM6892</span> (A320) ↗️<br /><span style="color: #bada55">SDM6896</span> (A319) ↗️<br /><span style="color: #bada55">NWS129</span> (B738) ↘️<br /><span style="color: #bada55">SDM6985</span> (A320) ↘️<br /><span style="color: #bada55">SDM6891</span> (A320) ↘️<br /><span style="color: #bada55">SDM6895</span> (A319) ↘️</div>`)[0];
+            popup_aeb1805f974247d88f583e0d0964d9cb.setContent(html_0c2308d57de6465e803c3d0b9fb9b601);
+        
+
+        poly_line_fd3633eb0c0e4645907fd56b053f5909.bindPopup(popup_aeb1805f974247d88f583e0d0964d9cb)
+        ;
+
+        
+    
+    
+            poly_line_fd3633eb0c0e4645907fd56b053f5909.bindTooltip(
+                `<div>
+                     🏠URFF↔ULLI<br />Distance: 896nm <br />Flights: 8 (Booked: 0)<br /><span style="color: #bada55">NWS130</span> (B738) ↗️<br /><span style="color: #bada55">SDM6986</span> (A320) ↗️<br /><span style="color: #bada55">SDM6892</span> (A320) ↗️<br /><span style="color: #bada55">SDM6896</span> (A319) ↗️<br /><span style="color: #bada55">NWS129</span> (B738) ↘️<br /><span style="color: #bada55">SDM6985</span> (A320) ↘️<br /><span style="color: #bada55">SDM6891</span> (A320) ↘️<br /><span style="color: #bada55">SDM6895</span> (A319) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_897559d64c98485ab2887a6e812643de = L.polyline(
+                [[45.0522, 33.975101], [45.118556901269585, 34.121082401750364], [45.184727401687695, 34.267403258528525], [45.25071063587056, 34.414064184732254], [45.3165057358706, 34.56106578603402], [45.38211183119342, 34.70840865923518], [45.44752804881551, 34.85609339211909], [45.512753513202206, 35.00412056330319], [45.5777873463263, 35.15249074209015], [45.64262866768717, 35.301204488317914], [45.70727659433017, 35.45026235220876], [45.771730240866916, 35.59966487421744], [45.83598871949573, 35.749412584878286], [45.90005114002284, 35.899506004651435], [45.963916609883995, 36.04994564376799], [46.02758423416663, 36.200732002074375], [46.091053115632654, 36.35186556887574], [46.15432235474156, 36.503346822778425], [46.217391049674355, 36.655176231531584], [46.28025829635788, 36.80735425186797], [46.342923188489664, 36.95988132934381], [46.405384817563444, 37.11275789817789], [46.46764227289519, 37.26598438108986], [46.52969464164971, 37.41956118913765], [46.59154100886782, 37.57348872155426], [46.65318045749411, 37.727767365583645], [46.71461206840529, 37.88239749631601], [46.77583492043912, 38.037379476522275], [46.83684809042391, 38.19271365648797], [46.897650653208736, 38.348400373846374], [46.95824168169403, 38.5044399534111], [47.01862024686304, 38.66083270700797], [47.078785417813705, 38.817578933306386], [47.13873626179122, 38.97467891765011], [47.19847184422127, 39.13213293188749], [47.25799122874371, 39.28994123420121], [47.31729347724714, 39.44810406893752], [47.37637764990387, 39.60662166643504], [47.43524280520566, 39.765494242853165], [47.493888, 39.924722]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_ba417a9b02524ed280121ce35538ec89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61ecc28ef8bb417aa2ca20c9a8a0ced1 = $(`<div id="html_61ecc28ef8bb417aa2ca20c9a8a0ced1" style="width: 100.0%; height: 100.0%;">🏠URFF↔URRP<br />Distance: 287nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO206</span> (SU95) ↗️<br /><span style="color: #bada55">AZO205</span> (SU95) ↘️</div>`)[0];
+            popup_ba417a9b02524ed280121ce35538ec89.setContent(html_61ecc28ef8bb417aa2ca20c9a8a0ced1);
+        
+
+        poly_line_897559d64c98485ab2887a6e812643de.bindPopup(popup_ba417a9b02524ed280121ce35538ec89)
+        ;
+
+        
+    
+    
+            poly_line_897559d64c98485ab2887a6e812643de.bindTooltip(
+                `<div>
+                     🏠URFF↔URRP<br />Distance: 287nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO206</span> (SU95) ↗️<br /><span style="color: #bada55">AZO205</span> (SU95) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_073e0a2027e1493db74dcaf2bd78db1e = L.polyline(
+                [[45.0522, 33.975101], [45.118556901269585, 34.121082401750364], [45.184727401687695, 34.267403258528525], [45.25071063587056, 34.414064184732254], [45.3165057358706, 34.56106578603402], [45.38211183119342, 34.70840865923518], [45.44752804881551, 34.85609339211909], [45.512753513202206, 35.00412056330319], [45.5777873463263, 35.15249074209015], [45.64262866768717, 35.301204488317914], [45.70727659433017, 35.45026235220876], [45.771730240866916, 35.59966487421744], [45.83598871949573, 35.749412584878286], [45.90005114002284, 35.899506004651435], [45.963916609883995, 36.04994564376799], [46.02758423416663, 36.200732002074375], [46.091053115632654, 36.35186556887574], [46.15432235474156, 36.503346822778425], [46.217391049674355, 36.655176231531584], [46.28025829635788, 36.80735425186797], [46.342923188489664, 36.95988132934381], [46.405384817563444, 37.11275789817789], [46.46764227289519, 37.26598438108986], [46.52969464164971, 37.41956118913765], [46.59154100886782, 37.57348872155426], [46.65318045749411, 37.727767365583645], [46.71461206840529, 37.88239749631601], [46.77583492043912, 38.037379476522275], [46.83684809042391, 38.19271365648797], [46.897650653208736, 38.348400373846374], [46.95824168169403, 38.5044399534111], [47.01862024686304, 38.66083270700797], [47.078785417813705, 38.817578933306386], [47.13873626179122, 38.97467891765011], [47.19847184422127, 39.13213293188749], [47.25799122874371, 39.28994123420121], [47.31729347724714, 39.44810406893752], [47.37637764990387, 39.60662166643504], [47.43524280520566, 39.765494242853165], [47.493888, 39.924722]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_ccc5bf1e7f8648469dc02b9c5447457f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe4f17c982214ed09af87539d9add9c0 = $(`<div id="html_fe4f17c982214ed09af87539d9add9c0" style="width: 100.0%; height: 100.0%;">🏠URFF↔URRP<br />Distance: 287nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO206</span> (SU95) ↗️<br /><span style="color: #bada55">AZO205</span> (SU95) ↘️</div>`)[0];
+            popup_ccc5bf1e7f8648469dc02b9c5447457f.setContent(html_fe4f17c982214ed09af87539d9add9c0);
+        
+
+        poly_line_073e0a2027e1493db74dcaf2bd78db1e.bindPopup(popup_ccc5bf1e7f8648469dc02b9c5447457f)
+        ;
+
+        
+    
+    
+            poly_line_073e0a2027e1493db74dcaf2bd78db1e.bindTooltip(
+                `<div>
+                     🏠URFF↔URRP<br />Distance: 287nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO206</span> (SU95) ↗️<br /><span style="color: #bada55">AZO205</span> (SU95) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3747281d77ae423da90c1ac99598f7d2 = L.polyline(
+                [[45.0522, 33.975101], [45.29627900807286, 34.025885142513175], [45.54033531650606, 34.07710833419735], [45.78436853229867, 34.12877813444849], [46.02837825391402, 34.18090226556235], [46.272364071042354, 34.23348861721974], [46.516325564355895, 34.28654525111877], [46.76026230525548, 34.34008040575966], [47.00417385560888, 34.39410250138822], [47.24805976748024, 34.4486201451038], [47.491919582850315, 34.50364213613843], [47.735752833327275, 34.559177471313525], [47.97955903984747, 34.61523535068146], [48.22333771236603, 34.67182518335898], [48.46708834953657, 34.72895659356034], [48.71081043837988, 34.78663942683797], [48.95450345394099, 34.84488375653905], [49.198166858934016, 34.90369989048668], [49.44180010337462, 34.96309837789481], [49.685402624199135, 35.023090016526396], [49.928973844870306, 35.083685860104744], [50.17251317496849, 35.14489722598857], [50.41602000976836, 35.20673570312157], [50.65949372979987, 35.26921316026806], [50.90293370039332, 35.33234175454656], [51.14633927120749, 35.39613394027401], [51.389709775740286, 35.46060247813364], [51.633044530821174, 35.525760444680365], [51.87634283608438, 35.59162124219816], [52.11960397342231, 35.6581986089245], [52.36282720641808, 35.72550662965794], [52.6060117797564, 35.79355974676539], [52.84915691861168, 35.86237277160654], [53.09226182801249, 35.93196089639409], [53.335325692181186, 36.00233970650882], [53.578347673847645, 36.073525193290024], [53.82132691353595, 36.14553376732235], [54.0642625288226, 36.21838227224174], [54.3071536135652, 36.29208799908391], [54.5499992371, 36.3666687012]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_5df278ba89944c2c95eea89c654d1f89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8519430be8842f6b883eb7c59279e4c = $(`<div id="html_c8519430be8842f6b883eb7c59279e4c" style="width: 100.0%; height: 100.0%;">🏠URFF↔UUBC<br />Distance: 578nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO546</span> (SU95) ↗️<br /><span style="color: #bada55">AZO545</span> (SU95) ↘️</div>`)[0];
+            popup_5df278ba89944c2c95eea89c654d1f89.setContent(html_c8519430be8842f6b883eb7c59279e4c);
+        
+
+        poly_line_3747281d77ae423da90c1ac99598f7d2.bindPopup(popup_5df278ba89944c2c95eea89c654d1f89)
+        ;
+
+        
+    
+    
+            poly_line_3747281d77ae423da90c1ac99598f7d2.bindTooltip(
+                `<div>
+                     🏠URFF↔UUBC<br />Distance: 578nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO546</span> (SU95) ↗️<br /><span style="color: #bada55">AZO545</span> (SU95) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b02dc983ad4f47daa945f86338ca4d1c = L.polyline(
+                [[45.0522, 33.975101], [45.29627900807286, 34.025885142513175], [45.54033531650606, 34.07710833419735], [45.78436853229867, 34.12877813444849], [46.02837825391402, 34.18090226556235], [46.272364071042354, 34.23348861721974], [46.516325564355895, 34.28654525111877], [46.76026230525548, 34.34008040575966], [47.00417385560888, 34.39410250138822], [47.24805976748024, 34.4486201451038], [47.491919582850315, 34.50364213613843], [47.735752833327275, 34.559177471313525], [47.97955903984747, 34.61523535068146], [48.22333771236603, 34.67182518335898], [48.46708834953657, 34.72895659356034], [48.71081043837988, 34.78663942683797], [48.95450345394099, 34.84488375653905], [49.198166858934016, 34.90369989048668], [49.44180010337462, 34.96309837789481], [49.685402624199135, 35.023090016526396], [49.928973844870306, 35.083685860104744], [50.17251317496849, 35.14489722598857], [50.41602000976836, 35.20673570312157], [50.65949372979987, 35.26921316026806], [50.90293370039332, 35.33234175454656], [51.14633927120749, 35.39613394027401], [51.389709775740286, 35.46060247813364], [51.633044530821174, 35.525760444680365], [51.87634283608438, 35.59162124219816], [52.11960397342231, 35.6581986089245], [52.36282720641808, 35.72550662965794], [52.6060117797564, 35.79355974676539], [52.84915691861168, 35.86237277160654], [53.09226182801249, 35.93196089639409], [53.335325692181186, 36.00233970650882], [53.578347673847645, 36.073525193290024], [53.82132691353595, 36.14553376732235], [54.0642625288226, 36.21838227224174], [54.3071536135652, 36.29208799908391], [54.5499992371, 36.3666687012]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_efbd67d542f34892868806e3121b2eb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4268d5968740406baca9fd122e523f2b = $(`<div id="html_4268d5968740406baca9fd122e523f2b" style="width: 100.0%; height: 100.0%;">🏠URFF↔UUBC<br />Distance: 578nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO546</span> (SU95) ↗️<br /><span style="color: #bada55">AZO545</span> (SU95) ↘️</div>`)[0];
+            popup_efbd67d542f34892868806e3121b2eb3.setContent(html_4268d5968740406baca9fd122e523f2b);
+        
+
+        poly_line_b02dc983ad4f47daa945f86338ca4d1c.bindPopup(popup_efbd67d542f34892868806e3121b2eb3)
+        ;
+
+        
+    
+    
+            poly_line_b02dc983ad4f47daa945f86338ca4d1c.bindTooltip(
+                `<div>
+                     🏠URFF↔UUBC<br />Distance: 578nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO546</span> (SU95) ↗️<br /><span style="color: #bada55">AZO545</span> (SU95) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d202899045a140599ad48dd7f07dd669 = L.polyline(
+                [[45.0522, 33.975101], [45.52965146451667, 34.927118093858454], [45.99906036489752, 35.89529730802415], [46.46015506865815, 36.87989584876918], [46.91265742232125, 37.88115468659622], [47.35628294417482, 38.89929627198488], [47.79074106786632, 39.934522117037], [48.21573544108363, 40.98701024945115], [48.63096428353655, 42.056912548100954], [49.03612080833802, 43.144351972667494], [49.43089371068141, 44.24941970327184], [49.81496772740678, 45.37217220983962], [50.18802427063217, 46.51262827496478], [50.549742138085925, 47.67076599826238], [50.89979830210349, 48.8465198145298], [51.23786877843867, 50.0397775623708], [51.56362957508289, 51.25037764415479], [51.87675772018432, 52.47810632213925], [52.17693236691841, 53.72269519911533], [52.46383597179004, 54.983818934865035], [52.73715554136363, 56.26109325185416], [52.996583940841866, 57.554073284734606], [53.2418212562774, 58.8622523282034], [53.472576200540935, 60.185061036389484], [53.688567551526816, 61.521867124062716], [53.88952560950319, 62.8719756154724], [54.075193659060325, 64.23462968046194], [54.24532941983516, 65.60901208967097], [54.39970646914829, 66.99424731119535], [54.53811561893649, 68.38940426017274], [54.66036622894876, 69.7934997006225], [54.76628743813966, 71.2055022857929], [54.8557292965705, 72.62433720962804], [54.92856378093592, 74.04889142819042], [54.984685678073596, 75.47801939643035], [55.02401332247393, 76.91054925307066], [55.04648917585541, 78.34528937505334], [55.05208023926162, 79.78103521342763], [55.04077829080624, 81.2165763151343], [55.012599945068, 82.650703430176]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_53436db9e7c94fa99a027ab12ba69c74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d1f23704edc4e90a90e98991588ae51 = $(`<div id="html_8d1f23704edc4e90a90e98991588ae51" style="width: 100.0%; height: 100.0%;">🏠URFF↔UNNT<br />Distance: 1926nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SBI5136</span> (A20N) ↗️<br /><span style="color: #bada55">SBI5135</span> (A20N) ↘️</div>`)[0];
+            popup_53436db9e7c94fa99a027ab12ba69c74.setContent(html_8d1f23704edc4e90a90e98991588ae51);
+        
+
+        poly_line_d202899045a140599ad48dd7f07dd669.bindPopup(popup_53436db9e7c94fa99a027ab12ba69c74)
+        ;
+
+        
+    
+    
+            poly_line_d202899045a140599ad48dd7f07dd669.bindTooltip(
+                `<div>
+                     🏠URFF↔UNNT<br />Distance: 1926nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SBI5136</span> (A20N) ↗️<br /><span style="color: #bada55">SBI5135</span> (A20N) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a23a298ed4d242478382842acb31bf60 = L.polyline(
+                [[45.0522, 33.975101], [45.52965146451667, 34.927118093858454], [45.99906036489752, 35.89529730802415], [46.46015506865815, 36.87989584876918], [46.91265742232125, 37.88115468659622], [47.35628294417482, 38.89929627198488], [47.79074106786632, 39.934522117037], [48.21573544108363, 40.98701024945115], [48.63096428353655, 42.056912548100954], [49.03612080833802, 43.144351972667494], [49.43089371068141, 44.24941970327184], [49.81496772740678, 45.37217220983962], [50.18802427063217, 46.51262827496478], [50.549742138085925, 47.67076599826238], [50.89979830210349, 48.8465198145298], [51.23786877843867, 50.0397775623708], [51.56362957508289, 51.25037764415479], [51.87675772018432, 52.47810632213925], [52.17693236691841, 53.72269519911533], [52.46383597179004, 54.983818934865035], [52.73715554136363, 56.26109325185416], [52.996583940841866, 57.554073284734606], [53.2418212562774, 58.8622523282034], [53.472576200540935, 60.185061036389484], [53.688567551526816, 61.521867124062716], [53.88952560950319, 62.8719756154724], [54.075193659060325, 64.23462968046194], [54.24532941983516, 65.60901208967097], [54.39970646914829, 66.99424731119535], [54.53811561893649, 68.38940426017274], [54.66036622894876, 69.7934997006225], [54.76628743813966, 71.2055022857929], [54.8557292965705, 72.62433720962804], [54.92856378093592, 74.04889142819042], [54.984685678073596, 75.47801939643035], [55.02401332247393, 76.91054925307066], [55.04648917585541, 78.34528937505334], [55.05208023926162, 79.78103521342763], [55.04077829080624, 81.2165763151343], [55.012599945068, 82.650703430176]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_fa901634a5444719b718331cebfca5d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb40caa1f6c64ad49298d40192558136 = $(`<div id="html_fb40caa1f6c64ad49298d40192558136" style="width: 100.0%; height: 100.0%;">🏠URFF↔UNNT<br />Distance: 1926nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SBI5136</span> (A20N) ↗️<br /><span style="color: #bada55">SBI5135</span> (A20N) ↘️</div>`)[0];
+            popup_fa901634a5444719b718331cebfca5d8.setContent(html_fb40caa1f6c64ad49298d40192558136);
+        
+
+        poly_line_a23a298ed4d242478382842acb31bf60.bindPopup(popup_fa901634a5444719b718331cebfca5d8)
+        ;
+
+        
+    
+    
+            poly_line_a23a298ed4d242478382842acb31bf60.bindTooltip(
+                `<div>
+                     🏠URFF↔UNNT<br />Distance: 1926nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SBI5136</span> (A20N) ↗️<br /><span style="color: #bada55">SBI5135</span> (A20N) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2a818ed4e312488e84c885799478cfd8 = L.polyline(
+                [[45.0522, 33.975101], [45.015083090702234, 34.13248815530907], [44.97775029672976, 34.28967082838479], [44.94020217997719, 34.44664837017904], [44.90243930373757, 34.603420142223], [44.86446223266989, 34.75998551660222], [44.82627153276689, 34.91634387593077], [44.787867771322865, 35.072494613324395], [44.74925151690176, 35.22843713237278], [44.71042333930525, 35.384170847111], [44.671383809541105, 35.53969518198987], [44.63213349979165, 35.69500957184562], [44.59267298338233, 35.85011346186858], [44.553002834750565, 36.00500630757111], [44.51312362941459, 36.15968757475458], [44.47303594394264, 36.314156739475614], [44.43274035592214, 36.46841328801156], [44.39223744392914, 36.622456716825006], [44.351527787497936, 36.77628653252771], [44.31061196709084, 36.929902251843636], [44.26949056406808, 37.083303401571285], [44.228164160657926, 37.23648951854528], [44.18663333992702, 37.38946014959728], [44.1448986857508, 37.542214851516036], [44.10296078278418, 37.69475319100699], [44.060820216432376, 37.84707474465096], [44.018477572821965, 37.9991790988623], [43.975933438772024, 38.151065849846354], [43.93318840176563, 38.302734603556324], [43.89024304992136, 38.454184975649426], [43.847097971965134, 38.60541659144254], [43.80375375720218, 38.75642908586717], [43.760210995489196, 38.907222103423884], [43.71647027720673, 39.05779529813618], [43.67253219323178, 39.208148333503765], [43.6283973349105, 39.358280882455325], [43.584066294031274, 39.50819262730076], [43.53953966279777, 39.6578832596829], [43.49481803380243, 39.80735248052869], [43.449902, 39.9566]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_dee833b6003c4d9594ec82d816465feb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5df27c1747c04bb7a0c97202bece1d1a = $(`<div id="html_5df27c1747c04bb7a0c97202bece1d1a" style="width: 100.0%; height: 100.0%;">🏠URFF↔URSS<br />Distance: 275nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SVR660</span> (A320) ↗️<br /><span style="color: #bada55">SVR659</span> (A320) ↘️</div>`)[0];
+            popup_dee833b6003c4d9594ec82d816465feb.setContent(html_5df27c1747c04bb7a0c97202bece1d1a);
+        
+
+        poly_line_2a818ed4e312488e84c885799478cfd8.bindPopup(popup_dee833b6003c4d9594ec82d816465feb)
+        ;
+
+        
+    
+    
+            poly_line_2a818ed4e312488e84c885799478cfd8.bindTooltip(
+                `<div>
+                     🏠URFF↔URSS<br />Distance: 275nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SVR660</span> (A320) ↗️<br /><span style="color: #bada55">SVR659</span> (A320) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d55e40ac223345559cd2255531e87b56 = L.polyline(
+                [[45.0522, 33.975101], [45.015083090702234, 34.13248815530907], [44.97775029672976, 34.28967082838479], [44.94020217997719, 34.44664837017904], [44.90243930373757, 34.603420142223], [44.86446223266989, 34.75998551660222], [44.82627153276689, 34.91634387593077], [44.787867771322865, 35.072494613324395], [44.74925151690176, 35.22843713237278], [44.71042333930525, 35.384170847111], [44.671383809541105, 35.53969518198987], [44.63213349979165, 35.69500957184562], [44.59267298338233, 35.85011346186858], [44.553002834750565, 36.00500630757111], [44.51312362941459, 36.15968757475458], [44.47303594394264, 36.314156739475614], [44.43274035592214, 36.46841328801156], [44.39223744392914, 36.622456716825006], [44.351527787497936, 36.77628653252771], [44.31061196709084, 36.929902251843636], [44.26949056406808, 37.083303401571285], [44.228164160657926, 37.23648951854528], [44.18663333992702, 37.38946014959728], [44.1448986857508, 37.542214851516036], [44.10296078278418, 37.69475319100699], [44.060820216432376, 37.84707474465096], [44.018477572821965, 37.9991790988623], [43.975933438772024, 38.151065849846354], [43.93318840176563, 38.302734603556324], [43.89024304992136, 38.454184975649426], [43.847097971965134, 38.60541659144254], [43.80375375720218, 38.75642908586717], [43.760210995489196, 38.907222103423884], [43.71647027720673, 39.05779529813618], [43.67253219323178, 39.208148333503765], [43.6283973349105, 39.358280882455325], [43.584066294031274, 39.50819262730076], [43.53953966279777, 39.6578832596829], [43.49481803380243, 39.80735248052869], [43.449902, 39.9566]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_b4f3ebe74dcd4c61af4bd152e071dff9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5221473b01f47c682b9eee6be74db06 = $(`<div id="html_a5221473b01f47c682b9eee6be74db06" style="width: 100.0%; height: 100.0%;">🏠URFF↔URSS<br />Distance: 275nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SVR660</span> (A320) ↗️<br /><span style="color: #bada55">SVR659</span> (A320) ↘️</div>`)[0];
+            popup_b4f3ebe74dcd4c61af4bd152e071dff9.setContent(html_a5221473b01f47c682b9eee6be74db06);
+        
+
+        poly_line_d55e40ac223345559cd2255531e87b56.bindPopup(popup_b4f3ebe74dcd4c61af4bd152e071dff9)
+        ;
+
+        
+    
+    
+            poly_line_d55e40ac223345559cd2255531e87b56.bindTooltip(
+                `<div>
+                     🏠URFF↔URSS<br />Distance: 275nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SVR660</span> (A320) ↗️<br /><span style="color: #bada55">SVR659</span> (A320) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f7ba584e1e7c44e8abc14e11866e37ee = L.polyline(
+                [[45.0522, 33.975101], [45.4177123614376, 34.50415717220397], [45.78075063758155, 35.04008374276668], [46.14125063528857, 35.5830104750392], [46.499146525671186, 36.133067868588576], [46.85437081433567, 36.690387012409516], [47.20685431269678, 37.25509942382313], [47.55652611056333, 37.82733687223873], [47.903313550204686, 38.4072311869418], [48.24714220212476, 38.99491404806284], [48.58793584278702, 39.59051675987954], [48.925616434551976, 40.194170005608626], [49.260104108106766, 40.806003582855354], [49.59131714768457, 41.42614611890856], [49.91917197939121, 42.05472476509944], [50.24358316297435, 42.691864869482906], [50.56446338739041, 43.33768962715361], [50.88172347054219, 43.9923197075755], [51.19527236357896, 44.65587285838569], [51.50501716016804, 45.328463485231374], [51.81086311116302, 46.0102022073145], [52.112713645109345, 46.70119538845429], [52.410470395040726, 47.40154464363252], [52.704033232031804, 48.11134632116457], [52.993300305980355, 48.83069096083825], [53.278168094098746, 49.559662728586765], [53.55853145759601, 50.29833882850939], [53.83428370703006, 51.04678889332623], [54.10531667680354, 51.80507435465052], [54.37152080926438, 52.573247794782986], [54.63278524885537, 53.35135228207745], [54.888997946733056, 54.13942069229327], [55.14004577624559, 54.93747501873566], [55.385814659621154, 55.7455256743879], [55.626189706172696, 56.56357078965484], [55.86105536227009, 57.39159550976162], [56.09029557326778, 58.229571296278785], [56.31379395750404, 59.07745523767013], [56.531433992406185, 59.935189374173895], [56.743099212646, 60.802700042725]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_8d4658917317416480b594d5756ae8a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cdc2e7277884551b6205d3ad98f5fa0 = $(`<div id="html_8cdc2e7277884551b6205d3ad98f5fa0" style="width: 100.0%; height: 100.0%;">🏠URFF↔USSS<br />Distance: 1222nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SVR2932</span> (A320) ↗️<br /><span style="color: #bada55">SVR2931</span> (A320) ↘️</div>`)[0];
+            popup_8d4658917317416480b594d5756ae8a3.setContent(html_8cdc2e7277884551b6205d3ad98f5fa0);
+        
+
+        poly_line_f7ba584e1e7c44e8abc14e11866e37ee.bindPopup(popup_8d4658917317416480b594d5756ae8a3)
+        ;
+
+        
+    
+    
+            poly_line_f7ba584e1e7c44e8abc14e11866e37ee.bindTooltip(
+                `<div>
+                     🏠URFF↔USSS<br />Distance: 1222nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SVR2932</span> (A320) ↗️<br /><span style="color: #bada55">SVR2931</span> (A320) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d39bb2d9b5f4425e90f0af41bfa028fb = L.polyline(
+                [[45.0522, 33.975101], [45.4177123614376, 34.50415717220397], [45.78075063758155, 35.04008374276668], [46.14125063528857, 35.5830104750392], [46.499146525671186, 36.133067868588576], [46.85437081433567, 36.690387012409516], [47.20685431269678, 37.25509942382313], [47.55652611056333, 37.82733687223873], [47.903313550204686, 38.4072311869418], [48.24714220212476, 38.99491404806284], [48.58793584278702, 39.59051675987954], [48.925616434551976, 40.194170005608626], [49.260104108106766, 40.806003582855354], [49.59131714768457, 41.42614611890856], [49.91917197939121, 42.05472476509944], [50.24358316297435, 42.691864869482906], [50.56446338739041, 43.33768962715361], [50.88172347054219, 43.9923197075755], [51.19527236357896, 44.65587285838569], [51.50501716016804, 45.328463485231374], [51.81086311116302, 46.0102022073145], [52.112713645109345, 46.70119538845429], [52.410470395040726, 47.40154464363252], [52.704033232031804, 48.11134632116457], [52.993300305980355, 48.83069096083825], [53.278168094098746, 49.559662728586765], [53.55853145759601, 50.29833882850939], [53.83428370703006, 51.04678889332623], [54.10531667680354, 51.80507435465052], [54.37152080926438, 52.573247794782986], [54.63278524885537, 53.35135228207745], [54.888997946733056, 54.13942069229327], [55.14004577624559, 54.93747501873566], [55.385814659621154, 55.7455256743879], [55.626189706172696, 56.56357078965484], [55.86105536227009, 57.39159550976162], [56.09029557326778, 58.229571296278785], [56.31379395750404, 59.07745523767013], [56.531433992406185, 59.935189374173895], [56.743099212646, 60.802700042725]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_0989def14f0a4bf2b12613852878051d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_900dcdbc8a0b4c05999f62a424014417 = $(`<div id="html_900dcdbc8a0b4c05999f62a424014417" style="width: 100.0%; height: 100.0%;">🏠URFF↔USSS<br />Distance: 1222nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SVR2932</span> (A320) ↗️<br /><span style="color: #bada55">SVR2931</span> (A320) ↘️</div>`)[0];
+            popup_0989def14f0a4bf2b12613852878051d.setContent(html_900dcdbc8a0b4c05999f62a424014417);
+        
+
+        poly_line_d39bb2d9b5f4425e90f0af41bfa028fb.bindPopup(popup_0989def14f0a4bf2b12613852878051d)
+        ;
+
+        
+    
+    
+            poly_line_d39bb2d9b5f4425e90f0af41bfa028fb.bindTooltip(
+                `<div>
+                     🏠URFF↔USSS<br />Distance: 1222nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SVR2932</span> (A320) ↗️<br /><span style="color: #bada55">SVR2931</span> (A320) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8e48ea8cc2a041a3a2db832711a884bf = L.polyline(
+                [[45.0522, 33.975101], [45.04011579286227, 34.211426816728434], [45.02754441254934, 34.44765081717184], [45.01448628668822, 34.683769072393304], [45.00094185896613, 34.919777667729775], [44.98691158905985, 35.155672703295046], [44.97239595256226, 35.39145029447799], [44.95739544090674, 35.627106572435984], [44.94191056128919, 35.86263768458315], [44.92594183658768, 36.09803979507363], [44.90948980527982, 36.33330908527943], [44.89255502135786, 36.56844175426278], [44.87513805424165, 36.80343401924305], [44.85723948868927, 37.03828211605791], [44.83885992470556, 37.27298229961859], [44.81999997744856, 37.50753084435935], [44.80066027713378, 37.741924044680715], [44.780841468936416, 37.9761582153867], [44.76054421289161, 38.21022969211552], [44.73976918379261, 38.44413483176421], [44.71851707108708, 38.67787001290643], [44.69678857877142, 38.911431636203886], [44.67458442528321, 39.14481612481094], [44.65190534339185, 39.37801992477246], [44.62875208008737, 39.61103950541482], [44.60512539646746, 39.84387135972989], [44.58102606762277, 40.07651200475194], [44.556454882520605, 40.30895798192755], [44.531412643886824, 40.541205857478154], [44.50590016808624, 40.77325222275545], [44.47991828500147, 41.00509369458937], [44.45346783791011, 41.236726915628736], [44.42654968336066, 41.46814855467436], [44.39916469104673, 41.69935530700471], [44.371313743680105, 41.93034389469397], [44.34299773686224, 42.161111066922494], [44.3142175789546, 42.39165360027961], [44.28497419094758, 42.62196829905868], [44.255268506328335, 42.85205199554453], [44.225101470947266, 43.08190155029297]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_3b940ed476254820ac5e3e1b1f912987 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7316965462c04a7fb57cabf499a04c02 = $(`<div id="html_7316965462c04a7fb57cabf499a04c02" style="width: 100.0%; height: 100.0%;">🏠URFF↔URMM<br />Distance: 392nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO506</span> (SU95) ↗️<br /><span style="color: #bada55">AZO505</span> (SU95) ↘️</div>`)[0];
+            popup_3b940ed476254820ac5e3e1b1f912987.setContent(html_7316965462c04a7fb57cabf499a04c02);
+        
+
+        poly_line_8e48ea8cc2a041a3a2db832711a884bf.bindPopup(popup_3b940ed476254820ac5e3e1b1f912987)
+        ;
+
+        
+    
+    
+            poly_line_8e48ea8cc2a041a3a2db832711a884bf.bindTooltip(
+                `<div>
+                     🏠URFF↔URMM<br />Distance: 392nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO506</span> (SU95) ↗️<br /><span style="color: #bada55">AZO505</span> (SU95) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_67d37c6476f5446b866c24ef80aa8c6e = L.polyline(
+                [[45.0522, 33.975101], [45.04011579286227, 34.211426816728434], [45.02754441254934, 34.44765081717184], [45.01448628668822, 34.683769072393304], [45.00094185896613, 34.919777667729775], [44.98691158905985, 35.155672703295046], [44.97239595256226, 35.39145029447799], [44.95739544090674, 35.627106572435984], [44.94191056128919, 35.86263768458315], [44.92594183658768, 36.09803979507363], [44.90948980527982, 36.33330908527943], [44.89255502135786, 36.56844175426278], [44.87513805424165, 36.80343401924305], [44.85723948868927, 37.03828211605791], [44.83885992470556, 37.27298229961859], [44.81999997744856, 37.50753084435935], [44.80066027713378, 37.741924044680715], [44.780841468936416, 37.9761582153867], [44.76054421289161, 38.21022969211552], [44.73976918379261, 38.44413483176421], [44.71851707108708, 38.67787001290643], [44.69678857877142, 38.911431636203886], [44.67458442528321, 39.14481612481094], [44.65190534339185, 39.37801992477246], [44.62875208008737, 39.61103950541482], [44.60512539646746, 39.84387135972989], [44.58102606762277, 40.07651200475194], [44.556454882520605, 40.30895798192755], [44.531412643886824, 40.541205857478154], [44.50590016808624, 40.77325222275545], [44.47991828500147, 41.00509369458937], [44.45346783791011, 41.236726915628736], [44.42654968336066, 41.46814855467436], [44.39916469104673, 41.69935530700471], [44.371313743680105, 41.93034389469397], [44.34299773686224, 42.161111066922494], [44.3142175789546, 42.39165360027961], [44.28497419094758, 42.62196829905868], [44.255268506328335, 42.85205199554453], [44.225101470947266, 43.08190155029297]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_60dc800642cc49bfb07b3b399093d809 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bdc90ebbb26744d0a345933629e1b05b = $(`<div id="html_bdc90ebbb26744d0a345933629e1b05b" style="width: 100.0%; height: 100.0%;">🏠URFF↔URMM<br />Distance: 392nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO506</span> (SU95) ↗️<br /><span style="color: #bada55">AZO505</span> (SU95) ↘️</div>`)[0];
+            popup_60dc800642cc49bfb07b3b399093d809.setContent(html_bdc90ebbb26744d0a345933629e1b05b);
+        
+
+        poly_line_67d37c6476f5446b866c24ef80aa8c6e.bindPopup(popup_60dc800642cc49bfb07b3b399093d809)
+        ;
+
+        
+    
+    
+            poly_line_67d37c6476f5446b866c24ef80aa8c6e.bindTooltip(
+                `<div>
+                     🏠URFF↔URMM<br />Distance: 392nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO506</span> (SU95) ↗️<br /><span style="color: #bada55">AZO505</span> (SU95) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b2c06c71b1234d709819ea71e0cb6361 = L.polyline(
+                [[45.0522, 33.975101], [45.05469436120037, 34.10827155111234], [45.0570339476628, 34.24145335953469], [45.059218734080645, 34.374645706051254], [45.061248696817024, 34.507847870990545], [45.063123813905996, 34.641059134256444], [45.06484406505375, 34.774278775359186], [45.066409431639606, 34.90750607344646], [45.067819896716976, 35.04074030733455], [45.06907544501425, 35.173980755539446], [45.07017606293556, 35.307226696308064], [45.07112173856153, 35.44047740764945], [45.0719124616498, 35.57373216736601], [45.07254822363565, 35.706990253084776], [45.07302901763236, 35.840250942288684], [45.07335483843163, 35.97351351234789], [45.0735256825038, 36.10677724055102], [45.07354154799807, 36.240041404136534], [45.07340243474254, 36.37330528032399], [45.0731083442443, 36.506568146345465], [45.07265927968926, 36.639829279476764], [45.07205524594208, 36.77308795706877], [45.07129624954584, 36.90634345657878], [45.07038229872173, 37.039595055601815], [45.06931340336867, 37.172842031901794], [45.068089575062714, 37.30608366344292], [45.06671082705654, 37.43931922842087], [45.06517717427873, 37.572548005293996], [45.063488633332994, 37.70576927281458], [45.06164522249731, 37.83898231005989], [45.05964696172303, 37.97218639646343], [45.05749387263382, 38.10538081184594], [45.055185978524534, 38.23856483644647], [45.05272330436006, 38.3717377509534], [45.050105876774, 38.504898836535396], [45.04733372406733, 38.6380473748723], [45.04440687620693, 38.77118264818601], [45.04132536482406, 38.90430393927128], [45.03808922321274, 39.037410531526405], [45.034698486328, 39.170501708984]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_0cacbaff8bc54ccbb7ca55ee8f501382 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edc83b7af75049859d73f6d90ad30876 = $(`<div id="html_edc83b7af75049859d73f6d90ad30876" style="width: 100.0%; height: 100.0%;">🏠URFF↔URKK<br />Distance: 220nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO306</span> (SU95) ↗️<br /><span style="color: #bada55">AZO305</span> (SU95) ↘️</div>`)[0];
+            popup_0cacbaff8bc54ccbb7ca55ee8f501382.setContent(html_edc83b7af75049859d73f6d90ad30876);
+        
+
+        poly_line_b2c06c71b1234d709819ea71e0cb6361.bindPopup(popup_0cacbaff8bc54ccbb7ca55ee8f501382)
+        ;
+
+        
+    
+    
+            poly_line_b2c06c71b1234d709819ea71e0cb6361.bindTooltip(
+                `<div>
+                     🏠URFF↔URKK<br />Distance: 220nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO306</span> (SU95) ↗️<br /><span style="color: #bada55">AZO305</span> (SU95) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_392d74371c9241acabcb59aeaebb9477 = L.polyline(
+                [[45.0522, 33.975101], [45.05469436120037, 34.10827155111234], [45.0570339476628, 34.24145335953469], [45.059218734080645, 34.374645706051254], [45.061248696817024, 34.507847870990545], [45.063123813905996, 34.641059134256444], [45.06484406505375, 34.774278775359186], [45.066409431639606, 34.90750607344646], [45.067819896716976, 35.04074030733455], [45.06907544501425, 35.173980755539446], [45.07017606293556, 35.307226696308064], [45.07112173856153, 35.44047740764945], [45.0719124616498, 35.57373216736601], [45.07254822363565, 35.706990253084776], [45.07302901763236, 35.840250942288684], [45.07335483843163, 35.97351351234789], [45.0735256825038, 36.10677724055102], [45.07354154799807, 36.240041404136534], [45.07340243474254, 36.37330528032399], [45.0731083442443, 36.506568146345465], [45.07265927968926, 36.639829279476764], [45.07205524594208, 36.77308795706877], [45.07129624954584, 36.90634345657878], [45.07038229872173, 37.039595055601815], [45.06931340336867, 37.172842031901794], [45.068089575062714, 37.30608366344292], [45.06671082705654, 37.43931922842087], [45.06517717427873, 37.572548005293996], [45.063488633332994, 37.70576927281458], [45.06164522249731, 37.83898231005989], [45.05964696172303, 37.97218639646343], [45.05749387263382, 38.10538081184594], [45.055185978524534, 38.23856483644647], [45.05272330436006, 38.3717377509534], [45.050105876774, 38.504898836535396], [45.04733372406733, 38.6380473748723], [45.04440687620693, 38.77118264818601], [45.04132536482406, 38.90430393927128], [45.03808922321274, 39.037410531526405], [45.034698486328, 39.170501708984]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_d20cb84d3a574537bc5a52966073c4fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c792802aabd411d83fade1be79b6b76 = $(`<div id="html_8c792802aabd411d83fade1be79b6b76" style="width: 100.0%; height: 100.0%;">🏠URFF↔URKK<br />Distance: 220nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO306</span> (SU95) ↗️<br /><span style="color: #bada55">AZO305</span> (SU95) ↘️</div>`)[0];
+            popup_d20cb84d3a574537bc5a52966073c4fe.setContent(html_8c792802aabd411d83fade1be79b6b76);
+        
+
+        poly_line_392d74371c9241acabcb59aeaebb9477.bindPopup(popup_d20cb84d3a574537bc5a52966073c4fe)
+        ;
+
+        
+    
+    
+            poly_line_392d74371c9241acabcb59aeaebb9477.bindTooltip(
+                `<div>
+                     🏠URFF↔URKK<br />Distance: 220nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO306</span> (SU95) ↗️<br /><span style="color: #bada55">AZO305</span> (SU95) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_96c8e193138a42b18b171821d65c21b7 = L.polyline(
+                [[45.0522, 33.975101], [45.01576637383198, 34.33742734731044], [44.97818858247859, 34.69928570994876], [44.939469623406204, 35.06066290129714], [44.89961257485016, 35.42154588374094], [44.85862059469755, 35.781921771917695], [44.81649691934809, 36.14177783585831], [44.77324486255407, 36.50110150401898], [44.72886781424019, 36.85988036620269], [44.683369239304234, 37.218102176369364], [44.63675267639984, 37.575754855333756], [44.589021736701724, 37.93282649335007], [44.54018010265492, 38.28930535258313], [44.49023152670872, 38.645179869465224], [44.43917983003615, 39.00043865693841], [44.38702890124025, 39.35507050658204], [44.33378269504788, 39.709064390625436], [44.279445230992124, 40.062409463845654], [44.22402059208415, 40.41509506535053], [44.167512923475655, 40.76711072024721], [44.10992643111255, 41.11844614119672], [44.051265380381125, 41.46909122985474], [43.99153409474744, 41.819036078199645], [43.93073695439085, 42.16827096974801], [43.86887839483271, 42.516786380658885], [43.805962905561, 42.86457298072744], [43.741995028651864, 43.21162163426909], [43.676979357388866, 43.557923400895376], [43.610920534880904, 43.90346953618245], [43.5438232526795, 44.24825149223399], [43.47569224939649, 44.59226091813936], [43.40653230932264, 44.93548966032889], [43.33634826104837, 45.27792976282769], [43.265144976086944, 45.619573467409545], [43.19292736750124, 45.96041321365267], [43.119700388534724, 46.30044163889903], [43.0454690312472, 46.63965157811908], [42.970238325156345, 46.97803606368367], [42.894013335885475, 47.31558832504525], [42.81679916381836, 47.65230178833008]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_3f7d321d68b5436dae6ab51c41abe949 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f83943ff082429b9bbaa6886fd8820d = $(`<div id="html_7f83943ff082429b9bbaa6886fd8820d" style="width: 100.0%; height: 100.0%;">🏠URFF↔URML<br />Distance: 606nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">UVT588</span> (CRJ2) ↗️<br /><span style="color: #bada55">UVT587</span> (CRJ2) ↘️</div>`)[0];
+            popup_3f7d321d68b5436dae6ab51c41abe949.setContent(html_7f83943ff082429b9bbaa6886fd8820d);
+        
+
+        poly_line_96c8e193138a42b18b171821d65c21b7.bindPopup(popup_3f7d321d68b5436dae6ab51c41abe949)
+        ;
+
+        
+    
+    
+            poly_line_96c8e193138a42b18b171821d65c21b7.bindTooltip(
+                `<div>
+                     🏠URFF↔URML<br />Distance: 606nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">UVT588</span> (CRJ2) ↗️<br /><span style="color: #bada55">UVT587</span> (CRJ2) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b325e8d817924b55a57fec54504ae7fa = L.polyline(
+                [[45.0522, 33.975101], [45.01576637383198, 34.33742734731044], [44.97818858247859, 34.69928570994876], [44.939469623406204, 35.06066290129714], [44.89961257485016, 35.42154588374094], [44.85862059469755, 35.781921771917695], [44.81649691934809, 36.14177783585831], [44.77324486255407, 36.50110150401898], [44.72886781424019, 36.85988036620269], [44.683369239304234, 37.218102176369364], [44.63675267639984, 37.575754855333756], [44.589021736701724, 37.93282649335007], [44.54018010265492, 38.28930535258313], [44.49023152670872, 38.645179869465224], [44.43917983003615, 39.00043865693841], [44.38702890124025, 39.35507050658204], [44.33378269504788, 39.709064390625436], [44.279445230992124, 40.062409463845654], [44.22402059208415, 40.41509506535053], [44.167512923475655, 40.76711072024721], [44.10992643111255, 41.11844614119672], [44.051265380381125, 41.46909122985474], [43.99153409474744, 41.819036078199645], [43.93073695439085, 42.16827096974801], [43.86887839483271, 42.516786380658885], [43.805962905561, 42.86457298072744], [43.741995028651864, 43.21162163426909], [43.676979357388866, 43.557923400895376], [43.610920534880904, 43.90346953618245], [43.5438232526795, 44.24825149223399], [43.47569224939649, 44.59226091813936], [43.40653230932264, 44.93548966032889], [43.33634826104837, 45.27792976282769], [43.265144976086944, 45.619573467409545], [43.19292736750124, 45.96041321365267], [43.119700388534724, 46.30044163889903], [43.0454690312472, 46.63965157811908], [42.970238325156345, 46.97803606368367], [42.894013335885475, 47.31558832504525], [42.81679916381836, 47.65230178833008]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_3f3bb3c61d6f4ee2a00d28d59403db3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e6b6483bc7747c592b4e9b6042d534e = $(`<div id="html_1e6b6483bc7747c592b4e9b6042d534e" style="width: 100.0%; height: 100.0%;">🏠URFF↔URML<br />Distance: 606nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">UVT588</span> (CRJ2) ↗️<br /><span style="color: #bada55">UVT587</span> (CRJ2) ↘️</div>`)[0];
+            popup_3f3bb3c61d6f4ee2a00d28d59403db3c.setContent(html_1e6b6483bc7747c592b4e9b6042d534e);
+        
+
+        poly_line_b325e8d817924b55a57fec54504ae7fa.bindPopup(popup_3f3bb3c61d6f4ee2a00d28d59403db3c)
+        ;
+
+        
+    
+    
+            poly_line_b325e8d817924b55a57fec54504ae7fa.bindTooltip(
+                `<div>
+                     🏠URFF↔URML<br />Distance: 606nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">UVT588</span> (CRJ2) ↗️<br /><span style="color: #bada55">UVT587</span> (CRJ2) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fb5a495f10d5426095eeab3c01a76ced = L.polyline(
+                [[45.0522, 33.975101], [45.34472334211913, 34.290006797835275], [45.63637238298179, 34.608179024700334], [45.92712898007474, 34.92967537756348], [46.21697457346342, 35.254554479607755], [46.5058901755867, 35.582875885464354], [46.793856360858754, 35.914700085534484], [47.08085325508053, 36.25008850931586], [47.366860524663345, 36.589103527644774], [47.6518573656687, 36.93180845375939], [47.93582249266827, 37.278267543083714], [48.21873412742971, 37.628545991626176], [48.50056998743425, 37.9827099328801], [48.78130727423327, 38.34082643310708], [49.06092266165238, 38.70296348487738], [49.33939228385197, 39.06918999873459], [49.616691723255535, 39.43957579284456], [49.892795998357194, 39.81419158048101], [50.16767955142236, 40.19310895519284], [50.441316236096476, 40.57640037349014], [50.7136793049384, 40.96413913487788], [50.984741396897185, 41.35639935905839], [51.25447452475247, 41.75325596011495], [51.52285006254099, 42.154784617481035], [51.78983873299395, 42.561061743491045], [52.05541059501172, 42.97216444730005], [52.319535031205774, 43.38817049495174], [52.58218073553924, 43.8091582653657], [52.84331570110101, 44.235206702007055], [53.10290720805074, 44.66639525999376], [53.360921811775206, 45.10280384838972], [53.61732533130001, 45.5445127674245], [53.87208283800306, 45.99160264037493], [54.12515864468087, 46.444154339837226], [54.37651629502146, 46.90224890811451], [54.626118553541716, 47.36596747143987], [54.87392739605106, 47.83539114775315], [55.11990400070721, 48.31060094774766], [55.36400873973394, 48.79167766890373], [55.606201171875, 49.278701782227]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_531110d7b319471fa169c8a711169a78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd2cdc017834425bb86798b26b59cb2c = $(`<div id="html_fd2cdc017834425bb86798b26b59cb2c" style="width: 100.0%; height: 100.0%;">🏠URFF↔UWKD<br />Distance: 860nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">KAR128</span> (E190) ↗️<br /><span style="color: #bada55">KAR127</span> (E190) ↘️</div>`)[0];
+            popup_531110d7b319471fa169c8a711169a78.setContent(html_fd2cdc017834425bb86798b26b59cb2c);
+        
+
+        poly_line_fb5a495f10d5426095eeab3c01a76ced.bindPopup(popup_531110d7b319471fa169c8a711169a78)
+        ;
+
+        
+    
+    
+            poly_line_fb5a495f10d5426095eeab3c01a76ced.bindTooltip(
+                `<div>
+                     🏠URFF↔UWKD<br />Distance: 860nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">KAR128</span> (E190) ↗️<br /><span style="color: #bada55">KAR127</span> (E190) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fb6e12e426c74d6ea0825f03f81d0d28 = L.polyline(
+                [[45.0522, 33.975101], [45.34472334211913, 34.290006797835275], [45.63637238298179, 34.608179024700334], [45.92712898007474, 34.92967537756348], [46.21697457346342, 35.254554479607755], [46.5058901755867, 35.582875885464354], [46.793856360858754, 35.914700085534484], [47.08085325508053, 36.25008850931586], [47.366860524663345, 36.589103527644774], [47.6518573656687, 36.93180845375939], [47.93582249266827, 37.278267543083714], [48.21873412742971, 37.628545991626176], [48.50056998743425, 37.9827099328801], [48.78130727423327, 38.34082643310708], [49.06092266165238, 38.70296348487738], [49.33939228385197, 39.06918999873459], [49.616691723255535, 39.43957579284456], [49.892795998357194, 39.81419158048101], [50.16767955142236, 40.19310895519284], [50.441316236096476, 40.57640037349014], [50.7136793049384, 40.96413913487788], [50.984741396897185, 41.35639935905839], [51.25447452475247, 41.75325596011495], [51.52285006254099, 42.154784617481035], [51.78983873299395, 42.561061743491045], [52.05541059501172, 42.97216444730005], [52.319535031205774, 43.38817049495174], [52.58218073553924, 43.8091582653657], [52.84331570110101, 44.235206702007055], [53.10290720805074, 44.66639525999376], [53.360921811775206, 45.10280384838972], [53.61732533130001, 45.5445127674245], [53.87208283800306, 45.99160264037493], [54.12515864468087, 46.444154339837226], [54.37651629502146, 46.90224890811451], [54.626118553541716, 47.36596747143987], [54.87392739605106, 47.83539114775315], [55.11990400070721, 48.31060094774766], [55.36400873973394, 48.79167766890373], [55.606201171875, 49.278701782227]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_2609f1f8c9e64426b4ed0b921ff5eadb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24ced4d290004af7b2c50798d7e3a66a = $(`<div id="html_24ced4d290004af7b2c50798d7e3a66a" style="width: 100.0%; height: 100.0%;">🏠URFF↔UWKD<br />Distance: 860nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">KAR128</span> (E190) ↗️<br /><span style="color: #bada55">KAR127</span> (E190) ↘️</div>`)[0];
+            popup_2609f1f8c9e64426b4ed0b921ff5eadb.setContent(html_24ced4d290004af7b2c50798d7e3a66a);
+        
+
+        poly_line_fb6e12e426c74d6ea0825f03f81d0d28.bindPopup(popup_2609f1f8c9e64426b4ed0b921ff5eadb)
+        ;
+
+        
+    
+    
+            poly_line_fb6e12e426c74d6ea0825f03f81d0d28.bindTooltip(
+                `<div>
+                     🏠URFF↔UWKD<br />Distance: 860nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">KAR128</span> (E190) ↗️<br /><span style="color: #bada55">KAR127</span> (E190) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7407bfc5ae6e4b3b8999bfa1f0119f8f = L.polyline(
+                [[45.0522, 33.975101], [45.32344986931855, 34.043187592232975], [45.59465889715362, 34.1119292680228], [45.86582629641021, 34.18133855059135], [46.1369512609867, 34.251428262088695], [46.40803296518866, 34.32221153268764], [46.67907056312096, 34.393701810006576], [46.95006318805746, 34.46591286887468], [47.22100995178738, 34.53885882145369], [47.49190994393701, 34.61255412773138], [47.76276223126609, 34.68701360640301], [48.0335658569375, 34.76225244615685], [48.304319839759074, 34.83828621738163], [48.5750231733965, 34.91513088431413], [48.84567482555571, 34.99280281764606], [49.116273737133696, 35.071318807610496], [49.386818821336114, 35.15069607756897], [49.6573089627603, 35.23095229812161], [49.92774301644194, 35.312105601763285], [50.19811980686398, 35.394174598110986], [50.46843812692569, 35.477178389727406], [50.738696736870445, 35.56113658856852], [51.008894363169844, 35.64606933308327], [51.27902969736242, 35.73199730599541], [51.549101394844676, 35.81894175279912], [51.819108073612156, 35.9069245010016], [52.089048312948165, 35.99596798014728], [52.358920652057584, 36.086095242660875], [52.62872358864323, 36.17732998554768], [52.89845557742167, 36.26969657299192], [53.168115028575784, 36.36322005989637], [53.437700306140876, 36.45792621640843], [53.70720972632079, 36.55384155348027], [53.976641555730886, 36.65099334951378], [54.245994009563766, 36.74940967814333], [54.51526524967418, 36.84911943721224], [54.784453382578725, 36.95015237900262], [55.053556457366, 37.05253914178071], [55.3225724635126, 37.15631128272404], [55.5914993286, 37.2615013123]],
+                {"bubblingMouseEvents": true, "color": "#00000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_872bb064efa94fb6962cd7b57825a0ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_709e1ca1f52a453e8b4e773c2f66216c = $(`<div id="html_709e1ca1f52a453e8b4e773c2f66216c" style="width: 100.0%; height: 100.0%;">🏠URFF↔UUWW<br />Distance: 645nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SYL781</span> (B737) ↘️</div>`)[0];
+            popup_872bb064efa94fb6962cd7b57825a0ec.setContent(html_709e1ca1f52a453e8b4e773c2f66216c);
+        
+
+        poly_line_7407bfc5ae6e4b3b8999bfa1f0119f8f.bindPopup(popup_872bb064efa94fb6962cd7b57825a0ec)
+        ;
+
+        
+    
+    
+            poly_line_7407bfc5ae6e4b3b8999bfa1f0119f8f.bindTooltip(
+                `<div>
+                     🏠URFF↔UUWW<br />Distance: 645nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SYL781</span> (B737) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bd6143a4023f490fbac52147e941207d = L.polyline(
+                [[45.0522, 33.975101], [45.32344986931855, 34.043187592232975], [45.59465889715362, 34.1119292680228], [45.86582629641021, 34.18133855059135], [46.1369512609867, 34.251428262088695], [46.40803296518866, 34.32221153268764], [46.67907056312096, 34.393701810006576], [46.95006318805746, 34.46591286887468], [47.22100995178738, 34.53885882145369], [47.49190994393701, 34.61255412773138], [47.76276223126609, 34.68701360640301], [48.0335658569375, 34.76225244615685], [48.304319839759074, 34.83828621738163], [48.5750231733965, 34.91513088431413], [48.84567482555571, 34.99280281764606], [49.116273737133696, 35.071318807610496], [49.386818821336114, 35.15069607756897], [49.6573089627603, 35.23095229812161], [49.92774301644194, 35.312105601763285], [50.19811980686398, 35.394174598110986], [50.46843812692569, 35.477178389727406], [50.738696736870445, 35.56113658856852], [51.008894363169844, 35.64606933308327], [51.27902969736242, 35.73199730599541], [51.549101394844676, 35.81894175279912], [51.819108073612156, 35.9069245010016], [52.089048312948165, 35.99596798014728], [52.358920652057584, 36.086095242660875], [52.62872358864323, 36.17732998554768], [52.89845557742167, 36.26969657299192], [53.168115028575784, 36.36322005989637], [53.437700306140876, 36.45792621640843], [53.70720972632079, 36.55384155348027], [53.976641555730886, 36.65099334951378], [54.245994009563766, 36.74940967814333], [54.51526524967418, 36.84911943721224], [54.784453382578725, 36.95015237900262], [55.053556457366, 37.05253914178071], [55.3225724635126, 37.15631128272404], [55.5914993286, 37.2615013123]],
+                {"bubblingMouseEvents": true, "color": "#bada55", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#bada55", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_789bfe9126734eb19c26e6f7038b2260 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0177992483834e269e65245a7c30d6be = $(`<div id="html_0177992483834e269e65245a7c30d6be" style="width: 100.0%; height: 100.0%;">🏠URFF↔UUWW<br />Distance: 645nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SYL781</span> (B737) ↘️</div>`)[0];
+            popup_789bfe9126734eb19c26e6f7038b2260.setContent(html_0177992483834e269e65245a7c30d6be);
+        
+
+        poly_line_bd6143a4023f490fbac52147e941207d.bindPopup(popup_789bfe9126734eb19c26e6f7038b2260)
+        ;
+
+        
+    
+    
+            poly_line_bd6143a4023f490fbac52147e941207d.bindTooltip(
+                `<div>
+                     🏠URFF↔UUWW<br />Distance: 645nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SYL781</span> (B737) ↘️
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1ef9a0cbf85c4f33ae01882c0e582f07 = L.circleMarker(
+                [59.80030059814453, 30.262500762939453],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_976133a2bb4b44e889f1323a9e256c49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aeb859de536c41189c4727fff825b889 = $(`<div id="html_aeb859de536c41189c4727fff825b889" style="width: 100.0%; height: 100.0%;"><div ><strong>Pulkovo Airport</strong> (ULLI)<br />Distance: 896nm <br />Flights: 8 (Booked: 0)<br /><span style="color: #bada55">NWS130</span> (B738) ↘️<br /><span style="color: #bada55">SDM6986</span> (A320) ↘️<br /><span style="color: #bada55">SDM6892</span> (A320) ↘️<br /><span style="color: #bada55">SDM6896</span> (A319) ↘️<br /><span style="color: #bada55">NWS129</span> (B738) ↗️<br /><span style="color: #bada55">SDM6985</span> (A320) ↗️<br /><span style="color: #bada55">SDM6891</span> (A320) ↗️<br /><span style="color: #bada55">SDM6895</span> (A319) ↗️</div></div>`)[0];
+            popup_976133a2bb4b44e889f1323a9e256c49.setContent(html_aeb859de536c41189c4727fff825b889);
+        
+
+        circle_marker_1ef9a0cbf85c4f33ae01882c0e582f07.bindPopup(popup_976133a2bb4b44e889f1323a9e256c49)
+        ;
+
+        
+    
+    
+            circle_marker_1ef9a0cbf85c4f33ae01882c0e582f07.bindTooltip(
+                `<div>
+                     <div ><strong>Pulkovo Airport</strong> (ULLI)<br />Distance: 896nm <br />Flights: 8 (Booked: 0)<br /><span style="color: #bada55">NWS130</span> (B738) ↘️<br /><span style="color: #bada55">SDM6986</span> (A320) ↘️<br /><span style="color: #bada55">SDM6892</span> (A320) ↘️<br /><span style="color: #bada55">SDM6896</span> (A319) ↘️<br /><span style="color: #bada55">NWS129</span> (B738) ↗️<br /><span style="color: #bada55">SDM6985</span> (A320) ↗️<br /><span style="color: #bada55">SDM6891</span> (A320) ↗️<br /><span style="color: #bada55">SDM6895</span> (A319) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6ac8eb8317704a9e8dbe66b81520df61 = L.circleMarker(
+                [55.012599945068, 82.650703430176],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_b69c08083da74a848e416debb6e0b832 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd8b7d5aa721426d889a2726dd9d43e3 = $(`<div id="html_bd8b7d5aa721426d889a2726dd9d43e3" style="width: 100.0%; height: 100.0%;"><div ><strong>Tolmachevo Airport</strong> (UNNT)<br />Distance: 1926nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SBI5136</span> (A20N) ↘️<br /><span style="color: #bada55">SBI5135</span> (A20N) ↗️</div></div>`)[0];
+            popup_b69c08083da74a848e416debb6e0b832.setContent(html_bd8b7d5aa721426d889a2726dd9d43e3);
+        
+
+        circle_marker_6ac8eb8317704a9e8dbe66b81520df61.bindPopup(popup_b69c08083da74a848e416debb6e0b832)
+        ;
+
+        
+    
+    
+            circle_marker_6ac8eb8317704a9e8dbe66b81520df61.bindTooltip(
+                `<div>
+                     <div ><strong>Tolmachevo Airport</strong> (UNNT)<br />Distance: 1926nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SBI5136</span> (A20N) ↘️<br /><span style="color: #bada55">SBI5135</span> (A20N) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4979ba60401341fb805d394dccf47820 = L.circle(
+                [45.0522, 33.975101],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 370400, "stroke": true, "weight": 1}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_bc7a7b5d5acc44469d24489c20ed9e06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3204dfebffd742f7a505c9b41b7a56cc = $(`<div id="html_3204dfebffd742f7a505c9b41b7a56cc" style="width: 100.0%; height: 100.0%;">1 hr flight</div>`)[0];
+            popup_bc7a7b5d5acc44469d24489c20ed9e06.setContent(html_3204dfebffd742f7a505c9b41b7a56cc);
+        
+
+        circle_4979ba60401341fb805d394dccf47820.bindPopup(popup_bc7a7b5d5acc44469d24489c20ed9e06)
+        ;
+
+        
+    
+    
+            var circle_6ccedbb3fd194d84815751eb851fa157 = L.circle(
+                [45.0522, 33.975101],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1111000.0, "stroke": true, "weight": 1}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_ba5afcedb253481cb9ecebf7e38f1e93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc3816c5c3ec4d538d60456422d5fa76 = $(`<div id="html_fc3816c5c3ec4d538d60456422d5fa76" style="width: 100.0%; height: 100.0%;">2 hr flight</div>`)[0];
+            popup_ba5afcedb253481cb9ecebf7e38f1e93.setContent(html_fc3816c5c3ec4d538d60456422d5fa76);
+        
+
+        circle_6ccedbb3fd194d84815751eb851fa157.bindPopup(popup_ba5afcedb253481cb9ecebf7e38f1e93)
+        ;
+
+        
+    
+    
+            var circle_dc62df1076c146348fe0868a3e5b90b1 = L.circle(
+                [45.0522, 33.975101],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1852000.0, "stroke": true, "weight": 1}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_fdd23576eaca4daf95cc5e323741aa65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b09f4e4d1da4cfc94360e38ea34763f = $(`<div id="html_0b09f4e4d1da4cfc94360e38ea34763f" style="width: 100.0%; height: 100.0%;">3 hr flight</div>`)[0];
+            popup_fdd23576eaca4daf95cc5e323741aa65.setContent(html_0b09f4e4d1da4cfc94360e38ea34763f);
+        
+
+        circle_dc62df1076c146348fe0868a3e5b90b1.bindPopup(popup_fdd23576eaca4daf95cc5e323741aa65)
+        ;
+
+        
+    
+    
+            var circle_a6d6525d0fbf4b899079e793b08389c5 = L.circle(
+                [45.0522, 33.975101],
+                {"bubblingMouseEvents": true, "color": "#8a2be2", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#8a2be2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2463160, "stroke": true, "weight": 1}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_98d051e7f268417f9efa81cbbfac5dd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_624f0e3fe6b540728aeb7750633b01cc = $(`<div id="html_624f0e3fe6b540728aeb7750633b01cc" style="width: 100.0%; height: 100.0%;">4 hr flight</div>`)[0];
+            popup_98d051e7f268417f9efa81cbbfac5dd9.setContent(html_624f0e3fe6b540728aeb7750633b01cc);
+        
+
+        circle_a6d6525d0fbf4b899079e793b08389c5.bindPopup(popup_98d051e7f268417f9efa81cbbfac5dd9)
+        ;
+
+        
+    
+    
+            var circle_marker_6834467196324941a2fd91e34c400ca9 = L.circleMarker(
+                [45.0522, 33.975101],
+                {"bubblingMouseEvents": true, "color": "#FF6666", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF6666", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_14fde0029a6449e086b77e5c41cb3347 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55169f74756b474e9a96dd534aab7343 = $(`<div id="html_55169f74756b474e9a96dd534aab7343" style="width: 100.0%; height: 100.0%;"><div ><strong>Simferopol International Airport</strong> (URFF)<br /></div></div>`)[0];
+            popup_14fde0029a6449e086b77e5c41cb3347.setContent(html_55169f74756b474e9a96dd534aab7343);
+        
+
+        circle_marker_6834467196324941a2fd91e34c400ca9.bindPopup(popup_14fde0029a6449e086b77e5c41cb3347)
+        ;
+
+        
+    
+    
+            circle_marker_6834467196324941a2fd91e34c400ca9.bindTooltip(
+                `<div>
+                     <div ><strong>Simferopol International Airport</strong> (URFF)<br /></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d9b49ce82eff48899ddac79ec5135b7a = L.circleMarker(
+                [45.034698486328, 39.170501708984],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_10836025d6af4ac197206aea3b956804 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1bd22ffd90a423d8e1bea41948adabf = $(`<div id="html_c1bd22ffd90a423d8e1bea41948adabf" style="width: 100.0%; height: 100.0%;"><div ><strong>Krasnodar Pashkovsky International Airport</strong> (URKK)<br />Distance: 220nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO306</span> (SU95) ↘️<br /><span style="color: #bada55">AZO305</span> (SU95) ↗️</div></div>`)[0];
+            popup_10836025d6af4ac197206aea3b956804.setContent(html_c1bd22ffd90a423d8e1bea41948adabf);
+        
+
+        circle_marker_d9b49ce82eff48899ddac79ec5135b7a.bindPopup(popup_10836025d6af4ac197206aea3b956804)
+        ;
+
+        
+    
+    
+            circle_marker_d9b49ce82eff48899ddac79ec5135b7a.bindTooltip(
+                `<div>
+                     <div ><strong>Krasnodar Pashkovsky International Airport</strong> (URKK)<br />Distance: 220nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO306</span> (SU95) ↘️<br /><span style="color: #bada55">AZO305</span> (SU95) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fe27715115434866a4f9e2ff6536a689 = L.circleMarker(
+                [42.81679916381836, 47.65230178833008],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_1fd1892b48da4de2835cacea0fb242d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0cd0acc42f04721b8672fdcf0bd2f25 = $(`<div id="html_c0cd0acc42f04721b8672fdcf0bd2f25" style="width: 100.0%; height: 100.0%;"><div ><strong>Uytash Airport</strong> (URML)<br />Distance: 606nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">UVT588</span> (CRJ2) ↘️<br /><span style="color: #bada55">UVT587</span> (CRJ2) ↗️</div></div>`)[0];
+            popup_1fd1892b48da4de2835cacea0fb242d9.setContent(html_c0cd0acc42f04721b8672fdcf0bd2f25);
+        
+
+        circle_marker_fe27715115434866a4f9e2ff6536a689.bindPopup(popup_1fd1892b48da4de2835cacea0fb242d9)
+        ;
+
+        
+    
+    
+            circle_marker_fe27715115434866a4f9e2ff6536a689.bindTooltip(
+                `<div>
+                     <div ><strong>Uytash Airport</strong> (URML)<br />Distance: 606nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">UVT588</span> (CRJ2) ↘️<br /><span style="color: #bada55">UVT587</span> (CRJ2) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_842ad927f6b344f2a898f76e65407383 = L.circleMarker(
+                [44.225101470947266, 43.08190155029297],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_70140c9ac162436fa8e84f14b2337e19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_197bda137d3240ddb69af00045a3093d = $(`<div id="html_197bda137d3240ddb69af00045a3093d" style="width: 100.0%; height: 100.0%;"><div ><strong>Mineralnyye Vody Airport</strong> (URMM)<br />Distance: 392nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO506</span> (SU95) ↘️<br /><span style="color: #bada55">AZO505</span> (SU95) ↗️</div></div>`)[0];
+            popup_70140c9ac162436fa8e84f14b2337e19.setContent(html_197bda137d3240ddb69af00045a3093d);
+        
+
+        circle_marker_842ad927f6b344f2a898f76e65407383.bindPopup(popup_70140c9ac162436fa8e84f14b2337e19)
+        ;
+
+        
+    
+    
+            circle_marker_842ad927f6b344f2a898f76e65407383.bindTooltip(
+                `<div>
+                     <div ><strong>Mineralnyye Vody Airport</strong> (URMM)<br />Distance: 392nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO506</span> (SU95) ↘️<br /><span style="color: #bada55">AZO505</span> (SU95) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ca29e2d08fa5449ea2955db7f3d86733 = L.circleMarker(
+                [47.493888, 39.924722],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_2976601d4cab4b98bd362e67375daa69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05a6947519b34485b4d8a7f6014ee94a = $(`<div id="html_05a6947519b34485b4d8a7f6014ee94a" style="width: 100.0%; height: 100.0%;"><div ><strong>Platov International Airport</strong> (URRP)<br />Distance: 287nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO206</span> (SU95) ↘️<br /><span style="color: #bada55">AZO205</span> (SU95) ↗️</div></div>`)[0];
+            popup_2976601d4cab4b98bd362e67375daa69.setContent(html_05a6947519b34485b4d8a7f6014ee94a);
+        
+
+        circle_marker_ca29e2d08fa5449ea2955db7f3d86733.bindPopup(popup_2976601d4cab4b98bd362e67375daa69)
+        ;
+
+        
+    
+    
+            circle_marker_ca29e2d08fa5449ea2955db7f3d86733.bindTooltip(
+                `<div>
+                     <div ><strong>Platov International Airport</strong> (URRP)<br />Distance: 287nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO206</span> (SU95) ↘️<br /><span style="color: #bada55">AZO205</span> (SU95) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_95247008e1b44309ae848e03911a28e5 = L.circleMarker(
+                [43.449902, 39.9566],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_72ae48afcb3949d39ff4dac441af1bf3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc854492511141a3a2fb951881885da9 = $(`<div id="html_bc854492511141a3a2fb951881885da9" style="width: 100.0%; height: 100.0%;"><div ><strong>Sochi International Airport</strong> (URSS)<br />Distance: 275nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SVR660</span> (A320) ↘️<br /><span style="color: #bada55">SVR659</span> (A320) ↗️</div></div>`)[0];
+            popup_72ae48afcb3949d39ff4dac441af1bf3.setContent(html_bc854492511141a3a2fb951881885da9);
+        
+
+        circle_marker_95247008e1b44309ae848e03911a28e5.bindPopup(popup_72ae48afcb3949d39ff4dac441af1bf3)
+        ;
+
+        
+    
+    
+            circle_marker_95247008e1b44309ae848e03911a28e5.bindTooltip(
+                `<div>
+                     <div ><strong>Sochi International Airport</strong> (URSS)<br />Distance: 275nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SVR660</span> (A320) ↘️<br /><span style="color: #bada55">SVR659</span> (A320) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1ff08d0ae1aa43d6bb62cc0a0d468e0d = L.circleMarker(
+                [56.743099212646, 60.802700042725],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_634df9bacee7436abb65d54f187ed84b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1e7529af016404ab5e46b2225cea91c = $(`<div id="html_a1e7529af016404ab5e46b2225cea91c" style="width: 100.0%; height: 100.0%;"><div ><strong>Koltsovo Airport</strong> (USSS)<br />Distance: 1222nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SVR2932</span> (A320) ↘️<br /><span style="color: #bada55">SVR2931</span> (A320) ↗️</div></div>`)[0];
+            popup_634df9bacee7436abb65d54f187ed84b.setContent(html_a1e7529af016404ab5e46b2225cea91c);
+        
+
+        circle_marker_1ff08d0ae1aa43d6bb62cc0a0d468e0d.bindPopup(popup_634df9bacee7436abb65d54f187ed84b)
+        ;
+
+        
+    
+    
+            circle_marker_1ff08d0ae1aa43d6bb62cc0a0d468e0d.bindTooltip(
+                `<div>
+                     <div ><strong>Koltsovo Airport</strong> (USSS)<br />Distance: 1222nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">SVR2932</span> (A320) ↘️<br /><span style="color: #bada55">SVR2931</span> (A320) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ad131110459b4594a566f89848292ea0 = L.circleMarker(
+                [54.5499992371, 36.3666687012],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_52ab778d73f340c9b3f31f0454afb523 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d54c0cedadd049088d05e30a2bec6962 = $(`<div id="html_d54c0cedadd049088d05e30a2bec6962" style="width: 100.0%; height: 100.0%;"><div ><strong>Grabtsevo Airport</strong> (UUBC)<br />Distance: 578nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO546</span> (SU95) ↘️<br /><span style="color: #bada55">AZO545</span> (SU95) ↗️</div></div>`)[0];
+            popup_52ab778d73f340c9b3f31f0454afb523.setContent(html_d54c0cedadd049088d05e30a2bec6962);
+        
+
+        circle_marker_ad131110459b4594a566f89848292ea0.bindPopup(popup_52ab778d73f340c9b3f31f0454afb523)
+        ;
+
+        
+    
+    
+            circle_marker_ad131110459b4594a566f89848292ea0.bindTooltip(
+                `<div>
+                     <div ><strong>Grabtsevo Airport</strong> (UUBC)<br />Distance: 578nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">AZO546</span> (SU95) ↘️<br /><span style="color: #bada55">AZO545</span> (SU95) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fbb8a51068b24374b67ae238abcdc818 = L.circleMarker(
+                [55.40879821777344, 37.90629959106445],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_a45c173104ce4f47a5d951eb875543c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b51cd143cb54999864915660b3f3dd4 = $(`<div id="html_1b51cd143cb54999864915660b3f3dd4" style="width: 100.0%; height: 100.0%;"><div ><strong>Domodedovo International Airport</strong> (UUDD)<br />Distance: 640nm <br />Flights: 21 (Booked: 0)<br /><span style="color: #bada55">SBI2012</span> (A21N) ↘️<br /><span style="color: #bada55">SVR522</span> (A20N) ↘️<br /><span style="color: #bada55">SVR2832</span> (A320) ↘️<br /><span style="color: #bada55">SBI2008</span> (A321) ↘️<br /><span style="color: #bada55">SBI2002</span> (A320) ↘️<br /><span style="color: #bada55">SVR526</span> (A320) ↘️<br /><span style="color: #bada55">SVR2842</span> (A21N) ↘️<br /><span style="color: #bada55">SBI2016</span> (A321) ↘️<br /><span style="color: #bada55">SVR36</span> (A321) ↘️<br /><span style="color: #bada55">IAE556</span> (A319) ↘️<br /><span style="color: #bada55">SVR8</span> () ↘️<br /><span style="color: #bada55">SBI2011</span> (A21N) ↗️<br /><span style="color: #bada55">SVR521</span> (A20N) ↗️<br /><span style="color: #bada55">SBI2007</span> (A321) ↗️<br /><span style="color: #bada55">SVR2831</span> (A320) ↗️<br /><span style="color: #bada55">SBI2001</span> (A320) ↗️<br /><span style="color: #bada55">SVR525</span> (A320) ↗️<br /><span style="color: #bada55">SBI2015</span> (A321) ↗️<br /><span style="color: #bada55">SVR2841</span> (A21N) ↗️<br /><span style="color: #bada55">SVR35</span> (A321) ↗️<br /><span style="color: #bada55">IAE555</span> (A319) ↗️</div></div>`)[0];
+            popup_a45c173104ce4f47a5d951eb875543c8.setContent(html_1b51cd143cb54999864915660b3f3dd4);
+        
+
+        circle_marker_fbb8a51068b24374b67ae238abcdc818.bindPopup(popup_a45c173104ce4f47a5d951eb875543c8)
+        ;
+
+        
+    
+    
+            circle_marker_fbb8a51068b24374b67ae238abcdc818.bindTooltip(
+                `<div>
+                     <div ><strong>Domodedovo International Airport</strong> (UUDD)<br />Distance: 640nm <br />Flights: 21 (Booked: 0)<br /><span style="color: #bada55">SBI2012</span> (A21N) ↘️<br /><span style="color: #bada55">SVR522</span> (A20N) ↘️<br /><span style="color: #bada55">SVR2832</span> (A320) ↘️<br /><span style="color: #bada55">SBI2008</span> (A321) ↘️<br /><span style="color: #bada55">SBI2002</span> (A320) ↘️<br /><span style="color: #bada55">SVR526</span> (A320) ↘️<br /><span style="color: #bada55">SVR2842</span> (A21N) ↘️<br /><span style="color: #bada55">SBI2016</span> (A321) ↘️<br /><span style="color: #bada55">SVR36</span> (A321) ↘️<br /><span style="color: #bada55">IAE556</span> (A319) ↘️<br /><span style="color: #bada55">SVR8</span> () ↘️<br /><span style="color: #bada55">SBI2011</span> (A21N) ↗️<br /><span style="color: #bada55">SVR521</span> (A20N) ↗️<br /><span style="color: #bada55">SBI2007</span> (A321) ↗️<br /><span style="color: #bada55">SVR2831</span> (A320) ↗️<br /><span style="color: #bada55">SBI2001</span> (A320) ↗️<br /><span style="color: #bada55">SVR525</span> (A320) ↗️<br /><span style="color: #bada55">SBI2015</span> (A321) ↗️<br /><span style="color: #bada55">SVR2841</span> (A21N) ↗️<br /><span style="color: #bada55">SVR35</span> (A321) ↗️<br /><span style="color: #bada55">IAE555</span> (A319) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d934e9f764734ca9b00fbe034610d8dd = L.circleMarker(
+                [55.972599, 37.4146],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_2d47c2b8943345299aabc85600cd832b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75956a24611f45f3a561c10db1950338 = $(`<div id="html_75956a24611f45f3a561c10db1950338" style="width: 100.0%; height: 100.0%;"><div ><strong>Sheremetyevo International Airport</strong> (UUEE)<br />Distance: 668nm <br />Flights: 13 (Booked: 0)<br /><span style="color: #bada55">AFL1625</span> (A321) ↘️<br /><span style="color: #bada55">AFL1621</span> (A321) ↘️<br /><span style="color: #bada55">AFL1637</span> (A321) ↘️<br /><span style="color: #bada55">AFL1631</span> (A321) ↘️<br /><span style="color: #bada55">KAR134</span> (B772) ↘️<br /><span style="color: #bada55">NWS134</span> (A321) ↘️<br /><span style="color: #bada55">NWS124</span> (A321) ↘️<br /><span style="color: #bada55">AFL1624</span> (A321) ↗️<br /><span style="color: #bada55">AFL1620</span> (A321) ↗️<br /><span style="color: #bada55">AFL1636</span> (A321) ↗️<br /><span style="color: #bada55">NWS123</span> (A321) ↗️<br /><span style="color: #bada55">AFL1630</span> (A321) ↗️<br /><span style="color: #bada55">KAR123</span> (B772) ↗️</div></div>`)[0];
+            popup_2d47c2b8943345299aabc85600cd832b.setContent(html_75956a24611f45f3a561c10db1950338);
+        
+
+        circle_marker_d934e9f764734ca9b00fbe034610d8dd.bindPopup(popup_2d47c2b8943345299aabc85600cd832b)
+        ;
+
+        
+    
+    
+            circle_marker_d934e9f764734ca9b00fbe034610d8dd.bindTooltip(
+                `<div>
+                     <div ><strong>Sheremetyevo International Airport</strong> (UUEE)<br />Distance: 668nm <br />Flights: 13 (Booked: 0)<br /><span style="color: #bada55">AFL1625</span> (A321) ↘️<br /><span style="color: #bada55">AFL1621</span> (A321) ↘️<br /><span style="color: #bada55">AFL1637</span> (A321) ↘️<br /><span style="color: #bada55">AFL1631</span> (A321) ↘️<br /><span style="color: #bada55">KAR134</span> (B772) ↘️<br /><span style="color: #bada55">NWS134</span> (A321) ↘️<br /><span style="color: #bada55">NWS124</span> (A321) ↘️<br /><span style="color: #bada55">AFL1624</span> (A321) ↗️<br /><span style="color: #bada55">AFL1620</span> (A321) ↗️<br /><span style="color: #bada55">AFL1636</span> (A321) ↗️<br /><span style="color: #bada55">NWS123</span> (A321) ↗️<br /><span style="color: #bada55">AFL1630</span> (A321) ↗️<br /><span style="color: #bada55">KAR123</span> (B772) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0d76c063d51041fc8595ea7f9bdbe291 = L.circleMarker(
+                [55.5914993286, 37.2615013123],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_e33623a158914371913c210b4b8ef1d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a5fa829592148c28f0a2c4cfd667f21 = $(`<div id="html_8a5fa829592148c28f0a2c4cfd667f21" style="width: 100.0%; height: 100.0%;"><div ><strong>Vnukovo International Airport</strong> (UUWW)<br />Distance: 645nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SYL781</span> (B737) ↗️</div></div>`)[0];
+            popup_e33623a158914371913c210b4b8ef1d1.setContent(html_8a5fa829592148c28f0a2c4cfd667f21);
+        
+
+        circle_marker_0d76c063d51041fc8595ea7f9bdbe291.bindPopup(popup_e33623a158914371913c210b4b8ef1d1)
+        ;
+
+        
+    
+    
+            circle_marker_0d76c063d51041fc8595ea7f9bdbe291.bindTooltip(
+                `<div>
+                     <div ><strong>Vnukovo International Airport</strong> (UUWW)<br />Distance: 645nm <br />Flights: 1 (Booked: 0)<br /><span style="color: #bada55">SYL781</span> (B737) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_23cf003b8d7d4e7b81b0966effdee45f = L.circleMarker(
+                [55.606201171875, 49.278701782227],
+                {"bubblingMouseEvents": true, "color": "#008080", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008080", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_8dc15e4181d340d3a511f33c1582507b);
+        
+    
+        var popup_d8cf4a4076ae425d9c8442d68d4a7a19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_597fe43aad9c4548a71496a9060cba45 = $(`<div id="html_597fe43aad9c4548a71496a9060cba45" style="width: 100.0%; height: 100.0%;"><div ><strong>Kazan International Airport</strong> (UWKD)<br />Distance: 860nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">KAR128</span> (E190) ↘️<br /><span style="color: #bada55">KAR127</span> (E190) ↗️</div></div>`)[0];
+            popup_d8cf4a4076ae425d9c8442d68d4a7a19.setContent(html_597fe43aad9c4548a71496a9060cba45);
+        
+
+        circle_marker_23cf003b8d7d4e7b81b0966effdee45f.bindPopup(popup_d8cf4a4076ae425d9c8442d68d4a7a19)
+        ;
+
+        
+    
+    
+            circle_marker_23cf003b8d7d4e7b81b0966effdee45f.bindTooltip(
+                `<div>
+                     <div ><strong>Kazan International Airport</strong> (UWKD)<br />Distance: 860nm <br />Flights: 2 (Booked: 0)<br /><span style="color: #bada55">KAR128</span> (E190) ↘️<br /><span style="color: #bada55">KAR127</span> (E190) ↗️</div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
